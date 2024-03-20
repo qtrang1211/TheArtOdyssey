@@ -1,0 +1,104 @@
+body
+{
+    background-color: #ECE5D5 !important;
+    
+}
+
+.navbar
+{
+    font-family: "Lato", sans-serif !important;
+}
+
+nav
+{
+    margin-top: 50px;
+}
+.abt-txt
+{
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px;
+}
+
+.nav-text
+{
+    color: black !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+    margin-right: 180px;
+}
+
+.para-txt
+{
+    text-align: center;
+    font-size: 24px;
+    margin: 220px 220px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+
+.para-txt2
+{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-left: 270px;
+    margin-right: 270px;
+   
+}
+
+.house-section
+{
+    margin: 60px 60px;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+.text-box
+{
+    padding: 70px;
+    background-color: #3A3635;
+    border-radius: 16px;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: -40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.house-section2
+{
+    margin: 60px 60px;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+
+.text-box2
+{
+    padding: 70px;
+    background-color: #3A3635;
+    border-radius: 16px;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    right: -40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.ctm-siz
+{
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-txt
+{
+    font-size: 20px;
+}
+
+.custom-input::placeholder {
+    color: #ffffff95 !important;
+    font-weight: 100;
+  }
