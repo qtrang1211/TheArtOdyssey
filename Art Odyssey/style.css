@@ -1,104 +1,132 @@
-body
-{
-    background-color: #ECE5D5 !important;
-    
+body {
+  background-color: #ece5d5 !important;
 }
 
-.navbar
-{
-    font-family: "Lato", sans-serif !important;
+.navbar {
+  font-family: "Lato", sans-serif !important;
 }
 
-nav
-{
-    margin-top: 50px;
+nav {
+  margin-top: 50px;
 }
-.abt-txt
-{
-    font-family: "Lato", sans-serif !important;
-    font-size: 20px;
+.abt-txt {
+  font-family: "Lato", sans-serif !important;
+  font-size: 20px;
 }
 
-.nav-text
-{
-    color: black !important;
-    font-family: "Lato", sans-serif !important;
-    font-size: 20px !important;
-    margin-right: 180px;
+.nav-text {
+  color: black !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 20px !important;
+  margin-right: 180px;
 }
 
-.para-txt
-{
-    text-align: center;
-    font-size: 24px;
-    margin: 220px 220px;
-    margin-top: 180px;
-    margin-bottom: 180px;
+.para-txt {
+  text-align: center;
+  font-size: 24px;
+  margin: 220px 220px;
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
-.para-txt2
-{
-    text-align: center;
-    font-size: 24px;
-    margin-top: 100px;
-    margin-left: 270px;
-    margin-right: 270px;
-   
+.para-txt2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 100px;
+  margin-left: 270px;
+  margin-right: 270px;
 }
 
-.house-section
-{
-    margin: 60px 60px;
-    z-index: 1;
-    margin-bottom: 200px;
+.house-section {
+  margin: 60px 60px;
+  z-index: 1;
+  margin-bottom: 200px;
 }
 
-.text-box
-{
-    padding: 70px;
-    background-color: #3A3635;
-    border-radius: 16px;
-    width: 100%;
-    height: 70%;
-    position: relative;
-    left: -40px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.text-box {
+  padding: 70px;
+  background-color: #3a3635;
+  border-radius: 16px;
+  width: 100%;
+  height: 70%;
+  position: relative;
+  left: -40px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-.house-section2
-{
-    margin: 60px 60px;
-    z-index: 1;
-    margin-bottom: 200px;
+.house-section2 {
+  margin: 60px 60px;
+  z-index: 1;
+  margin-bottom: 200px;
 }
 
-
-.text-box2
-{
-    padding: 70px;
-    background-color: #3A3635;
-    border-radius: 16px;
-    width: 100%;
-    height: 70%;
-    position: relative;
-    right: -40px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.text-box2 {
+  padding: 70px;
+  background-color: #3a3635;
+  border-radius: 16px;
+  width: 100%;
+  height: 70%;
+  position: relative;
+  right: -40px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-.ctm-siz
-{
-    width: 300px;
-    filter: brightness(0) invert(1);
+.ctm-siz {
+  width: 300px;
+  filter: brightness(0) invert(1);
 }
 
-.footer-txt
-{
-    font-size: 20px;
+.footer-txt {
+  font-size: 20px;
 }
 
 .custom-input::placeholder {
-    color: #ffffff95 !important;
-    font-weight: 100;
-  }
+  color: #ffffff95 !important;
+  font-weight: 100;
+}
+
+/*Rembrandth Artist House*/
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 8em;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: flex-start; /* align-items changed to flex-start */
+  justify-content: center;
+  text-align: left;
+  max-width: 800px;
+}
+
+.houseIntroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the flex-direction column */
+}
+
+.responsive-image {
+  width: 250px; /* Fixed width */
+  height: auto; /* Height is auto to maintain aspect ratio */
+  margin-right: 60px; /* Adjust the space between the image and the text */
+}
+
+.takeMeThere {
+  text-align: left;
+  padding: 8px 16px;
+  background-color: #3a3635;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  /* Removed margin-bottom */
+}
+
+.houseIntroText > .takeMeThere {
+  align-self: flex-start; /* Alignment to the start (left) */
+}
