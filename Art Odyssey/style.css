@@ -6,6 +6,30 @@ body {
   font-family: "Lato", sans-serif !important;
 }
 
+@media(min-width:992px)
+{
+  .navbar-expand-lg .navbar-collapse{
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand.order-1.mr-lg-0 {
+    margin-right: 0 !important; /* Use !important to ensure it overrides other margin values */
+  }
+}
+
+@media (min-width: 992px) { /* Adjust the breakpoint as needed */
+  .navbar-nav.me-auto > .nav-item:first-child {
+    margin-right: 20px; /* Adjust the margin value as needed */
+  }
+}
+
+.bg-color-cstm
+{
+  background-color: #ece5d5 !important;
+}
+
 nav {
   margin-top: 50px;
 }
@@ -129,4 +153,22 @@ nav {
 
 .houseIntroText > .takeMeThere {
   align-self: flex-start; /* Alignment to the start (left) */
+}
+
+.btn-style
+{
+  background-color:  #3A3635 !important;
+  color: #ECE5D5 !important;
+  border-radius: 4px !important;
+
+}
+
+.marginTop-100px
+{
+  margin-top: 100px;
+}
+
+.fnt-fmly
+{
+  font-family: "Lato", sans-serif !important;
 }
