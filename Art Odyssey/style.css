@@ -25,9 +25,27 @@ body {
   }
 }
 
+@media (min-width: 992px) { /* Apply styles only on large screens (lg) */
+  .artists-page-margin {
+    margin-left: 40px;
+    margin-right: 100px;
+  }
+
+  .contact-page-margin {
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+}
+
 .bg-color-cstm
 {
   background-color: #ece5d5 !important;
+}
+
+.btn-background
+{
+  background-color: #3a3635 !important;
+  border: 0px #3a3635 !important;
 }
 
 nav {
