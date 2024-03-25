@@ -16,6 +16,12 @@ body {
 }
 
 @media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
   .navbar-brand.order-1.mr-lg-0 {
     margin-right: 0 !important; /* Use !important to ensure it overrides other margin values */
   }
@@ -28,8 +34,26 @@ body {
   }
 }
 
+@media (min-width: 992px) {
+  /* Apply styles only on large screens (lg) */
+  .artists-page-margin {
+    margin-left: 40px;
+    margin-right: 100px;
+  }
+
+  .contact-page-margin {
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+}
+
 .bg-color-cstm {
   background-color: #ece5d5 !important;
+}
+
+.btn-background {
+  background-color: #3a3635 !important;
+  border: 0px #3a3635 !important;
 }
 
 nav {
