@@ -1,14 +1,16 @@
+@import url("https://fonts.cdnfonts.com/css/lato");
+
 body {
   background-color: #ece5d5 !important;
+  font-family: "Lato", sans-serif !important;
 }
 
 .navbar {
   font-family: "Lato", sans-serif !important;
 }
 
-@media(min-width:992px)
-{
-  .navbar-expand-lg .navbar-collapse{
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
     width: 100%;
   }
 }
@@ -19,14 +21,14 @@ body {
   }
 }
 
-@media (min-width: 992px) { /* Adjust the breakpoint as needed */
+@media (min-width: 992px) {
+  /* Adjust the breakpoint as needed */
   .navbar-nav.me-auto > .nav-item:first-child {
     margin-right: 20px; /* Adjust the margin value as needed */
   }
 }
 
-.bg-color-cstm
-{
+.bg-color-cstm {
   background-color: #ece5d5 !important;
 }
 
@@ -111,35 +113,48 @@ nav {
   font-weight: 100;
 }
 
-/*Rembrandth Artist House*/
+/*--------------------ARTIST HOUSES PAGE-----------------------------*/
+.quotes {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.5em;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
-  padding: 0 20px;
-  margin-top: 8em;
+  margin-top: 7em;
 }
 
 .image-text-container {
   display: flex;
-  align-items: flex-start; /* align-items changed to flex-start */
+  align-items: center;
   justify-content: center;
   text-align: left;
-  max-width: 800px;
+  max-width: 60%;
 }
 
 .houseIntroText {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start of the flex-direction column */
+  align-items: flex-start;
+}
+
+.houseIntroText h1,
+p {
+  margin-bottom: 20px;
 }
 
 .responsive-image {
-  width: 250px; /* Fixed width */
-  height: auto; /* Height is auto to maintain aspect ratio */
-  margin-right: 60px; /* Adjust the space between the image and the text */
+  width: 250px;
+  height: auto;
+  margin-right: 60px;
 }
 
 .takeMeThere {
+  margin-top: 1.5em;
   text-align: left;
   padding: 8px 16px;
   background-color: #3a3635;
@@ -148,27 +163,95 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  /* Removed margin-bottom */
+  text-decoration: none;
 }
 
 .houseIntroText > .takeMeThere {
-  align-self: flex-start; /* Alignment to the start (left) */
+  align-self: flex-start;
 }
 
-.btn-style
-{
-  background-color:  #3A3635 !important;
-  color: #ECE5D5 !important;
+.btn-style {
+  background-color: #3a3635 !important;
+  color: #ece5d5 !important;
   border-radius: 4px !important;
-
 }
 
-.marginTop-100px
-{
+.marginTop-100px {
   margin-top: 100px;
 }
 
-.fnt-fmly
-{
-  font-family: "Lato", sans-serif !important;
+/*--------- About the House-------*/
+#content-wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subheadings {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#carouselIndicators {
+  width: 100%;
+
+  margin-top: 6vw;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: block;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.houseInfo {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.houseInfo img {
+  padding: auto;
+  width: 100%;
+}
+
+/* Container holding the grid */
+.image-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* creates 5 columns */
+  gap: 10px; /* space between images */
+}
+
+/* Individual items in the grid */
+.grid-item {
+  display: block;
+  overflow: hidden;
+}
+
+/* Styles for the images to make them responsive */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: a little zoom effect on hover */
+.grid-item:hover img {
+  transform: scale(1.05);
 }

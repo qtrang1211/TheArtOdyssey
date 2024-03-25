@@ -90,26 +90,20 @@
       style="margin-top: 40px"
       alt="Header Image"
     />
-    <p
-      class="quotes"
-      style="
-        text-align: center;
-        margin-top: 80px;
-        font-size: 40px;
-        padding-left: 250px;
-        padding-right: 250px;
-      "
-    >
+
+    <!---------Content Section 1---------------->
+
+    <h1 class="quotes">
       “Life etches itself onto our faces as we grow older, showing our violence,
       excesses or kindnesses.” <br />― Rembrandt Van Rijn
-    </p>
+    </h1>
+
+    <!---------Content Section 2---------------->
 
     <div class="content-wrapper">
       <div class="image-text-container">
         <img
-          src="assets/rembrandtDraw.PNG"
-          width="250"
-          height="400"
+          src="assets/rembrandt_images/RMBillus.PNG"
           alt="Rembrandt Illustration"
           class="responsive-image"
         />
@@ -126,10 +120,156 @@
             especially in the impressive residence he purchased in 1639 (now the
             Rembrandt House Museum).
           </p>
-          <button class="takeMeThere">Take me there!</button>
+          <a class="takeMeThere" href="address.html">Take me there!</a>
         </div>
       </div>
     </div>
+
+    <!---------Content Section 3---------------->
+
+    <div id="content-wrapper2">
+      <div
+        id="carouselIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <p class="subheadings">About the House</p>
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/rembrandt_images/RMB5.jpg"
+              class="d-block w-100"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/rembrandt_images/RMB3.jpg"
+              class="d-block w-100"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/rembrandt_images/RMB2.jpg"
+              class="d-block w-100"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselIndicators"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <div class="houseInfo">
+        <p>
+          Rembrandt’s House Museum, the place where the Dutch painter Rembrandt
+          Harmenszoon van Rijn (1606 – 1669) lived between 1639 and 1659, houses
+          an extensive collection of etchings by the Master, paintings by
+          artists from whom he drew inspiration and numerous personal objects of
+          the artist. <br /><br />
+          The house itself was built in 1606, the year of Rembrandt’s birth in
+          Leiden. A few years before Rembrandt moved in, it is thought the house
+          was remodelled by architect Jacob van Campen who designed the Royal
+          Palace on Dam Square. Rembrandt stayed in the house for 19 turbulent
+          years producing some of his most famous works including the NightWatch
+          which can be seen at the Rijksmuseum For a good period Rembrandt
+          enjoyed great prosperity as an artist and teacher and his studio
+          produced a significant output of artworks. In total Rembrandt produced
+          some 300 paintings, 290 etchings and 2,000 drawings over his career.
+          The Rembrandt House has an almost complete collection of his etchings.
+          <br /><br />
+          Eventually Rembrandt’s fortunes began to change due to his extravagant
+          lifestyle and a declining art market. In 1658 after persistent
+          problems paying off his debts Rembrandt was declared bankrupt.He had
+          to move to a smaller rented house on Rozengracht <br /><br />
+          For around the next 250 years the Rembrandt house had a number of
+          different occupants before being bought by the city council who turned
+          it over to a foundation. The house was renovated between 1908 and 1911
+          and then opened as a museum dedicated to the artist.
+        </p>
+        <img src="assets/rembrandt_images/RMB1.jpg" alt="rembrandt house" />
+        <p>
+          In 1998 a modern new wing was added nextdoor and the main house was
+          restored carefully. The bankruptcy inventory was vital in helping
+          create an authentic recreation of the home. The museum underwent a
+          major renovation in 2022-23 adding 30% more exhibition space. The
+          layout of the house is typical for the period in which it was built,
+          and its restoration is extraordinarily faithful to the original. Of
+          great interest to the contemporary visitor are Rembrandt’s bedroom,
+          with its small bed; his large studio, in which many of his well-known
+          works were painted, and his cabinet, in which are stored many of the
+          natural and man-made objects and curiosities that appear in
+          Rembrandt’s works <br /><br />
+          The Amsterdam Rembrandt House Museum is a reconstruction of
+          Rembrandt’s rooms and of his workshop. The furniture and objects from
+          the epoch are carefully presented together with the prints, sculptures
+          and a few paintings of other painters from Rembrandt’s time. A
+          collection of almost all Rembrandt’s prints and the graphic techniques
+          he used, are also shown.
+        </p>
+      </div>
+      <p class="subheadings">Things to do around</p>
+
+      <div class="image-grid-container">
+        <a
+          href="https://www.rijksmuseum.nl/nl"
+          target="_blank"
+          class="grid-item"
+        >
+          <img
+            src="assets/rembrandt_images/TTDA1.jpg"
+            alt="Image description"
+          />
+        </a>
+        <a
+          href="https://www.amsterdam.info/canals/"
+          target="_blank"
+          class="grid-item"
+        >
+          <img
+            src="assets/rembrandt_images/TTDA2.jpg"
+            alt="Image description"
+          />
+        </a>
+        <a
+          href="https://www.vangoghmuseum.nl/en"
+          target="_blank"
+          class="grid-item"
+        >
+          <img
+            src="assets/rembrandt_images/TTDA3.jpg"
+            alt="Image description"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--------------------Footer----------------------->
 
     <footer
       style="
