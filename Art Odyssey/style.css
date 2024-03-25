@@ -113,13 +113,14 @@ nav {
   font-weight: 100;
 }
 
-/*--------------------ARTIST HOUSES PAGE-----------------------------*/
+/*--------------------(ARTIST HOUSES PAGE)-----------------------------*/
 .quotes {
   text-align: center;
   margin-top: 80px;
   font-size: 1.5em;
-  padding-left: 500px;
-  padding-right: 500px;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-weight: bold;
 }
 
 .content-wrapper {
@@ -180,7 +181,7 @@ p {
   margin-top: 100px;
 }
 
-/*--------- About the House-------*/
+/*------------------------ About the House-----------------------*/
 #content-wrapper2 {
   display: flex;
   align-items: center;
@@ -189,7 +190,7 @@ p {
 }
 
 .subheadings {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
@@ -230,7 +231,7 @@ p {
   width: 100%;
 }
 
-/* Container holding the grid */
+/* ------------------------Container holding image grid--------------------------- */
 .image-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* creates 5 columns */
@@ -254,4 +255,69 @@ p {
 /* Optional: a little zoom effect on hover */
 .grid-item:hover img {
   transform: scale(1.05);
+}
+
+/*--------------------------------------------Testimonials-------------------------------------*/
+
+.containerTestimonial {
+  background-color: #c5ad8c;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card {
+  border: none;
+}
+.profile img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+.second {
+  border-left: 2px dotted lightgrey;
+  border-right: 2px dotted lightgrey;
+}
+@media only screen and (max-width: 600px) {
+  .second {
+    border: none;
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+  .third {
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+  .icon {
+    margin-top: 20px;
+    top: 0;
+  }
+}
+
+.intro {
+  font-size: 11px;
+  margin-left: 13px;
+  position: relative;
+  bottom: 8px;
+}
+.row {
+  padding-bottom: 53px;
+}
+.company {
+  position: absolute;
+  bottom: -42px;
+}
+.fa-amazon:before {
+  content: "\f270";
+  font-size: 23px;
+}
+.icon {
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 20px;
+}
+.header {
+  padding-top: 35px;
+  padding-bottom: 50px;
 }
