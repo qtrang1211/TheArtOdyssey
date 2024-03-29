@@ -128,15 +128,15 @@
       alt="Header Image"
     /> -->
 
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">Prices and Directions</h1>
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px; font-size: 3.5em">Prices and Directions</h1>
     <!-- Buttons -->
 
 <div>
 
     <!-- Buttons -->
-    <button class="button button-default button-active" id="button1" onclick="selectButton(1)">Dalí</button>
-    <button class="button button-default" id="button2" onclick="selectButton(2)">Monet</button>
-    <button class="button button-default" id="button3" onclick="selectButton(3)">Rembrandt</button>
+    <button class="button button-default button-active" id="button1" onclick="selectButton(1)">DALÍ</button>
+    <button class="button button-default" id="button2" onclick="selectButton(2)">MONET</button>
+    <button class="button button-default" id="button3" onclick="selectButton(3)">REMBRANDT</button>
 
     <script>
         // Function to handle button click
@@ -161,16 +161,16 @@
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="opening-tab" data-bs-toggle="tab" data-bs-target="#opening" type="button" role="tab" aria-controls="opening" aria-selected="true">Opening Hours</button>
+      <button class="nav-link active" id="opening-tab" data-bs-toggle="tab" data-bs-target="#opening" type="button" role="tab" aria-controls="opening" aria-selected="true">OPENING HOURS</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="prices-tab" data-bs-toggle="tab" data-bs-target="#prices" type="button" role="tab" aria-controls="prices" aria-selected="false">Prices</button>
+      <button class="nav-link" id="prices-tab" data-bs-toggle="tab" data-bs-target="#prices" type="button" role="tab" aria-controls="prices" aria-selected="false">PRICES</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="dircetions-tab" data-bs-toggle="tab" data-bs-target="#directions" type="button" role="tab" aria-controls="directions" aria-selected="false">Directions</button>
+      <button class="nav-link" id="dircetions-tab" data-bs-toggle="tab" data-bs-target="#directions" type="button" role="tab" aria-controls="directions" aria-selected="false">DIRECTIONS</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
+      <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">LOCATION</button>
     </li>
   </ul>
 
@@ -181,8 +181,8 @@
     
     <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">Dalí's House - Opening Hours in 2024</h1>
 
-    <div id="timing" style="margin-bottom: 25px;">
-      Dalí's House daily open: 10:30am - 6pm, last admission 5:10pm
+    <div id="timing" style="margin-bottom: 25px; font-size: larger;">
+      Dalí's House <b>daily open: 10:30am - 6pm, last admission 5:10pm</b>
     </div>
 
     <script>
@@ -218,7 +218,7 @@
       });
     </script>
 
-    <div class="container text-center">
+    <div class="container text-center" style="font-size: larger;">
       <div class="row justify-content-center">
         <div class="col-md-2">Adults</div>
         <div class="col-md-2" id="adults-price">15 €</div>
@@ -274,34 +274,76 @@
 
     <div class="d-flex flex-column">
 
-      <div class="row justify-content-center">
+      <!-- <div class="row justify-content-center">
         <div class="col-md-3">
           <img src="assets/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
         </div>
         <div class="col-md-6 text-center" style="padding: 20px;">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."         </div>
-      </div>
-      <div class="row justify-content-center">
+      </div> -->
+
+      <div class="row justify-content-center" style="font-size: larger;">
         <div class="col-md-3">
           <img src="assets/mdi_bus.png" alt="Train Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;" id="bus">
+          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
 
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Figueres, Estacio
+            </div>
+            <div class="col-md">
+              End: Cadaques (+ 20 walk)
+            </div>
+            <div class="col-md">
+              Duration: approx. 1h 30m
+            </div>
+          </div>
+        
         </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
-        </div>
+
       </div>
       <div class="row justify-content-center">
         <div class="col-md-3">
           <img src="assets/mdi_airplane.png" alt="Train Icon" class="image" style="padding: 20px;">
 
         </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+        <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;" id="car">
+        With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
+
+        <div class="row text-center" style="padding-top: 20px;">
+          <div class="col-md">
+            Start: Figueres, Estacio
+          </div>
+          <div class="col-md">
+            End: Salvador Dalí - House Museum
+          </div>
+          <div class="col-md">
+            Duration: approx. 50 minutes
+          </div>
         </div>
+      
+      </div>
       </div>
 
   </div>
 </div>
+
+<script>
+
+  document.getElementById("button1").addEventListener("click", function() {
+    document.getElementById("bus").innerHTML = 'The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí`s house you can enjoy the nature and lose yourself in the tiny city.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start: Figueres, Estacio</div><div class="col-md">End: Cadaques (+ 20 walk)</div><div class="col-md">Duration: approx. 1h 30m</div></div>';
+    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
+  });
+
+  document.getElementById("button3").addEventListener("click", function() {
+    document.getElementById("bus").innerHTML = 'From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house! <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Amsterdam Central Station </div>  <div class="col-md">    End: Rembrandt House Museum  </div>  <div class="col-md">    Duration: approx. 15 minutes  </div></div>';
+    // document.getElementById("bus").innerHTML = 'The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí`s house you can enjoy the nature and lose yourself in the tiny city.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start: Figueres, Estacio</div><div class="col-md">End: Cadaques (+ 20 walk)</div><div class="col-md">Duration: approx. 1h 30m</div></div>';
+    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
+  });
+
+</script>
 
 <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
   <div class="d-flex justify-content-center align-items-center flex-column">
@@ -331,204 +373,15 @@
     
     <script>
         document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("timing").innerText = "Dalí's House daily open: 10:30am - 6pm, last admission 5:10pm";
+            document.getElementById("timing").innerHTML = "Dalí's House <b>daily open: 10:30am - 6pm, last admission 5:10pm</b>";
         });
         document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = "Monet's House open March 29th to November 1st 2024 <br>Daily open: 9:30am - 6pm, last admission 5:30";
+            document.getElementById("timing").innerHTML = "Monet's House <b>open March 29th to November 1st 2024</b> <br><b>Daily open: 9:30am - 6pm, last admission 5:30pm</b>";
         });
         document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("timing").innerText = "Rembrandt's House daily open 10am - 6pm, last admission 5:40pm";
+            document.getElementById("timing").innerHTML = "Rembrandt's House <b>daily open 10am - 6pm, last admission 5:40pm</b>";
         });
     </script>
-
-    <!-- Content area -->
-    <!-- <div id="content">
-      <div class="box" id="display1">#1 You clicked Button 1</div>
-      <div class="box" id="display2">#2 You clicked Button 1</div>
-      <div class="box" id="display3">#3 You clicked Button 1</div>
-  </div> -->
-
-    <!-- <script>
-        // JavaScript code to handle button clicks and update text box content
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("display1").innerText = "#1 You clicked Button 1";
-            document.getElementById("display2").innerText = "#2 You clicked Button 1";
-            document.getElementById("display3").innerText = "#3 You clicked Button 1";
-        });
-
-        document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("display1").innerText = "#1 You clicked Button 2";
-          document.getElementById("display2").innerText = "#2 You clicked Button 2";
-          document.getElementById("display3").innerText = "#3 You clicked Button 2";
-        });
-
-        document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("display1").innerText = "#1 You clicked Button 3";
-          document.getElementById("display2").innerText = "#2 You clicked Button 3";
-          document.getElementById("display3").innerText = "#3 You clicked Button 3";
-        });
-    </script> -->
-
-  <!-- <h1 style="text-align: center; margin-top: 100px;">Mode of Transport</h1>
-
-    <div class="d-flex flex-column">
-
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <img src="assets/material-symbols-light_train.png" alt="Train Icon" class="image">
-        </div>
-        <div class="col-md-6 text-start">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <img src="assets/mdi_bus.png" alt="Train Icon" class="image">
-
-        </div>
-        <div class="col-md-6 text-start">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <img src="assets/mdi_airplane.png" alt="Train Icon" class="image">
-
-        </div>
-        <div class="col-md-6 text-start">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
-        </div>
-      </div> -->
-
-    <!-- <script>
-        // JavaScript code to handle button clicks and update text box content
-        document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("transport1").innerText = "#1 You clicked Button 1";
-          document.getElementById("transport2").innerText = "#2 You clicked Button 1";
-          document.getElementById("transport3").innerText = "#3 You clicked Button 1";
-        });
-
-        document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("transport1").innerText = "#1 You clicked Button 2";
-          document.getElementById("transport2").innerText = "#2 You clicked Button 2";
-          document.getElementById("transport3").innerText = "#3 You clicked Button 2";
-        });
-
-        document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("transport1").innerText = "#1 You clicked Button 3";
-          document.getElementById("transport2").innerText = "#2 You clicked Button 3";
-          document.getElementById("transport3").innerText = "#3 You clicked Button 3";
-        });
-    </script> -->
-
-    <!-- <footer
-      style="
-        background-color: #3a3635;
-        padding-top: 100px;
-        padding-bottom: 100px;
-      "
-    >
-      <div class="newsltter-footer d-flex justify-content-evenly">
-        <div
-          class="d-flex flex-column"
-          style="margin-left: 40px; margin-right: 200px"
-        >
-          <div class="">
-            <img
-              class="ctm-siz"
-              src="The Art Odyssey.svg"
-              alt=""
-              style="color: white !important; margin-bottom: 40px"
-            />
-          </div>
-          <div>
-            <form style="width: 70%">
-              <div class="input-group mb-3">
-                <input
-                  type="email"
-                  style="background-color: #3a3635; margin-right: 10px"
-                  class="form-control custom-input"
-                  placeholder="Your email"
-                  aria-label="Your email"
-                  aria-describedby="subscribeButton"
-                />
-                <button
-                  style="
-                    background-color: #3a3635;
-                    border: 1px solid white;
-                    color: #ece5d5;
-                    border-radius: 4px;
-                  "
-                  class="btn btn-primary"
-                  type="submit"
-                  id="subscribeButton"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-            <div style="width: 80%; color: white">
-              Subscribe for exclusive art, culture, and adventure updates.
-              Elevate your inbox with creativity!
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column">
-          <div style="margin-bottom: 50px">
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-                margin-right: 150px;
-              "
-              href=""
-              >Artist houses</a
-            >
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-              "
-              href="/about.html"
-              >About Us</a
-            >
-          </div>
-          <div>
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-                margin-right: 150px;
-              "
-              href=""
-              >Prices & Directions</a
-            >
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-              "
-              href="/contact.html"
-              >Contact Us</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="socials d-flex" style="margin-top: 70px; margin-left: 960px">
-        <img style="margin-right: 40px" src="/facebook_symbol.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="/instagram_logo.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="tiktok_symbol.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="/x_logo.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="/youtube_symbol.svg.svg" alt="" />
-      </div>
-    </footer> -->
 
     <footer style="
     background-color: #3a3635;
