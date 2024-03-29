@@ -103,6 +103,26 @@ nav {
   margin-bottom: 100px;
 }
 
+
+/*Artist House Links*/
+.linkhouses {
+  display: flex;
+  justify-content: center; /* Center the items */
+  color: #9a8278;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.linkhouses a {
+  text-decoration: none;
+  color: #9a8278;
+  padding: 0 135px; /* Adjust padding to control spacing between links */
+}
+
+
+
 .house-section2 {
   margin: 60px 60px;
   z-index: 1;
@@ -134,6 +154,7 @@ nav {
   color: #ffffff95 !important;
   font-weight: 100;
 }
+
 
 /*Rembrandth Artist House*/
 .content-wrapper {
@@ -174,6 +195,7 @@ nav {
   outline: none;
   /* Removed margin-bottom */
 }
+
 
 .houseIntroText > .takeMeThere {
   align-self: flex-start; /* Alignment to the start (left) */
