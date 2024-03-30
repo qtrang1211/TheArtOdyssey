@@ -13,6 +13,17 @@ body {
   }
 }
 
+.cstm-w
+{
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .margin-top-cstm {
+    margin-top: 20px !important; /* Adjust the margin-top value as needed */
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-brand.order-1.mr-lg-0 {
     margin-right: 0 !important; /* Use !important to ensure it overrides other margin values */
@@ -171,4 +182,10 @@ nav {
 .fnt-fmly
 {
   font-family: "Lato", sans-serif !important;
+}
+
+.width-60percentage
+{
+  width: 60%;
+  display: block !important;
 }
