@@ -387,3 +387,80 @@ p {
   padding-top: 35px;
   padding-bottom: 50px;
 }
+
+/*--------------------------------------------contact page-------------------------------------*/
+
+.footer-txt-margin
+{
+  margin: 40px;
+}
+
+.mr-50px
+{
+  margin-right: 50px;
+}
+
+.ftr-lnk-sz
+{
+  font-family: "Lato", sans-serif !important;
+  font-size: 20px !important;
+  color: #F5F5F5 !important;
+  text-decoration: none;
+
+}
+
+.row-nobtm
+{
+  padding-bottom: 0px !important;
+}
+
+@media (max-width: 767px) {
+  .ctm-siz {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-elements {
+      width: auto !important; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+  }
+}
+
+@media (max-width: 574px) {
+  .form-elements.w-50 {
+      width: auto !important; /* Override w-50 class */
+  }
+}
+
+@media (max-width: 767px) {
+  .txt-ele-center {
+      text-align: center;
+      width: auto !important;
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cstm-margin {
+     padding-left: 250px !important;
+     margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cstm-mt {
+     margin-top: -50px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cstm-margin-left {
+     margin-left: -130px !important;
+  }
+}
