@@ -45,6 +45,11 @@ h1 {
     margin-right: 100px;
   }
 
+  .directions-page-margin {
+    /* margin-left: 100px; */
+    margin-right: 100px;
+  }
+
   .contact-page-margin {
     margin-right: 50px;
     margin-left: 100px;
@@ -374,6 +379,13 @@ p {
 .header {
   padding-top: 35px;
   padding-bottom: 50px;
+}
+
+.image_preview_container {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+}
+.image_preview {
+  background-image: url("headerImage/header1.jpg");
 }
 
 /* ------------------------Container holding image grid (What else to do around?)--------------------------- */
