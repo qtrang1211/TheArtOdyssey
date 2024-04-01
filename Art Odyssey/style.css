@@ -68,6 +68,17 @@ h1 {
 nav {
   margin-top: 50px;
 }
+
+.artist-name-bar {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  height: 60px;
+  background-color: #3a3635;
+  color: #ece5d5;
+  margin-bottom: 3%;
+}
+
 .abt-txt {
   font-family: "Lato", sans-serif !important;
   font-size: 20px;
@@ -219,7 +230,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  /* text-align: left; */
   max-width: 60%;
 }
 
@@ -237,7 +248,7 @@ p {
 .responsive-image {
   width: 250px;
   height: auto;
-  margin-right: 60px;
+  /* margin-right: 60px; */
 }
 
 .takeMeThere {
