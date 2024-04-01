@@ -1,14 +1,20 @@
+@import url("https://fonts.cdnfonts.com/css/lato");
+
 body {
   background-color: #ece5d5 !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+h1 {
+  font-size: 4em;
 }
 
 .navbar {
   font-family: "Lato", sans-serif !important;
 }
 
-@media(min-width:992px)
-{
-  .navbar-expand-lg .navbar-collapse{
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
     width: 100%;
   }
 }
@@ -25,13 +31,15 @@ body {
   }
 }
 
-@media (min-width: 992px) { /* Adjust the breakpoint as needed */
+@media (min-width: 992px) {
+  /* Adjust the breakpoint as needed */
   .navbar-nav.me-auto > .nav-item:first-child {
     margin-right: 20px; /* Adjust the margin value as needed */
   }
 }
 
-@media (min-width: 992px) { /* Apply styles only on large screens (lg) */
+@media (min-width: 992px) {
+  /* Apply styles only on large screens (lg) */
   .artists-page-margin {
     margin-left: 40px;
     margin-right: 100px;
@@ -43,13 +51,11 @@ body {
   }
 }
 
-.bg-color-cstm
-{
+.bg-color-cstm {
   background-color: #ece5d5 !important;
 }
 
-.btn-background
-{
+.btn-background {
   background-color: #3a3635 !important;
   border: 0px #3a3635 !important;
 }
@@ -149,41 +155,93 @@ nav {
   font-size: 20px;
 }
 
+  .mapContainer {
+    position: relative;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 425px;
+    height: 350px;
+    /* padding-top: 75%;  */
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 75%;
+  }
+
+  @media screen and (min-width: 425px){
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 .custom-input::placeholder {
   color: #ffffff95 !important;
   font-weight: 100;
 }
 
 
-/*Rembrandth Artist House*/
+/*--------------------(ARTIST HOUSES PAGE)-----------------------------*/
+.quotes {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.5em;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-weight: bold;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
-  padding: 0 20px;
-  margin-top: 8em;
+  margin-top: 7em;
 }
 
 .image-text-container {
   display: flex;
-  align-items: flex-start; /* align-items changed to flex-start */
+  align-items: center;
   justify-content: center;
   text-align: left;
-  max-width: 800px;
+  max-width: 60%;
 }
 
 .houseIntroText {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start of the flex-direction column */
+  align-items: flex-start;
+}
+
+.houseIntroText h1,
+p {
+  margin-bottom: 20px;
 }
 
 .responsive-image {
-  width: 250px; /* Fixed width */
-  height: auto; /* Height is auto to maintain aspect ratio */
-  margin-right: 60px; /* Adjust the space between the image and the text */
+  width: 250px;
+  height: auto;
+  margin-right: 60px;
 }
 
 .takeMeThere {
+  margin-top: 1.5em;
   text-align: left;
   padding: 8px 16px;
   background-color: #3a3635;
@@ -192,28 +250,238 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  /* Removed margin-bottom */
+  text-decoration: none;
 }
 
 
 .houseIntroText > .takeMeThere {
-  align-self: flex-start; /* Alignment to the start (left) */
+  align-self: flex-start;
 }
 
-.btn-style
-{
-  background-color:  #3A3635 !important;
-  color: #ECE5D5 !important;
+.btn-style {
+  background-color: #3a3635 !important;
+  color: #ece5d5 !important;
   border-radius: 4px !important;
-
 }
 
-.marginTop-100px
-{
+.marginTop-100px {
   margin-top: 100px;
 }
 
-.fnt-fmly
+/*------------------------ About the House-----------------------*/
+#content-wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subheadings {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#carouselIndicators {
+  width: 100%;
+
+  margin-top: 6vw;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: block;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.houseInfo {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.houseInfo img {
+  padding: auto;
+  width: 100%;
+}
+
+/* ------------------------Container holding image grid--------------------------- */
+.image-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* creates 5 columns */
+  gap: 10px; /* space between images */
+}
+
+/* Individual items in the grid */
+.grid-item {
+  display: block;
+  overflow: hidden;
+}
+
+/* Styles for the images to make them responsive */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: a little zoom effect on hover */
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+/*--------------------------------------------Testimonials-------------------------------------*/
+
+.containerTestimonial {
+  background-color: #c5ad8c;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card {
+  border: none;
+}
+.profile img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+.second {
+  border-left: 2px dotted lightgrey;
+  border-right: 2px dotted lightgrey;
+}
+@media only screen and (max-width: 600px) {
+  .second {
+    border: none;
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+  .third {
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+  .icon {
+    margin-top: 20px;
+    top: 0;
+  }
+}
+
+.intro {
+  font-size: 11px;
+  margin-left: 13px;
+  position: relative;
+  bottom: 8px;
+}
+.row {
+  padding-bottom: 53px;
+}
+.company {
+  position: absolute;
+  bottom: -42px;
+}
+.fa-amazon:before {
+  content: "\f270";
+  font-size: 23px;
+}
+.icon {
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 20px;
+}
+.header {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+/*--------------------------------------------contact page-------------------------------------*/
+
+.footer-txt-margin
+{
+  margin: 40px;
+}
+
+.mr-50px
+{
+  margin-right: 50px;
+}
+
+.ftr-lnk-sz
 {
   font-family: "Lato", sans-serif !important;
+  font-size: 20px !important;
+  color: #F5F5F5 !important;
+  text-decoration: none;
+
+}
+
+.row-nobtm
+{
+  padding-bottom: 0px !important;
+}
+
+@media (max-width: 767px) {
+  .ctm-siz {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-elements {
+      width: auto !important; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+  }
+}
+
+@media (max-width: 574px) {
+  .form-elements.w-50 {
+      width: auto !important; /* Override w-50 class */
+  }
+}
+
+@media (max-width: 767px) {
+  .txt-ele-center {
+      text-align: center;
+      width: auto !important;
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cstm-margin {
+     padding-left: 250px !important;
+     margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cstm-mt {
+     margin-top: -50px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cstm-margin-left {
+     margin-left: -130px !important;
+  }
 }
