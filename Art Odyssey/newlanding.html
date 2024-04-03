@@ -1,0 +1,103 @@
+<!--03 april changes-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>artHaus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const dropdown = document.querySelector('.nav-item.dropdown');
+  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+  let timeoutId;
+
+  dropdown.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // Prevent immediate hiding on quick hover
+    this.classList.add('show');
+    dropdownMenu.classList.add('show');
+  });
+
+  dropdown.addEventListener('mouseleave', function() {
+    // Delay removal of 'show' class to allow for moving to the dropdown
+    timeoutId = setTimeout(() => {
+      this.classList.remove('show');
+      dropdownMenu.classList.remove('show');
+    }, 200); // 500 ms delay; adjust as necessary
+  });
+
+  dropdownMenu.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // Prevent hiding when mouse is over the menu
+  });
+
+  dropdownMenu.addEventListener('mouseleave', function() {
+    // Hide immediately when leaving the menu
+    dropdown.classList.remove('show');
+    this.classList.remove('show');
+  });
+});
+
+//HOME AS LINK!
+
+
+
+
+
+</script>
+  
+   
+    <header>
+      <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+        <div class="container">
+          <img src="assets/Logo/logo-black.svg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Houses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
+                  <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
+                  <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="directions.html">Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <section>
+        <div id="intro" class="bg-image vh-100">
+         
+        </div>
+      </section>
+    </header>
