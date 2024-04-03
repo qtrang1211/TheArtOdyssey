@@ -1,52 +1,162 @@
-@import url("https://fonts.cdnfonts.com/css/lato");
+/*---03rd April---*/
 
-body {
+@import url("https://fonts.cdnfonts.com/css/lato");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/petit-formal-script"); /*font-family: 'Petit Formal Script', sans-serif;---for quotes*/
+
+body,
+html {
   background-color: #ece5d5 !important;
   font-family: "Lato", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 4em;
 }
 
-.navbar {
-  font-family: "Lato", sans-serif !important;
+/*---------------------------------------------NAVIGATION BAR----------------------------*/
+
+/*just for rembrandt page*/
+
+/* Directly targeting the #intro element and using !important to override other styles if necessary */
+#intro {
+  height: 500px !important;
+  background-image: url("assets/header/cloud.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  width: 100% !important;
 }
 
+.custom-navbar,
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.custom-navbar .navbar-nav .nav-item {
+  margin-right: 20px; /* Adds space to the right of each nav item */
+}
+
+.custom-navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
+}
+
+.custom-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  color: #3a3635 !important;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-toggler-icon {
+  color: #ffffff; /* White color for navbar items */
+  position: relative; /* Setup for underline effect */
+}
+
+.custom-navbar .dropdown-toggle::after {
+  display: none; /* Hide default dropdown arrow */
+}
+
+/* Updated to include dropdown-toggle for the underline effect */
+.custom-navbar .navbar-nav .nav-link::after,
+.custom-navbar .navbar-nav .dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #3a3635; /* Underline color */
+  bottom: -2px; /* Positioning the underline correctly */
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link:focus::after,
+.custom-navbar .dropdown-toggle:hover::after,
+.custom-navbar .dropdown-toggle:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link[aria-current="page"],
+.custom-navbar .dropdown-toggle:focus,
+.custom-navbar .dropdown-toggle.active,
+.custom-navbar .dropdown-toggle[aria-current="page"] {
+  outline: none;
+  color: #3a3635; /* Focused or active link color */
+  background-color: transparent; /* Clear background */
+}
+
+.navbar-scrolled {
+  background-color: #cbbcb1; /* Scrolled navbar color */
+}
+
+.custom-navbar .dropdown-menu {
+  margin-top: 11px; /* Aesthetic spacing */
+  backdrop-filter: blur(5px); /* Cohesive styling with navbar */
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 0;
+}
+
+.custom-navbar .dropdown-item {
+  color: #3a3635; /* Dropdown item text color */
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* Dropdown item hover background */
+}
+
+/* Ensures navbar items align to the right */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Ensure dropdown menu is displayed on hover for larger screens */
 @media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/*responsive nav*/
+
+/*@media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     width: 100%;
   }
-}
 
-@media (min-width: 992px) {
   .navbar-nav .nav-link {
     font-size: 18px;
   }
-}
 
-@media (min-width: 992px) {
   .navbar-brand.order-1.mr-lg-0 {
-    margin-right: 0 !important; /* Use !important to ensure it overrides other margin values */
+    margin-right: 0 !important; 
   }
-}
 
-@media (min-width: 992px) {
-  /* Adjust the breakpoint as needed */
   .navbar-nav.me-auto > .nav-item:first-child {
-    margin-right: 20px; /* Adjust the margin value as needed */
+    margin-right: 20px; 
   }
-}
 
-@media (min-width: 992px) {
-  /* Apply styles only on large screens (lg) */
   .artists-page-margin {
     margin-left: 40px;
     margin-right: 100px;
   }
 
   .directions-page-margin {
-    /* margin-left: 100px; */
+    margin-left: 100px; 
     margin-right: 100px;
   }
 
@@ -63,10 +173,6 @@ h1 {
 .btn-background {
   background-color: #3a3635 !important;
   border: 0px #3a3635 !important;
-}
-
-nav {
-  margin-top: 50px;
 }
 
 .artist-name-bar {
@@ -89,7 +195,7 @@ nav {
   font-family: "Lato", sans-serif !important;
   font-size: 20px !important;
   margin-right: 180px;
-}
+}*/
 
 .para-txt {
   text-align: center;
@@ -125,7 +231,6 @@ nav {
   margin-bottom: 100px;
 }
 
-
 /*Artist House Links*/
 .linkhouses {
   display: flex;
@@ -142,7 +247,6 @@ nav {
   color: #9a8278;
   padding: 0 135px; /* Adjust padding to control spacing between links */
 }
-
 
 .house-section2 {
   margin: 60px 60px;
@@ -209,16 +313,54 @@ nav {
   font-weight: 100;
 }
 
-
-/*--------------------(ARTIST HOUSES PAGE)-----------------------------*/
-.quotes {
+/*-----------------------------------------------------------(ARTIST HOUSES PAGE)-----------------------------*/
+/*.quotes {
   text-align: center;
   margin-top: 80px;
   font-size: 1.5em;
   padding-left: 400px;
   padding-right: 400px;
   font-weight: bold;
+}*/
+
+/*-----QUOTE SECTION----*/
+.quote-section {
+  background-color: #e9dbbd; /* Or any color you wish to use for the background */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  padding: 40px; /* Add some padding around the text */
 }
+
+.quotes {
+  margin: 0; /* Remove default margins */
+  padding: 0 150px; /* Add some padding on the left and right */
+  text-align: left; /* Align quote text to the left */
+  color: #333; /* Dark grey color for text */
+}
+
+.quotes p {
+  font-family: "Petit Formal Script", sans-serif !important;
+}
+
+.quotes h1 {
+  font-family: "Open Sans", sans-serif; /* Different specific font for the author's name */
+  text-align: right; /* Align author's name to the right */
+  color: #333; /* Dark grey color for the author's name */
+}
+
+/*.responsive-image {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.responsive-image:hover {
+  transform: scale(1.05); 
+}*/
+
+/*----WELCOME SECTION- ABOUT ARTIST----*/
 
 .content-wrapper {
   display: flex;
@@ -230,8 +372,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: left; */
   max-width: 60%;
+  gap: 20px; /* This will create space between the image and the text */
 }
 
 .houseIntroText {
@@ -248,7 +390,7 @@ p {
 .responsive-image {
   width: 250px;
   height: auto;
-  /* margin-right: 60px; */
+  margin-right: 100px; /* Adjust this value as needed to create more space */
 }
 
 .takeMeThere {
@@ -262,8 +404,23 @@ p {
   cursor: pointer;
   outline: none;
   text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for background and shadow */
 }
 
+.takeMeThere:hover {
+  background-color: #4a4039; /* Slightly lighter shade on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Elevation effect */
+}
+
+.subheadings {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e9dbbd;
+  padding: 20px;
+  width: 100%;
+  /*position: fixed; GET BACK HEADINGS!*/
+}
 
 .houseIntroText > .takeMeThere {
   align-self: flex-start;
@@ -280,17 +437,11 @@ p {
 }
 
 /*------------------------ About the House-----------------------*/
-#content-wrapper2 {
+/*#content-wrapper2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.subheadings {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
 }
 
 #carouselIndicators {
@@ -303,15 +454,6 @@ p {
   height: 500px;
 }
 
-.carousel-indicators li {
-  background-color: #999;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  display: block;
-  opacity: 0.5;
-}
-
 .carousel-indicators .active {
   background-color: #fff;
   opacity: 1;
@@ -319,84 +461,66 @@ p {
 
 .houseInfo {
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .houseInfo img {
   width: 100%;
+}*/
+
+.container {
+  width: 80%;
+  max-width: 1000px; /* Set a max-width to keep the content from stretching too far on larger screens */
+  margin: 0 auto; /* Center the container */
 }
 
-/*--------------------------------------------Testimonials-------------------------------------*/
-
-.containerTestimonial {
-  background-color: #c5ad8c;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.card {
-  border: none;
-}
-.profile img {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-}
-.second {
-  border-left: 2px dotted lightgrey;
-  border-right: 2px dotted lightgrey;
+#carouselIndicators {
+  width: 100%;
+  margin-top: 6vw;
 }
 
-@media only screen and (max-width: 768px) {
-  .second {
-    border: none;
-    border-top: 2px dotted lightgrey;
-    margin-top: 25px;
-  }
-  .third {
-    border-top: 2px dotted lightgrey;
-    margin-top: 25px;
-  }
-  .icon {
-    margin-top: 20px;
-    top: 0;
-  }
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
 }
 
-.intro {
-  font-size: 11px;
-  margin-left: 13px;
-  position: relative;
-  bottom: 8px;
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
 }
-.row {
-  padding-bottom: 53px;
+
+.text-section {
+  /*background-color: #f8f8f8;  A light background for the text */
+  padding: 20px;
+  border-radius: 4px; /* Optional: adds rounded corners */
+  margin-bottom: 30px; /* Space between text and image */
 }
-.company {
-  position: absolute;
-  bottom: -42px;
-}
-.fa-amazon:before {
-  content: "\f270";
-  font-size: 23px;
-}
-.icon {
+
+.section-heading {
+  color: #a07636; /* A gold color for headings */
   margin-bottom: 15px;
-  position: relative;
-  bottom: 20px;
-}
-.header {
-  padding-top: 35px;
-  padding-bottom: 50px;
 }
 
-.image_preview_container {
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+.parallax-image {
+  width: 100%;
+  max-height: 400px; /* Adjust as necessary */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  margin-bottom: 30px;
+  display: block; /* Remove any extra space below the image */
 }
-.image_preview {
-  background-image: url("headerImage/header1.jpg");
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  .text-section,
+  .image-section {
+    margin-bottom: 20px;
+  }
+  .parallax-image {
+    max-height: 300px;
+  }
 }
 
 /* ------------------------Container holding image grid (What else to do around?)--------------------------- */
@@ -441,6 +565,69 @@ p {
 .grid-item:hover img {
   transform: scale(1.05);
 }
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack the items vertically */
+    margin-top: 3em; /* Reduce the top margin */
+  }
+
+  .quote-section {
+    flex-direction: column; /* Stack quote and author vertically */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .quotes,
+  .quotes h1 {
+    padding: 0 20px; /* Reduce padding on the left and right */
+    text-align: center; /* Center-align the text for both quote and author */
+  }
+
+  /* Optional: Adjust the font size for smaller screens */
+  .quotes h1 {
+    font-size: smaller; /* Adjust the font size as needed */
+  }
+
+  .image-text-container {
+    flex-direction: column; /* Stack image and text vertically */
+    max-width: 100%; /* Use full width */
+    gap: 10px; /* Reduce the gap between image and text */
+  }
+
+  .responsive-image {
+    width: 20%; /* Full width images */
+    margin-right: 0; /* Remove margin to the right of the image */
+  }
+
+  .houseIntroText,
+  .houseIntroText h1,
+  .houseIntroText p {
+    align-items: center; /* Center align the flex items */
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Reduce margin between heading and paragraph */
+  }
+
+  .houseIntroText > .takeMeThere {
+    align-self: center; /* Center the button */
+  }
+
+  .image-grid-container {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Responsive grid */
+  }
+
+  .carousel-inner img {
+    height: auto; /* Adjust height to be auto to maintain aspect ratio */
+  }
+
+  .subheadings {
+    font-size: 1.5em; /* Reduce font size for smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
 /*--------------------------------------------contact page-------------------------------------*/
 
 .footer-txt-margin {
@@ -468,9 +655,7 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-@media (max-width: 767px) {
   .form-elements {
     width: auto !important;
     margin: 0 auto;
@@ -478,36 +663,26 @@ p {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media (max-width: 574px) {
   .form-elements.w-50 {
     width: auto !important; /* Override w-50 class */
   }
-}
 
-@media (max-width: 767px) {
   .txt-ele-center {
     text-align: center;
     width: auto !important;
     margin-top: 20px;
   }
-}
 
-@media (max-width: 767px) {
   .cstm-margin {
     padding-left: 250px !important;
     margin-top: 60px !important;
   }
-}
 
-@media (max-width: 767px) {
   .cstm-mt {
     margin-top: -50px !important;
   }
-}
 
-@media (max-width: 576px) {
   .cstm-margin-left {
     margin-left: -130px !important;
   }
