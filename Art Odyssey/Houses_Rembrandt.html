@@ -53,10 +53,48 @@
   });
 });
 
-//HOME AS LINK!
+document.addEventListener("DOMContentLoaded", function() {
+  const housesLink = document.querySelector('.nav-item.dropdown > a');
+  
+  // Function to handle navigation or dropdown display
+  function handleHousesLinkClick(event) {
+    // Check if dropdown is already shown
+    if (!this.nextElementSibling.classList.contains('show')) {
+      // Prevent default if dropdown not shown, and navigate
+      event.preventDefault();
+      window.location.href = this.getAttribute('href');
+    }
+    // If dropdown is shown, do nothing and let Bootstrap handle it
+  }
+  
+  // Attach click event listener to the Houses link
+  if (housesLink) {
+    housesLink.addEventListener('click', handleHousesLinkClick);
+  }
 
-
-
+  // Existing code for hover functionality
+  const dropdown = document.querySelector('.nav-item.dropdown');
+  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+  let timeoutId;
+  dropdown.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId);
+    this.classList.add('show');
+    dropdownMenu.classList.add('show');
+  });
+  dropdown.addEventListener('mouseleave', function() {
+    timeoutId = setTimeout(() => {
+      this.classList.remove('show');
+      dropdownMenu.classList.remove('show');
+    }, 200);
+  });
+  dropdownMenu.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId);
+  });
+  dropdownMenu.addEventListener('mouseleave', function() {
+    dropdown.classList.remove('show');
+    this.classList.remove('show');
+  });
+});
 
 
 </script>
@@ -113,6 +151,8 @@
       width="100%"
       />
     </div-->
+
+    <!------------------------------COMMON NAV BAR------------------------------------>
     <header>
       <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
         <div class="container">
