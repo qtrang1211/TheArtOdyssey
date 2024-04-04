@@ -5,6 +5,15 @@
 @import url("https://fonts.cdnfonts.com/css/petit-formal-script"); /*font-family: 'Petit Formal Script', sans-serif;---for quotes*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body,
 html {
   background-color: #ece5d5 !important;
@@ -12,11 +21,14 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  animation: fadeIn 1.5s ease forwards;
 }
 
 h1 {
   font-size: 4em;
 }
+
+/*BACK TO TOP BUTTON*/
 
 /*---------------------------------------------NAVIGATION BAR----------------------------*/
 
@@ -25,7 +37,8 @@ h1 {
 /* Directly targeting the #intro element and using !important to override other styles if necessary */
 #intro {
   height: 500px !important;
-  background-image: url("assets/header/cloud.png") !important;
+  /* background-image: url("assets/header/cloud.png") !important;*/
+
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -314,6 +327,17 @@ h1 {
   font-weight: 100;
 }
 
+/*-----------------------------------------------------------(ARTIST HOUSES - LANDING PAGE)-----------------------------*/
+
+.heading-section {
+  background-color: #e9dbbd; /* Or any color you wish to use for the background */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add some padding around the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+
 /*-----------------------------------------------------------(ARTIST HOUSES PAGE)-----------------------------*/
 /*.quotes {
   text-align: center;
@@ -330,7 +354,8 @@ h1 {
   display: flex; /* Use flexbox for layout */
   justify-content: center;
   align-items: center; /* Center items vertically */
-  padding: 40px; /* Add some padding around the text */
+  padding: 20px; /* Add some padding around the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quotes {
@@ -399,7 +424,7 @@ p {
   text-align: left;
   padding: 8px 16px;
   background-color: #3a3635;
-  color: #fff;
+  color: #ece5d5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -413,11 +438,14 @@ p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Elevation effect */
 }
 
+/*--------------------------ABOUT THE HOUSE_------*/
+
 .subheadings {
   font-size: 2em;
-  font-weight: bold;
+
   text-align: center;
-  background-color: #e9dbbd;
+  background-color: #bf844b;
+  color: #ece5d5;
   padding: 20px;
   width: 100%;
   /*position: fixed; GET BACK HEADINGS!*/
@@ -431,6 +459,7 @@ p {
   background-color: rgb(58, 54, 53) !important;
   color: #ece5d5 !important;
   border-radius: 4px !important;
+  padding: 20px !important;
 }
 
 .marginTop-100px {
@@ -471,18 +500,19 @@ p {
 
 .container {
   width: 80%;
-  max-width: 1000px; /* Set a max-width to keep the content from stretching too far on larger screens */
+  max-width: 1000px;
   margin: 0 auto; /* Center the container */
 }
 
 #carouselIndicators {
   width: 100%;
-  margin-top: 6vw;
+  /*margin-top: 6vw;*/
 }
 
 .carousel-inner img {
   object-fit: cover;
   height: 500px;
+  margin-top: -10px;
 }
 
 .carousel-indicators .active {
@@ -510,6 +540,138 @@ p {
   display: block; /* Remove any extra space below the image */
 }
 
+/*--------------HISTORY, TODAY AND FR MORE-------------*/
+.history-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  justify-content: space-between;
+  margin: 70px 5%; /* Reduce lateral margins */
+  animation: fadeInUp 1.5s ease forwards; /* Added 'forwards' to keep the final state */
+}
+
+.history-heading {
+  flex-basis: 40%; /* Adjust width as necessary */
+  max-width: 40%; /* Ensure that the basis is not exceeded */
+}
+
+.history-heading h2 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin-bottom: 0.5em; /* Adjust as needed */
+  color: #bf844b;
+}
+
+.history-heading img {
+  width: 100%; /* Makes the image take the full width of its container */
+  height: auto; /* Keeps the aspect ratio of the image */
+  margin-top: 10px;
+}
+
+.history-text {
+  flex-basis: 55%; /* Adjust width as necessary */
+  max-width: 55%; /* Ensure that the basis is not exceeded */
+  padding-left: 20px; /* Adds some spacing between the text and the image */
+}
+
+.history-text p {
+  text-align: justify;
+  text-justify: inter-word; /* This helps to improve the spacing between words */
+}
+
+.modern-container {
+  background-color: #e9dbbd;
+  padding: 10px;
+}
+
+/* Keyframes and animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp-animation {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  /* Add "animation-delay" if you want to delay the start of the animation */
+}
+
+/*Greatest work*/
+
+.greatest-works {
+  width: 90%;
+  padding: 10px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-around; /* Evenly distribute with space around items */
+  align-items: center;
+}
+
+.section-title {
+  width: 100%; /* Full width to break line */
+  text-align: center;
+  margin-bottom: 30px; /* Space below the section title */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items */
+  justify-content: space-around; /* Distribute with space around */
+  align-items: center;
+}
+
+.image-grid .grid-item {
+  width: 250px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  margin: 10px; /* Margin around each box */
+  transition: transform 1s, z-index 0s, box-shadow 1s; /* Smooth transition for transform and shadow */
+  position: relative; /* Needed for z-index to work */
+}
+
+.image-grid .grid-item img {
+  width: 100%; /* Make image take full width of its container */
+  height: 100%; /* Make image take full height of its container */
+  object-fit: cover; /* Cover the container completely */
+  transition: transform 1s; /* Smooth transition for transform */
+}
+
+.image-grid a::after {
+  content: attr(data-title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0); /* Transparent background */
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  pointer-events: none; /* Ensure the click passes through */
+}
+
+.image-grid a:hover::after {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  opacity: 1; /* Make title visible */
+}
+
+.image-grid .grid-item:hover {
+  transform: scale(1.1); /* Enlarge */
+  z-index: 2; /* Bring to front */
+  box-shadow: 2px 2px 2px #000; /* Add shadow */
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .container {
@@ -522,6 +684,12 @@ p {
   .parallax-image {
     max-height: 300px;
   }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 20px; /* Optionally increase the gap */
+    /* Adjust other styles as needed */
+  }
 }
 
 /* ------------------------Container holding image grid (What else to do around?)--------------------------- */
@@ -529,6 +697,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  justify-items: center;
 }
 
 .grid-item {
@@ -606,6 +775,8 @@ p {
     align-items: center; /* Center align the flex items */
     text-align: center; /* Center align text */
     margin-bottom: 10px; /* Reduce margin between heading and paragraph */
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .houseIntroText > .takeMeThere {
@@ -625,7 +796,28 @@ p {
 
   .subheadings {
     font-size: 1.5em; /* Reduce font size for smaller screens */
-    padding: 15px; /* Adjust padding */
+    /*padding: 0px; /* Adjust padding */
+  }
+
+  .history-container {
+    flex-direction: column;
+    text-align: center; /* Center text for smaller screens */
+    margin: 20px 2%; /* Reduce lateral margins for smaller screens */
+  }
+
+  .history-heading,
+  .history-text {
+    flex-basis: auto;
+    max-width: 96%; /* Account for the reduced lateral margins */
+  }
+
+  .history-heading img {
+    margin: 20px auto; /* Space above and below the image */
+  }
+
+  .history-text {
+    padding-top: 0; /* No additional padding above the text */
+    padding-left: 0; /* Align text to the edge on smaller screens */
   }
 }
 
