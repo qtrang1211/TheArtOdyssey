@@ -36,9 +36,7 @@ h1 {
 /* Directly targeting the #intro element and using !important to override other styles if necessary */
 #intro {
   height: 500px !important;
-  /* background-image: url("assets/header/cloud.png") !important;*/
-
-  background-repeat: no-repeat !important;
+background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
   width: 100% !important;
@@ -880,40 +878,34 @@ p {
   }
 }
 
-
 /* new landing page */
 
-.welcome-txt
-{
+.welcome-txt {
   font-size: 80px;
   font-weight: 400 !important;
   font-family: "Lato", sans-serif !important;
   color: #383635;
 }
 
-.subtext
-
-{
+.subtext {
   font-size: 24px;
   font-family: "Lato", sans-serif !important;
   text-align: left;
   color: #383635;
 }
 
-.cstm-pad
-{
-  padding: 200px; 
+.cstm-pad {
+  padding: 200px;
 }
 
 .vertical-line {
-  width: 2px; 
-  height: 50%; 
-  background-color: #383635; 
-  vertical-align: middle; 
+  width: 2px;
+  height: 50%;
+  background-color: #383635;
+  vertical-align: middle;
   margin-top: 110px;
   animation: slideIn 1s ease forwards;
 }
-
 
 @keyframes slideInLeft {
   from {
@@ -962,41 +954,31 @@ p {
   }
 }
 
-.cstm-section
-{
+.cstm-section {
   background-color: #3a3635;
   padding: 50px;
 }
 
-.cstm-txt1
-{
+.cstm-txt1 {
   font-size: 32px;
   font-family: "Lato", sans-serif !important;
-  color: #ECE5D5;
+  color: #ece5d5;
   font-weight: 300 !important;
   margin: auto;
 }
 
-
-.cstm-txt2
-{
+.cstm-txt2 {
   font-size: 52px;
   font-family: "Lato", sans-serif !important;
-  color: #ECE5D5;
+  color: #ece5d5;
   font-weight: 300 !important;
   margin: auto !important;
 }
 
-.cstm-margin-100px
-{
+.cstm-margin-100px {
   margin-top: 150px;
 }
 
-.slider-txt
-{
+.slider-txt {
   font-size: 40px;
-
 }
-
-
-  
