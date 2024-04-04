@@ -16,15 +16,18 @@
   }
 }
 
-::-webkit-scrollbar-thumb:vertical { /*navbar scroll kit*/
+::-webkit-scrollbar-thumb:vertical {
+  /*navbar scroll kit*/
   background-color: #000000;
   height: 50px;
 }
 
-::-webkit-scrollbar { /*navbar scroll kit*/
+::-webkit-scrollbar {
+  /*navbar scroll kit*/
   height: 10px;
   width: 9px;
-  background-color: white;}
+  background-color: white;
+}
 
 body,
 html {
@@ -49,8 +52,6 @@ h1 {
 /* Directly targeting the #intro element and using !important to override other styles if necessary */
 #intro {
   height: 500px !important;
-  /* background-image: url("assets/header/cloud.png") !important;*/
-
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -64,12 +65,14 @@ h1 {
 }
 
 .custom-navbar .navbar-nav .nav-item {
-  margin-right: 20px; /* Adds space to the right of each nav item */
+  margin-right: 10px; /* Adds space to the right of each nav item */
+  margin-left: 20px; /* Adds space to the right of each nav item */
 }
 
-.custom-navbar .navbar-nav .nav-item:last-child {
-  margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
-}
+/* Ensures the last item doesn't have extra space on the right */
+/* .custom-navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+} */
 
 .custom-brand {
   font-size: 1.75rem;
@@ -519,8 +522,8 @@ p {
   margin: 0 auto; /* Center the container */
 }
 
-#carouselExampleCaptions{
-  margin-top:50px;
+#carouselExampleCaptions {
+  margin-top: 50px;
 }
 
 #carouselIndicators {
@@ -717,8 +720,8 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   justify-items: center;
-  margin-top:30px;
-  margin-bottom:-50px;
+  margin-top: 30px;
+  margin-bottom: -50px;
 }
 
 .grid-item {
@@ -907,40 +910,34 @@ p {
   }
 }
 
-
 /* new landing page */
 
-.welcome-txt
-{
+.welcome-txt {
   font-size: 80px;
   font-weight: 400 !important;
   font-family: "Lato", sans-serif !important;
   color: #383635;
 }
 
-.subtext
-
-{
+.subtext {
   font-size: 24px;
   font-family: "Lato", sans-serif !important;
   text-align: left;
   color: #383635;
 }
 
-.cstm-pad
-{
-  padding: 200px; 
+.cstm-pad {
+  padding: 200px;
 }
 
 .vertical-line {
-  width: 2px; 
-  height: 50%; 
-  background-color: #383635; 
-  vertical-align: middle; 
+  width: 2px;
+  height: 50%;
+  background-color: #383635;
+  vertical-align: middle;
   margin-top: 110px;
   animation: slideIn 1s ease forwards;
 }
-
 
 @keyframes slideInLeft {
   from {
@@ -989,107 +986,123 @@ p {
   }
 }
 
-.cstm-section
-{
+.cstm-section {
   background-color: #3a3635;
   padding: 50px;
 }
 
-.cstm-txt1
-{
+.cstm-txt1 {
   font-size: 32px;
   font-family: "Lato", sans-serif !important;
-  color: #ECE5D5;
+  color: #ece5d5;
   font-weight: 300 !important;
   margin: auto;
 }
 
-
-.cstm-txt2
-{
+.cstm-txt2 {
   font-size: 52px;
   font-family: "Lato", sans-serif !important;
-  color: #ECE5D5;
+  color: #ece5d5;
   font-weight: 300 !important;
   margin: auto !important;
 }
 
-.cstm-margin-100px
-{
+.cstm-margin-100px {
   margin-top: 150px;
 }
 
-.slider-txt
-{
+.slider-txt {
   font-size: 40px;
-
 }
 
-.cstm-icon-color
-{
+@media (max-width:  390px) {
+  .slider-txt {
+    font-size: 20px;
+  }
+}
+
+
+
+.cstm-icon-color {
   color: #8c4c03 !important;
   font-size: 30px;
 }
 
-.cstm-bg-land
-{
-    background-color: #E9DBBD;  
+.cstm-bg-land {
+  background-color: #e9dbbd;
 }
-  
-.cstm-pad-100
-{
+
+.cstm-pad-100 {
   padding-top: 100px;
 }
 
-.cstm-bg-btn
-{
-  background-color: #ECE5D5 !important;
+.cstm-bg-btn {
+  background-color: #ece5d5 !important;
   font-family: "Lato", sans-serif !important;
 }
 
-.land-sec-p
-{
+.land-sec-p {
   padding: 100px;
   font-size: 24px;
   margin-bottom: 0px !important;
 }
 
-.cstm-top-70px
-{
+.cstm-top-70px {
   padding-top: 70px;
 }
 
-.cstm-bg-brwn
-{
+.cstm-bg-brwn {
   background-color: #3a3635 !important;
   color: white !important;
 }
 
-.txt-white
-{
+.txt-white {
   color: rgb(212, 207, 207) !important;
   font-weight: 300 !important;
 }
 
-.cstm-pad-rt
-{
+.cstm-pad-rt {
   padding-right: 70px;
 }
 
-.cstm-pad-top
-{
+.cstm-pad-top {
   padding-top: 140px;
 }
 
-
 @media (max-width: 758px) {
   .cstm-center {
-      text-align: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 758px) {
   .cstm-pad-right {
-      padding-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width:  767px) {
+  .cstm-pad {
+    padding: 50px;
+    padding-top: 0px;
+  }
+}
+
+
+@media (max-width:  767px) {
+  .subtext {
+    text-align: center !important;
+  }
+}
+
+@media (max-width:  430px) {
+  .welcome-txt {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:  1200px) {
+  .arrow-icon {
+    display: none !important;
   }
 }

@@ -1,9 +1,3 @@
-// Listen for clicks on the button
-backToTopButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" }); // Scrolls to the top smoothly
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".nav-item.dropdown");
   const dropdownMenu = dropdown.querySelector(".dropdown-menu");
@@ -67,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timeoutId = setTimeout(() => {
       this.classList.remove("show");
       dropdownMenu.classList.remove("show");
-    }, 200);
+    }, 500);
   });
   dropdownMenu.addEventListener("mouseenter", function () {
     clearTimeout(timeoutId);
