@@ -345,12 +345,110 @@ h1 {
 /*-----------------------------------------------------------(ARTIST HOUSES - LANDING PAGE)-----------------------------*/
 
 .heading-section {
-  background-color: #e9dbbd; /* Or any color you wish to use for the background */
-  display: flex; /* Use flexbox for layout */
+  background-color: #e9dbbd;
+  display: flex;
   justify-content: center;
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Add some padding around the text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, and color */
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.european-artists-section {
+  text-align: center;
+
+  padding: 80px 0; /* Space above and below the section content */
+}
+
+.european-artists-title {
+  margin-bottom: 30px; /* Space below the title */
+  font-size: 1.5rem; /* Larger font size for the title */
+  color: #ece5d5; /* Text color for the title */
+  background-color: #333;
+  width: 30%;
+  border-top-right-radius: 20px;
+  padding: 25px 0;
+}
+
+.european-artists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items in a row */
+  gap: 15px; /* Space between grid items */
+  padding: 0 15%; /* Horizontal padding for grid */
+}
+
+.artist-item {
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+  cursor: pointer; /* Indicates the items are clickable */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for scale and shadow */
+}
+
+.artist-item:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.artist-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.artist-item:hover .artist-image {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+.artist-name {
+  position: absolute;
+  bottom: 0px; /* Position from the bottom of the artist item */
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: white; /* Text color for artist name */
+  font-weight: bold; /* Make the artist name bold */
+  padding: 5px; /* Padding above and below the text */
+}
+
+.coming-soon {
+  margin-top: 20px; /* Space above the 'coming soon' text */
+  color: #8c4c03; /* Text color for the 'coming soon' text */
+  font-style: italic; /* Italicize the 'coming soon' text */
+}
+
+@media (max-width: 992px) {
+  .european-artists-title {
+    /* Adjust the title size and width for smaller screens */
+    font-size: 1.2rem;
+    width: 50%; /* Increase the width percentage for smaller screens */
+    padding: 20px 0; /* Adjust the padding as necessary */
+  }
+
+  .european-artists-grid {
+    /* Adjust the grid to have two columns instead of three */
+    grid-template-columns: repeat(2, 1fr); /* Two items in a row */
+    gap: 15px;
+    padding: 0 10%; /* Adjust the horizontal padding for the grid */
+  }
+
+  .artist-image {
+    /* Adjust the height of images for smaller screens */
+    height: 300px; /* Decrease the fixed height for smaller screens */
+  }
+
+  .artist-item {
+    /* If necessary, adjust the scaling factor for hover */
+    &:hover {
+      transform: scale(1.02); /* Slightly reduce the scale up on hover */
+    }
+  }
+
+  .coming-soon {
+    /* Adjust 'coming soon' text font-size for smaller screens */
+    font-size: 1em; /* Adjust the font size as necessary */
+  }
 }
 
 /*-----------------------------------------------------------(ARTIST HOUSES PAGE)-----------------------------*/
