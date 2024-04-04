@@ -867,6 +867,13 @@ p {
   text-decoration: none;
 }
 
+.ftr-link-style {
+  font-family: "Lato", sans-serif !important;
+  font-size: large !important;
+  color: #f5f5f5 !important;
+  text-decoration: none;
+}
+
 .row-nobtm {
   padding-bottom: 0px !important;
 }
