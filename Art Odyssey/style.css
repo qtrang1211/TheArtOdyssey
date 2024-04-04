@@ -687,3 +687,124 @@ p {
     margin-left: -130px !important;
   }
 }
+
+
+/* new landing page */
+
+.welcome-txt
+{
+  font-size: 80px;
+  font-weight: 400 !important;
+  font-family: "Lato", sans-serif !important;
+  color: #383635;
+}
+
+.subtext
+
+{
+  font-size: 24px;
+  font-family: "Lato", sans-serif !important;
+  text-align: left;
+  color: #383635;
+}
+
+.cstm-pad
+{
+  padding: 200px; 
+}
+
+.vertical-line {
+  width: 2px; 
+  height: 50%; 
+  background-color: #383635; 
+  vertical-align: middle; 
+  margin-top: 110px;
+  animation: slideIn 1s ease forwards;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.welcome-txt {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.subtext {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .vertical-line {
+    display: none;
+  }
+}
+
+.cstm-section
+{
+  background-color: #3a3635;
+  padding: 50px;
+}
+
+.cstm-txt1
+{
+  font-size: 32px;
+  font-family: "Lato", sans-serif !important;
+  color: #ECE5D5;
+  font-weight: 300 !important;
+  margin: auto;
+}
+
+
+.cstm-txt2
+{
+  font-size: 52px;
+  font-family: "Lato", sans-serif !important;
+  color: #ECE5D5;
+  font-weight: 300 !important;
+  margin: auto !important;
+}
+
+.cstm-margin-100px
+{
+  margin-top: 150px;
+}
+
+.slider-txt
+{
+  font-size: 40px;
+
+}
+
+
+  
