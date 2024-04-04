@@ -1005,6 +1005,14 @@ p {
   font-size: 40px;
 }
 
+@media (max-width:  390px) {
+  .slider-txt {
+    font-size: 20px;
+  }
+}
+
+
+
 .cstm-icon-color {
   color: #8c4c03 !important;
   font-size: 30px;
@@ -1060,5 +1068,31 @@ p {
 @media (max-width: 758px) {
   .cstm-pad-right {
     padding-right: 0px;
+  }
+}
+
+@media (max-width:  767px) {
+  .cstm-pad {
+    padding: 50px;
+    padding-top: 0px;
+  }
+}
+
+
+@media (max-width:  767px) {
+  .subtext {
+    text-align: center !important;
+  }
+}
+
+@media (max-width:  430px) {
+  .welcome-txt {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:  1200px) {
+  .arrow-icon {
+    display: none !important;
   }
 }
