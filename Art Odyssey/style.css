@@ -63,12 +63,14 @@ h1 {
 }
 
 .custom-navbar .navbar-nav .nav-item {
-  margin-right: 20px; /* Adds space to the right of each nav item */
+  margin-right: 10px; /* Adds space to the right of each nav item */
+  margin-left: 20px; /* Adds space to the right of each nav item */
 }
 
-.custom-navbar .navbar-nav .nav-item:last-child {
-  margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
-}
+/* Ensures the last item doesn't have extra space on the right */
+/* .custom-navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+} */
 
 .custom-brand {
   font-size: 1.75rem;
