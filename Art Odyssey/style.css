@@ -6,7 +6,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); /*'Dancing Script'*/
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -626,6 +625,7 @@ p {
 
 /*Greatest work*/
 
+
 .greatest-works {
   width: 90%;
   padding: 10px;
@@ -635,6 +635,16 @@ p {
   flex-wrap: wrap; /* Allow wrapping of items */
   justify-content: space-around; /* Evenly distribute with space around items */
   align-items: center;
+}
+
+.subtext-greatest-work {
+  width: 100%;
+  margin-top:-30px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  font-style:italic;
+  text-align: center;
+  color:#383635;
 }
 
 .section-title {
