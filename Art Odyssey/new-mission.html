@@ -1,0 +1,197 @@
+<!--03 april changes-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mission</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const dropdown = document.querySelector('.nav-item.dropdown');
+  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+  let timeoutId;
+
+  dropdown.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // Prevent immediate hiding on quick hover
+    this.classList.add('show');
+    dropdownMenu.classList.add('show');
+  });
+
+  dropdown.addEventListener('mouseleave', function() {
+    // Delay removal of 'show' class to allow for moving to the dropdown
+    timeoutId = setTimeout(() => {
+      this.classList.remove('show');
+      dropdownMenu.classList.remove('show');
+    }, 200); // 500 ms delay; adjust as necessary
+  });
+
+  dropdownMenu.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // Prevent hiding when mouse is over the menu
+  });
+
+  dropdownMenu.addEventListener('mouseleave', function() {
+    // Hide immediately when leaving the menu
+    dropdown.classList.remove('show');
+    this.classList.remove('show');
+  });
+});
+</script>
+  
+   
+    <header>
+      <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+        <div class="container">
+          <img src="assets/Logo/logo-black.svg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Houses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
+                  <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
+                  <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="directions.html">Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <section>
+        <div id="intro" class="bg-image vh-100">
+         
+        </div>
+      </section>
+    </header>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pb-5">
+          <p class="mission-txt text-uppercase">
+            Our Mission
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="heyy.png" class="img-fluid chng-pos" alt="">
+        </div>
+        <div class="col-md-8">
+          <div class="cstm-color mx-auto" id="margin-left">
+            <p class="">
+              Monet's house, also known as the Maison de Monet, was the beloved home of the renowned Impressionist painter Claude Monet from 1883 until his death in 1926. Situated in the heart of Giverny, the house served as Monet's residence and his artistic sanctuary. Giverny, the house served as Monet's residence and his artistic sanctuary.Giverny, the house served as Monet's residence and his artistic sanctuary.
+  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #3A3635; padding: 40px; padding-bottom: 0px !important; ">
+      <div class="row mt-3 mb-4">
+        <div class="col-md-8">
+          <img  class="ctm-siz"src="assets/icons/The Art Odyssey.svg" alt="" style="color: white !important; margin-bottom: 40px;">
+          <form class="w-50 form-elements">
+            <div class="input-group mb-3">
+              <input type="email" style="background-color: #3A3635; margin-right: 10px;" class="form-control custom-input" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton">
+              <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
+            </div>
+          </form>
+          <div class="txt-ele-center" style="width: 50%; color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</div>
+        </div>
+        <div class="col-md-4 cstm-margin cstm-margin-left">
+
+          <div class="row">
+            <div class="col-md-6 p-4 "><a class="ftr-lnk-sz" href="landing-house.html">Artists' Houses</a></div>
+            <div class="col-md-6 p-4"><a class="ftr-lnk-sz" href="about.html">About Us</a></div>
+          </div>
+          <div class="row cstm-mt ">
+            <div class="col-md-6 p-4 ftr-lnks-margin"><a class="ftr-lnk-sz" href="directions.html">Directions</a></div>
+            <div class="col-md-6 p-4 ftr-lnks-margin"><a class="ftr-lnk-sz" href="contact.html">Contact Us</a></div>
+          </div>
+          </div>
+        </div>  
+        <div class="row row-nobtm">
+          <div class="col-md-7"></div>
+          <div class="col-md-5">
+            <div class="d-flex justify-content-evenly">
+              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/youtube_symbol.svg.svg" alt=""></a>
+              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/x_logo.svg.svg" alt=""></a>
+              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/tiktok_symbol.svg.svg" alt=""></a>
+              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/instagram_logo.svg.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+            <div class="col-md-8">
+              <p class="txt-white cstm-center">idm-2024@arthaus.com</p>
+            </div>
+            <div class="col-md-1">
+              <p class="txt-white text-center">
+                Legal
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="txt-white text-center">
+                Privacy
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="txt-white text-center">Cookies</p>
+            </div>
+            <div class="col-md-1">
+              <p class="txt-white text-center">Copyright</p>
+            </div>
+        </div>
+      </div>
+
+ 
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+
+
+  </html>
