@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Houses | Rembrandt</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/icons8-museum-32.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,139 +20,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    
+    <script src="index.js"></script>
   </head>
   <body>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-  const dropdown = document.querySelector('.nav-item.dropdown');
-  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
-  let timeoutId;
 
-  dropdown.addEventListener('mouseenter', function() {
-    clearTimeout(timeoutId); // Prevent immediate hiding on quick hover
-    this.classList.add('show');
-    dropdownMenu.classList.add('show');
-  });
-
-  dropdown.addEventListener('mouseleave', function() {
-    // Delay removal of 'show' class to allow for moving to the dropdown
-    timeoutId = setTimeout(() => {
-      this.classList.remove('show');
-      dropdownMenu.classList.remove('show');
-    }, 200); // 500 ms delay; adjust as necessary
-  });
-
-  dropdownMenu.addEventListener('mouseenter', function() {
-    clearTimeout(timeoutId); // Prevent hiding when mouse is over the menu
-  });
-
-  dropdownMenu.addEventListener('mouseleave', function() {
-    // Hide immediately when leaving the menu
-    dropdown.classList.remove('show');
-    this.classList.remove('show');
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const housesLink = document.querySelector('.nav-item.dropdown > a');
-  
-  // Function to handle navigation or dropdown display
-  function handleHousesLinkClick(event) {
-    // Check if dropdown is already shown
-    if (!this.nextElementSibling.classList.contains('show')) {
-      // Prevent default if dropdown not shown, and navigate
-      event.preventDefault();
-      window.location.href = this.getAttribute('href');
-    }
-    // If dropdown is shown, do nothing and let Bootstrap handle it
-  }
-  
-  // Attach click event listener to the Houses link
-  if (housesLink) {
-    housesLink.addEventListener('click', handleHousesLinkClick);
-  }
-
-  // Existing code for hover functionality
-  const dropdown = document.querySelector('.nav-item.dropdown');
-  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-  let timeoutId;
-  dropdown.addEventListener('mouseenter', function() {
-    clearTimeout(timeoutId);
-    this.classList.add('show');
-    dropdownMenu.classList.add('show');
-  });
-  dropdown.addEventListener('mouseleave', function() {
-    timeoutId = setTimeout(() => {
-      this.classList.remove('show');
-      dropdownMenu.classList.remove('show');
-    }, 200);
-  });
-  dropdownMenu.addEventListener('mouseenter', function() {
-    clearTimeout(timeoutId);
-  });
-  dropdownMenu.addEventListener('mouseleave', function() {
-    dropdown.classList.remove('show');
-    this.classList.remove('show');
-  });
-});
-
-</script>
-  
-   
-    <!--nav class="navbar navbar-expand-lg bg-color-cstm" > 
-
-      <div class="container-fluid justify-content-between" >
-        <a class="navbar-brand mr-lg-0" href="index.html" style="margin-left: 10%;" >
-          <a class="navbar-brand" href="index.html"><span style="color: #3a3635; font-size: x-large; font-family: Cinzel Decorative, serif;">Art</span><span style="color: #3a3635; font-size: x-large; font-family: Cinzel Decorative, serif; font-weight: bolder;">Haus</span></a>
-          <button class="navbar-toggler ml-auto float-xs-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-         
-              <a class="offcanvas-title navbar-brand mr-lg-0" href="index.html" id="offcanvasNavbarLabel">
-                <a class="navbar-brand" href="index.html"><span style="color: #3a3635; font-size: x-large; font-family: Cinzel Decorative, serif;">Art</span><span style="color: #3a3635; font-size: x-large; font-family: Cinzel Decorative, serif; font-weight: bolder;">Haus</span></a>
-              </a>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                  <a class="nav-link active artists-page-margin" aria-current="page" href="landing-house.html">Discover Houses</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active directions-page-margin" href="directions.html">Visit</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active about-page-margin" href="about.html">Our mission</a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="contact.html" class="btn btn-primary btn-background contact-page-margin">Contact</a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-      </div>
-    </nav>
-
-    <div-- class="image_preview_container">
-      <img
-      src="assets/header/cloud.png"
-      class="img-fluid image_preview"
-     
-      alt="Header Image"
-      width="100%"
-      />
-    </div-->
 
     <!------------------------------COMMON NAV BAR------------------------------------>
+
+
     <header>
       <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
         <div class="container">
@@ -185,8 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       </nav>
     
+      <!--HEADER IMAGE-->
       <section>
-        <div id="intro" class="bg-image vh-100">
+        <div id="intro" class="bg-image vh-100" style="background-image: url(assets/header/remHeader.jpg)">
          
         </div>
       </section>
@@ -224,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             especially in the impressive residence he purchased in 1639 (now the
             Rembrandt House Museum).
           </p>
-          <a class="takeMeThere" href="directions.html">Visit</a>
+          <a class="takeMeThere" href="directions.html">Visit House</a>
         </div>
       </div>
     </div><br><br>
@@ -232,8 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <!---------Content Section 3---------------->
    
 
-      <h2 class="subheadings">About the House</h2>
-     
+      <h2 class="subheadings">ABOUT THE HOUSE</h2>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -272,139 +150,80 @@ document.addEventListener("DOMContentLoaded", function() {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!--div class="houseInfo container w-50 align-items-center">
-        <p>
-          <h3>HISTORY</h3>
-          
-          Rembrandt’s House Museum, the place where the Dutch painter Rembrandt
-          Harmenszoon van Rijn (1606 – 1669) lived between 1639 and 1659, houses
-          an extensive collection of etchings by the Master, paintings by
-          artists from whom he drew inspiration and numerous personal objects of
-          the artist. <br /><br />
-          The house itself was built in 1606, the year of Rembrandt’s birth in
-          Leiden. A few years before Rembrandt moved in, it is thought the house
-          was remodelled by architect Jacob van Campen who designed the Royal
-          Palace on Dam Square. Rembrandt stayed in the house for 19 turbulent
-          years producing some of his most famous works including the NightWatch
-          which can be seen at the Rijksmuseum For a good period Rembrandt
-          enjoyed great prosperity as an artist and teacher and his studio
-          produced a significant output of artworks. In total Rembrandt produced
-          some 300 paintings, 290 etchings and 2,000 drawings over his career.
-          The Rembrandt House has an almost complete collection of his etchings.
-          <br /><br />
-          Eventually Rembrandt’s fortunes began to change due to his extravagant
-          lifestyle and a declining art market. In 1658 after persistent
-          problems paying off his debts Rembrandt was declared bankrupt.He had
-          to move to a smaller rented house on Rozengracht <br /><br />
-          For around the next 250 years the Rembrandt house had a number of
-          different occupants before being bought by the city council who turned
-          it over to a foundation. The house was renovated between 1908 and 1911
-          and then opened as a museum dedicated to the artist.
-        </p>
-        <img
-          src="assets/rembrandt_images/RMB1.jpg"
-          alt="rembrandt house"
-        /><br /><br />
-        <p>
 
-          <h3>MODERN TIME</h3>
-          In 1998 a modern new wing was added nextdoor and the main house was
-          restored carefully. The bankruptcy inventory was vital in helping
-          create an authentic recreation of the home. The museum underwent a
-          major renovation in 2022-23 adding 30% more exhibition space. The
-          layout of the house is typical for the period in which it was built,
-          and its restoration is extraordinarily faithful to the original. Of
-          great interest to the contemporary visitor are Rembrandt’s bedroom,
-          with its small bed; his large studio, in which many of his well-known
-          works were painted, and his cabinet, in which are stored many of the
-          natural and man-made objects and curiosities that appear in
-          Rembrandt’s works <br /><br />
-          The Amsterdam Rembrandt House Museum is a reconstruction of
-          Rembrandt’s rooms and of his workshop. The furniture and objects from
-          the epoch are carefully presented together with the prints, sculptures
-          and a few paintings of other painters from Rembrandt’s time. A
-          collection of almost all Rembrandt’s prints and the graphic techniques
-          he used, are also shown. <br /><br />
-          There are many fun activities you can do at the museum,
-          <a
-            href="https://www.rembrandthuis.nl/en/whats-on/rembrandt-in-het-museum/activities/"
-            target="_blank"
-            style="color: rgb(170, 118, 54)"
-            >check out here!</a
-          >
-        </p><br><br>
+
+      <!-----------------------------Content Section 4-------------------------------------->
+      <div class="history-container fadeInUp-animation">
+        <div class="history-heading">
+          <h2>HISTORY</h2>
+         
+          <img src="assets/rembrandt_images/remHistory2.jpg" alt="Historic Image">
+        </div>
+        <div class="history-text">
+          <p>
+            <b>Rembrandt’s House Museum,</b> the residence of the Dutch painter Rembrandt Harmenszoon van Rijn (1606 – 1669) from 1639 to 1659, showcases an extensive collection of etchings by the Master, paintings by artists who inspired him, and numerous personal belongings of the artist. The building, <b>erected in 1606,</b> the same year Rembrandt was born in Leiden, underwent remodeling by architect Jacob van Campen, also known for designing the Royal Palace on Dam Square, a few years before Rembrandt’s occupancy. During the 19 years Rembrandt lived there, <b>he created some of his most celebrated works, including the Night Watch,</b>  which is displayed at the Rijksmuseum.This period marked a time of great prosperity for Rembrandt as both an artist and a teacher, with his studio generating a vast array of artworks. Over his lifetime, Rembrandt produced approximately 300 paintings, 290 etchings, and 2,000 drawings, with the Rembrandt House holding an almost complete collection of his etchings. <br><br>
+            
+            However, Rembrandt’s fortunes eventually waned, attributed to his lavish lifestyle and a diminishing art market. In 1658, after continual difficulties in settling his debts, he was declared bankrupt and forced to relocate to a more modest rented accommodation on Rozengracht.
+            
+            For the subsequent 250 years, the Rembrandt house was inhabited by various tenants until it was acquired by the city council and entrusted to a foundation. The building <b>underwent renovations from 1908 to 1911 before being inaugurated as a museum </b>devoted to the artist's legacy.</p>
+        </div>
+      </div>
+
+      <div class="modern-container">
+      <div class="history-container fadeInUp-animation">
+        <div class="history-heading">
+          <h2>MODERN DAY</h2>
+         
+          <img src="assets/rembrandt_images/remPresent.jpg" alt="Historic Image">
+        </div>
+        <div class="history-text">
+          <p>
+            Considered a <b> National Treasure </b>by Dutch government, contemporary new wing was inaugurated in 1998, adjacent to the main building. 2022-23 saw a significant upgrade, expanding its exhibition space by 30%. The house's layout mirrors the typical design of its era, with a restoration that remarkably adheres to the original architecture. <br> <br>
+            
+            Modern visitors will find particular interest in exploring Rembrandt’s bedroom, which <b> features a quaintly small bed; his expansive studio, where numerous famed artworks were created;</b> and his cabinet, home to an array of natural and crafted objects that influenced Rembrandt’s pieces.The era's furniture and artifacts are meticulously arranged alongside prints, sculptures, and a selection of paintings by Rembrandt’s contemporaries. The museum also exhibits nearly all of Rembrandt’s prints and illustrates the graphic techniques he employed. <br> <br>
+            
+            Visitors can also explore his reception room, where he conducted sales of his paintings; the kitchen, which includes the bedstee for the maid, the main studio and the studio used by his students. Additionally, a substantial storeroom holds various specimens collected by Rembrandt, along with a functioning press used for printing etchings.</p>
+            <p>
+              <b>
+                There are many fun activities you can do at the museum,
+              <a href="https://www.rembrandthuis.nl/en/whats-on/rembrandt-in-het-museum/activities/" target="_blank" class="activities-link" style="color: #BF844B; text-decoration: none;">
+                CHECK HERE!
+                
+              </a>
+              </b>
+            </p>
+        </div>
+
        
+      </div>
+    </div>
 
-      </!--div-->
+    <section class="greatest-works">
+      <h2 class="section-title">Greatest Works at Rembrandt's Museum</h2>
+      <div class="image-grid">
+        <a href="https://www.artbible.info/art/large/818.html" class="grid-item" data-title="Mordecai's Triumph" target="_blank">
+          <img src="assets/rembrandt_images/art1.jpg" alt="Mordecai's Triumph">
+        </a>
+        <a href="https://www.artbible.info/art/large/271.html" class="grid-item" data-title="The Lamentation of Abel" target="_blank">
+          <img src="assets/rembrandt_images/art22.jpg" alt="The Lamentation of Abel">
+        </a>
+        
+        <a href="https://www.artbible.info/art/large/1048.html" class="grid-item" data-title="The Crucifixion" target="_blank">
+          <img src="assets/rembrandt_images/art4.jpg" alt="The Crucifixion">
+        </a>
+        <a href="https://www.artbible.info/art/large/19.html" class="grid-item" data-title="Jesus Preaching" target="_blank">
+          <img src="assets/rembrandt_images/art6.jpg" alt="Jesus Preaching">
+        </a>
+      </div>
+    </section>
+    
 
-      <div class="houseInfo container">
-  <div class="text-section">
-    <h3 class="section-heading">HISTORY</h3>
-    <p>Rembrandt’s House Museum, the place where the Dutch painter Rembrandt
-      Harmenszoon van Rijn (1606 – 1669) lived between 1639 and 1659, houses
-      an extensive collection of etchings by the Master, paintings by
-      artists from whom he drew inspiration and numerous personal objects of
-      the artist.
-      The house itself was built in 1606, the year of Rembrandt’s birth in
-      Leiden. A few years before Rembrandt moved in, it is thought the house
-      was remodelled by architect Jacob van Campen who designed the Royal
-      Palace on Dam Square. Rembrandt stayed in the house for 19 turbulent
-      years producing some of his most famous works including the NightWatch
-      which can be seen at the Rijksmuseum For a good period Rembrandt
-      enjoyed great prosperity as an artist and teacher and his studio
-      produced a significant output of artworks. In total Rembrandt produced
-      some 300 paintings, 290 etchings and 2,000 drawings over his career.
-      The Rembrandt House has an almost complete collection of his etchings.
-      <br /><br />
-      Eventually Rembrandt’s fortunes began to change due to his extravagant
-      lifestyle and a declining art market. In 1658 after persistent
-      problems paying off his debts Rembrandt was declared bankrupt.He had
-      to move to a smaller rented house on Rozengracht.
-      For around the next 250 years the Rembrandt house had a number of
-      different occupants before being bought by the city council who turned
-      it over to a foundation. The house was renovated between 1908 and 1911
-      and then opened as a museum dedicated to the artist.</p>
-    <!-- Include additional paragraphs as needed -->
-  </div>
-  <div class="image-section">
-    <img src="assets/rembrandt_images/RMB1.jpg" alt="Rembrandt's house" class="parallax-image"/>
-  </div>
-  <div class="text-section">
-    <h3 class="section-heading">MODERN TIME</h3>
-    <p>In 1998 a modern new wing was added nextdoor and the main house was
-      restored carefully. The bankruptcy inventory was vital in helping
-      create an authentic recreation of the home. The museum underwent a
-      major renovation in 2022-23 adding 30% more exhibition space. The
-      layout of the house is typical for the period in which it was built,
-      and its restoration is extraordinarily faithful to the original. Of
-      great interest to the contemporary visitor are Rembrandt’s bedroom,
-      with its small bed; his large studio, in which many of his well-known
-      works were painted, and his cabinet, in which are stored many of the
-      natural and man-made objects and curiosities that appear in
-      Rembrandt’s works <br /><br />
-      The Amsterdam Rembrandt House Museum is a reconstruction of
-      Rembrandt’s rooms and of his workshop. The furniture and objects from
-      the epoch are carefully presented together with the prints, sculptures
-      and a few paintings of other painters from Rembrandt’s time. A
-      collection of almost all Rembrandt’s prints and the graphic techniques
-      he used, are also shown. <br /><br />
-   </p>
-   <p>   There are many fun activities you can do at the museum,
-    <a
-      href="https://www.rembrandthuis.nl/en/whats-on/rembrandt-in-het-museum/activities/"
-      target="_blank"
-      style="color: rgb(170, 118, 54)"
-      >check out here!</a
-    ></p>
-    <!-- Additional paragraphs and the link -->
-  </div>
-</div>
-
+ 
 
       
            <!------------------------------What to do section----------------------------->
 
-           <h2 class="subheadings">What else to do around?</h2>
+           <h2 class="subheadings">EXPLORE NEARBY ATTRACTIONS</h2>
 
            <div class="image-grid-container">
              <a
@@ -444,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function() {
            <br /><br />
          </div>
 
-   
+  
 
     <!--------------------Footer----------------------->
 
