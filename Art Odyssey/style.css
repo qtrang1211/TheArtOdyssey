@@ -225,6 +225,11 @@ h1 {
   margin-right: 180px;
 }*/
 
+.abt-txt {
+  font-family: "Lato", sans-serif !important;
+  font-size: 20px;
+}
+
 .para-txt {
   text-align: center;
   font-size: 24px;
