@@ -1217,3 +1217,9 @@ p {
     display: none !important;
   }
 }
+
+@media (max-width: 767px) {
+  .cstm-mar-top-50 {
+    margin-top: 50px !important;
+  }
+}
