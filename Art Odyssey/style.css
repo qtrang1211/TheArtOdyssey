@@ -60,7 +60,7 @@ h1 {
 .custom-navbar,
 .mask-custom {
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.419);
 }
 
 .custom-navbar .navbar-nav .nav-item {
@@ -82,7 +82,7 @@ h1 {
 
 .custom-navbar .nav-link,
 .custom-navbar .navbar-toggler-icon {
-  color: #ffffff; /* White color for navbar items */
+  color: #383635; /* White color for navbar items */
   position: relative; /* Setup for underline effect */
 }
 
@@ -467,7 +467,7 @@ h1 {
 
 /*-----QUOTE SECTION----*/
 .quote-section {
-  background-color: #e9dbbd; /* Or any color you wish to use for the background */
+  background-color: #f7e8c9; /* Or any color you wish to use for the background */
   display: flex; /* Use flexbox for layout */
   justify-content: center;
   align-items: center; /* Center items vertically */
@@ -479,14 +479,14 @@ h1 {
   margin: 0; /* Remove default margins */
   padding: 0 300px 0 0px; /* Add some padding on the left and right */
   text-align: left; /* Align quote text to the left */
-  color: #333; /* Dark grey color for text */
+  color: #222120; /* Dark grey color for text */
   font-style: italic;
 }
 
 .quotes2 {
   font-family: "Dancing Script"; /* Different specific font for the author's name */
   text-align: right; /* Align author's name to the right */
-  color: #333; /* Dark grey color for the author's name */
+  color: #222120; /* Dark grey color for the author's name */
   font-size: 60px;
 }
 
@@ -558,8 +558,8 @@ p {
 .subheadings {
   font-size: 2em;
   text-align: center;
-  background-color: #bf844b;
-  color: #ece5d5;
+  background-color: #be7836;
+  color: #f8f2e6;
   padding: 30px;
   width: 60%;
   margin: 0 auto; /* Center align horizontally */
@@ -677,7 +677,7 @@ p {
   font-weight: 600;
   font-size: 2.5em;
   margin-bottom: 0.5em; /* Adjust as needed */
-  color: #bf844b;
+  color: #c87527;
 }
 
 .history-heading img {
