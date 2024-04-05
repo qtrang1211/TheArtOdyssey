@@ -155,7 +155,7 @@
     <!-- Buttons -->
 
     <div style="margin-bottom: 5%;">
-      <p class="directionsPickOptionText" style="font-size: 2em; color: #9A7741; margin-bottom: 50px;">Pick your artist:</p>
+      <p class="directionsPickOptionText" style="font-size: 2em; color: #c87527; margin-bottom: 50px;">Pick your artist:</p>
   
       <style>
           .button {
@@ -171,7 +171,7 @@
           }
   
           .button.button-active {
-              background-color: #ffbf00;
+              background-color: white;
               color: #000; /* Change text color when active */
           }
       </style>
@@ -200,7 +200,7 @@
   
 
     <div>
-      <p class="directionsPickOptionText" style="font-size: 1.6em; color: #9A7741;">Click a tab below to see more information:</p>
+      <p class="directionsPickOptionText" style="font-size: 1.6em; color: #c87527;">Click a tab below to see more information:</p>
     </div>
     
     <div id="content">
@@ -225,65 +225,161 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="opening" role="tabpanel" aria-labelledby="opening-tab">
     
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">Dalí's House - Opening Hours in 2024</h1>
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">
+      <div style="color: #c87527;">DALÍ'S HOUSE</div>
+      <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
+    </h1>
 
-    <div id="timing" style="margin-bottom: 25px; font-size: larger;">
+    <!-- <div id="timing" style="margin-bottom: 25px; font-size: larger;">
       Dalí's House <b>daily open: 10:30am - 6pm, last admission 5:10pm</b>
+    </div> -->
+
+    <!-- <div class="container text-center d-flex justify-content-center">
+      <div class="row row-cols-2" style="margin-bottom: 25px; font-size: larger;">
+        <div class="col" style="margin-left: 20px; margin-right: 20px;">Daily opening:</div>
+        <div class="col" style="margin-left: 20px; margin-right: 20px;">10:30am - 6pm</div>
+        <div class="col" style="margin-left: 20px; margin-right: 20px;">Last admission:</div>
+        <div class="col" style="margin-left: 20px; margin-right: 20px;">5:10pm</div>
+      </div>
+    </div> -->
+
+    <div class="container text-center d-flex justify-content-evenly" style="margin-bottom: 25px; font-size: larger; font-weight: 500;">
+      <div class="row row-cols-2" id="timing">
+        <div class="col">Daily opening:</div>
+        <div class="col">10:30am - 6pm</div>
+        <div class="col">Last admission:</div>
+        <div class="col">5:10pm</div>
+      </div>
     </div>
 
-    
+    <!-- <div class="container text-center">
+      <div class="row" style="margin-bottom: 25px; font-size: larger;">
+          <div class="col" style="margin-left: 20px; margin-right: 20px;">
+              <div class="row">
+                  <div class="col">Daily opening:</div>
+                  <div class="col">10:30am - 6pm</div>
+              </div>
+          </div>
+      </div>
+      <div class="row" style="font-size: larger;">
+          <div class="col" style="margin-left: 20px; margin-right: 20px;">
+              <div class="row">
+                  <div class="col">Last admission:</div>
+                  <div class="col">5:10pm</div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+  
+  <!-- <div class="container text-center">
+    <div class="row">
+      <div class="col" style="margin-bottom: 25px;">
+        <div style="margin-left: 20px; margin-right: 20px;">Daily opening:</div>
+        <div style="margin-left: 20px; margin-right: 20px;">10:30am - 6pm</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="margin-bottom: 25px;">
+        <div style="margin-left: 20px; margin-right: 20px;">Last admission:</div>
+        <div style="margin-left: 20px; margin-right: 20px;">5:10pm</div>
+      </div>
+    </div>
+  </div>
+   -->
+  
 
     <script>
       document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("hours").innerHTML = '<div style="color: #9A7741;">DALÍ´S HOUSE</div><div style="font-size: large;">opening hours in 2024</div>';
+          document.getElementById("hours").innerHTML = `
+          <div style="color: #c87527;">DALÍ'S HOUSE</div>
+          <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
+          `;
       });
   
       document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("hours").innerText = "Monet's House - Opening Hours in 2024";
+          document.getElementById("hours").innerHTML = `<div style="color: #c87527;">MONET'S HOUSE</div> <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</b> <div style="font-size: medium;">(open March 29th to November 1st)</div>
+ </div>`;
       });
   
       document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("hours").innerText = "Rembrandt's House - Opening Hours in 2024";
+          document.getElementById("hours").innerHTML = `<div style="color: #c87527;">REMBRANDT'S HOUSE</div> <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>`;
       });
     </script>
 
   </div>
+
+  <script>
+    document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("timing").innerHTML = `
+        <div class="col">Daily opening:</div>
+        <div class="col">10:30am - 6pm</div>
+        <div class="col">Last admission:</div>
+        <div class="col">5:10pm</div>`;
+    });
+    document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("timing").innerHTML = `
+        <div class="col">Daily opening:</div>
+        <div class="col">9:30am - 6pm</div>
+        <div class="col">Last admission:</div>
+        <div class="col">5:30pm</div>`;
+    });
+    document.getElementById("button3").addEventListener("click", function() {
+        document.getElementById("timing").innerHTML = `
+        <div class="col">Daily opening:</div>
+        <div class="col">10am - 6pm</div>
+        <div class="col">Last admission:</div>
+        <div class="col">5:40pm</div>`;
+    });
+</script>
+
   <div class="tab-pane fade" id="prices" role="prices" aria-labelledby="prices-tab">
 
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="artist-name">Dalí's House - Prices</h1>
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="artist-name">
+      <div style="color: #c87527;">DALÍ'S HOUSE</div>
+      <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+    </h1>
 
     <script>
       document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("artist-name").innerText = "Dalí's House - Prices";
+          document.getElementById("artist-name").innerHTML = `
+          <div style="color: #c87527;">DALÍ'S HOUSE</div>
+          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+          `;
       });
   
       document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("artist-name").innerText = "Monet's House - Prices";
+          document.getElementById("artist-name").innerHTML = `
+          <div style="color: #c87527;">MONET'S HOUSE</div>
+          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+          `;
       });
   
       document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("artist-name").innerText = "Rembrandt's House - Prices";
+          document.getElementById("artist-name").innerHTML = `
+          <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
+          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+          `;
       });
     </script>
 
     <div class="container text-center" style="font-size: larger;">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="margin-bottom: 30px;">
         <div class="col-md-2">Adults</div>
         <div class="col-md-2" id="adults-price">15 €</div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="margin-bottom: 30px;">
         <div class="col-md-2">Students</div>
         <div class="col-md-2" id="students-price">12 €</div>
       </div>
-      <div class="row justify-content-center" id="children-over">
+      <div class="row justify-content-center" id="children-over" style="margin-bottom: 30px;">
         <div class="col-md-2">Children (age 9-18)</div>
         <div class="col-md-2">12 €</div>
       </div>
-      <div class="row justify-content-center" id="children-under">
+      <div class="row justify-content-center" id="children-under" style="margin-bottom: 30px;">
         <div class="col-md-2">Children (until age 8)</div>
         <div class="col-md-2">Free</div>
       </div>
-      <div class="row justify-content-center" id="disabilities">
+      <div class="row justify-content-center" id="disabilities" style="margin-bottom: 30px;">
         <div class="col-md-2">People with Disabilities (50%)</div>
         <div class="col-md-2">Free</div>
       </div>
@@ -318,7 +414,24 @@
   </div>
   <div class="tab-pane fade" id="directions" role="directions" aria-labelledby="directions-tab">
 
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">Mode of Transport</h1>
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
+      <div style="color: #c87527;" id="transport-title">DALÍ'S HOUSE</div>
+      <div style="font-size: 0.6em; color: #7C7468;">mode of transport in 2024</div>
+    </h1>
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function() {
+          document.getElementById("transport-title").innerText = `DALÍ'S HOUSE`;
+      });
+  
+      document.getElementById("button2").addEventListener("click", function() {
+          document.getElementById("transport-title").innerHTML = `MONET'S HOUSE`;
+      });
+  
+      document.getElementById("button3").addEventListener("click", function() {
+          document.getElementById("transport-title").innerHTML = `REMBRANDT'S HOUSE`;
+      });
+    </script>
 
     <div class="d-flex flex-column">
 
@@ -346,7 +459,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-3">
-          <img src="assets/icons/mdi_airplane.png" alt="Train Icon" class="image" style="padding: 20px;">
+          <img src="assets/icons/mdi_car.png" alt="Train Icon" class="image" style="padding: 20px;">
 
         </div>
         <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;" id="car">
@@ -377,18 +490,45 @@
     document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
   });
 
+  document.getElementById("button2").addEventListener("click", function() {
+    document.getElementById("bus").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start:  Somewhere in France </div><div class="col-md">End: Paris, France</div><div class="col-md">Duration: approx. 1h 30m</div></div>`;
+    document.getElementById("car").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Lyon, France  </div>  <div class="col-md">    End: Paris, France  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>`;        
+  });
+
+
   document.getElementById("button3").addEventListener("click", function() {
     document.getElementById("bus").innerHTML = 'From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house! <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Amsterdam Central Station </div>  <div class="col-md">    End: Rembrandt House Museum  </div>  <div class="col-md">    Duration: approx. 15 minutes  </div></div>';
     // document.getElementById("bus").innerHTML = 'The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí`s house you can enjoy the nature and lose yourself in the tiny city.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start: Figueres, Estacio</div><div class="col-md">End: Cadaques (+ 20 walk)</div><div class="col-md">Duration: approx. 1h 30m</div></div>';
-    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
+    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Some start  </div>  <div class="col-md">    End: Somewhere  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
   });
 
 </script>
 
 <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-  <div class="d-flex justify-content-center align-items-center flex-column">
 
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">Location</h1>
+  <div class="d-flex justify-content-center align-items-center flex-column">
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
+      <div style="color: #c87527;" id="location-title">DALÍ'S HOUSE</div>
+      
+      <div style="font-size: 0.6em; color: #7C7468;">location</div>
+    </h1>
+
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function() {
+          document.getElementById("location-title").innerText = `DALÍ'S HOUSE`;
+      });
+  
+      document.getElementById("button2").addEventListener("click", function() {
+          document.getElementById("location-title").innerHTML = `MONET'S HOUSE`;
+      });
+  
+      document.getElementById("button3").addEventListener("click", function() {
+          document.getElementById("location-title").innerHTML = `REMBRANDT'S HOUSE`;
+      });
+    </script>
+
     <div class="mapContainer" id="map" style="margin-bottom: 50px;">
       <iframe class="responsive-iframe" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -410,18 +550,6 @@
     });
 
 </script>
-    
-    <script>
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = "Dalí's House <b>daily open: 10:30am - 6pm, last admission 5:10pm</b>";
-        });
-        document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = "Monet's House <b>open March 29th to November 1st 2024</b> <br><b>Daily open: 9:30am - 6pm, last admission 5:30pm</b>";
-        });
-        document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = "Rembrandt's House <b>daily open 10am - 6pm, last admission 5:40pm</b>";
-        });
-    </script>
 
     <footer style="
     background-color: #3a3635;
