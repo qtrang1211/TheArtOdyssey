@@ -71,3 +71,68 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.remove("show");
   });
 });
+
+
+//POP UP COOKIE FUNCTION//
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the user has already accepted the cookies
+  var cookiePreferences = readCookie('cookiePreferences');
+  console.log('Cookie Preferences:', cookiePreferences);
+
+  if (!cookiePreferences) {
+      // Show the cookie consent popup
+      openCookiePreferences();
+  } else {
+      // User has already accepted the cookies, hide the popup
+      hideCookieContainer();
+      console.log('Cookie Preferences already accepted');
+  }
+
+  // In Ordnung Button
+  var acceptButton = document.getElementById('accept_cookie_settings');
+  acceptButton.addEventListener('click', function() {
+      // Hide the cookie consent container
+      hideCookieContainer();
+      // Set the cookie to remember the user's choice
+      createCookie('cookiePreferences', 'true', 365); // Set cookie to expire in 365 days
+      console.log('Accepted Cookie Usage');
+  });
+
+  // Function to hide the entire cookie consent container
+  function hideCookieContainer() {
+      var cookieContainer = document.getElementById('cookie_consent_container');
+      cookieContainer.classList.add('cookie_hide');
+  }
+
+  // Function to show the cookie consent popup
+  function openCookiePreferences() {
+      var cookieContainer = document.getElementById('cookie_consent_container');
+      cookieContainer.classList.remove('cookie_hide');
+  }
+
+  // Function to create a cookie
+  function createCookie(c_name, c_value, c_days) {
+      var expires;
+      if (c_days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (c_days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+      } else {
+          expires = "";
+      }
+      document.cookie = c_name + "=" + c_value + expires + "; path=/";
+  }
+
+  // Function to read a cookie
+  function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+  }
+});
