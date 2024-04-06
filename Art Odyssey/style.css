@@ -41,6 +41,56 @@ html {
 h1 {
   font-size: 4em;
 }
+/*
+  =====================================
+     BUTTON FOR SCROLL TO TOP
+=====================================
+*/
+
+#myBtn {
+  /* Display none until JavaScript picks up scroll function */
+  display: none;
+  border-radius: 10px; /* Adjust as needed */
+
+  /* Makes it stay to bottom */
+  bottom: 20px; /* Adjust as needed */
+
+  /* Makes it sticky */
+  position: fixed;
+
+  font-size: 14px; /* Decreased font size */
+
+  border: none;
+  outline: none;
+
+  background-color: black;
+
+  /* Text color is white */
+  color: white;
+
+  /* Cursor is changed to pointer so user knows that they can click */
+  cursor: pointer;
+
+  padding: 8px; /* Decreased padding */
+
+  /* Set a fixed width */
+  width: 100px; /* Adjust as needed */
+
+  /* Adjust margin to position it to the right */
+  margin-left: calc(100% - 120px); /* Adjust as needed */
+}
+
+/* On hover change to darker color */
+#myBtn:hover {
+  background-color: #be7836; /* Adjust as needed */
+}
+
+/* responsive design - hide button on screens less than 767px */
+@media only screen and (max-width: 767px) {
+  #myBtn {
+    visibility: always;
+  }
+}
 
 /*POP UP function start*/
 @import url("https://use.typekit.net/mga3rlv.css");
