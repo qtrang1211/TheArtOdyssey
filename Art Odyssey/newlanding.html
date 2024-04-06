@@ -35,7 +35,7 @@
 
     
 
-<!----Cookie Pop Up-->
+<!----Cookie Pop Up 1-->
 <!-- Cookie Consent Screen -->
 <div class="cookie_consent_container cookie_hide" id="cookie_consent_container">
   <div class="cookie_consent_box">
@@ -83,6 +83,7 @@
       </div>
   </div>
   </div>
+
 
     <!------------------------------COMMON NAV BAR------------------------------------>
     <script src="index.js"></script>
@@ -383,7 +384,8 @@
           <p class="txt-white cstm-center">idm-2024@arthaus.com</p>
         </div>
         <div class="col-md-1">
-          <p class="txt-white text-center">Legal</p>
+          <p class="txt-white text-center"><a href="#" id="consent_link">Legal</a></p> 
+
         </div>
         <div class="col-md-1">
           <p class="txt-white text-center">Privacy</p>
@@ -396,6 +398,44 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Your JavaScript code
+      document.addEventListener('DOMContentLoaded', function() {
+          // Get the link that triggers the cookie consent popup
+          var consentLink = document.getElementById('consent_link');
+  
+          // Add event listener to the consent link
+          consentLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+  
+              // Show the cookie consent popup
+              openCookiePreferences();
+          });
+  
+          // Function to hide the entire cookie consent container
+          function hideCookieContainer() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.add('cookie_hide');
+          }
+  
+          // Function to show the cookie consent popup
+          function openCookiePreferences() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.remove('cookie_hide');
+          }
+  
+          // Function to create a cookie
+          function createCookie(c_name, c_value, c_days) {
+              // Your createCookie function implementation
+          }
+  
+          // Function to read a cookie
+          function readCookie(name) {
+              // Your readCookie function implementation
+          }
+      });
+  </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

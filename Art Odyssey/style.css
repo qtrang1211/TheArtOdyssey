@@ -133,6 +133,10 @@ h1 {
     display: flex;
 }
 
+#consent_link {
+  color: white; /* Change to the color you desire */
+}
+
 .cookie_consent_box {
     background: #fff;
     border-radius: .25em;
