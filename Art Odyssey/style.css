@@ -769,11 +769,13 @@ h1 {
   margin-top: 20px; /* Space below the heading */
   margin: 0 auto; /* This will center the container on the page */
   max-width: 1400px;
+  margin-left: 5%;
 }
 
 .collection-side,
 .artists-side {
   margin-top: 100px;
+  margin-right: 5%;
 }
 
 .collection-side {
