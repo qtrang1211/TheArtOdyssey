@@ -88,17 +88,6 @@
   </head>
   <body>
 
-
-    <!-- <div class="image_preview_container">
-      <img
-      src="../headerImage/header1.jpg"
-      class="img-fluid image_preview"
-      style="margin-top: 40px"
-      alt="Header Image"
-      width="100%"
-      />
-    </div> -->
-
     <!------------------------------COMMON NAV BAR------------------------------------>
     <script src="index.js"></script>
 
@@ -142,10 +131,8 @@
     </header>
 
     <!--CONTENT SECTION--> 
-      <div class="quotes3">Plan your visit
+    <div class="quotes3">Plan your visit
     </div>
-
-    <!-- <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px; font-size: 3.5em">Prices and Directions</h1> -->
 
     <p class="abt-txt" style="width:60%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 30px;">
       This page will show all the information you need to visit the artists' houses! Below you can pick one artist and depending on the artist you will see the different ticket prices, opening hours, directions and the location changing. Just go ahead and try it!
@@ -229,19 +216,6 @@
       <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
     </h1>
 
-    <!-- <div id="timing" style="margin-bottom: 25px; font-size: larger;">
-      Dalí's House <b>daily open: 10:30am - 6pm, last admission 5:10pm</b>
-    </div> -->
-
-    <!-- <div class="container text-center d-flex justify-content-center">
-      <div class="row row-cols-2" style="margin-bottom: 25px; font-size: larger;">
-        <div class="col" style="margin-left: 20px; margin-right: 20px;">Daily opening:</div>
-        <div class="col" style="margin-left: 20px; margin-right: 20px;">10:30am - 6pm</div>
-        <div class="col" style="margin-left: 20px; margin-right: 20px;">Last admission:</div>
-        <div class="col" style="margin-left: 20px; margin-right: 20px;">5:10pm</div>
-      </div>
-    </div> -->
-
     <div class="container text-center d-flex justify-content-evenly" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
       <div class="row row-cols-2" id="timing">
         <div class="col">Daily opening:</div>
@@ -250,42 +224,6 @@
         <div class="col">5:10pm</div>
       </div>
     </div>
-
-    <!-- <div class="container text-center">
-      <div class="row" style="margin-bottom: 25px; font-size: larger;">
-          <div class="col" style="margin-left: 20px; margin-right: 20px;">
-              <div class="row">
-                  <div class="col">Daily opening:</div>
-                  <div class="col">10:30am - 6pm</div>
-              </div>
-          </div>
-      </div>
-      <div class="row" style="font-size: larger;">
-          <div class="col" style="margin-left: 20px; margin-right: 20px;">
-              <div class="row">
-                  <div class="col">Last admission:</div>
-                  <div class="col">5:10pm</div>
-              </div>
-          </div>
-      </div>
-  </div> -->
-  
-  <!-- <div class="container text-center">
-    <div class="row">
-      <div class="col" style="margin-bottom: 25px;">
-        <div style="margin-left: 20px; margin-right: 20px;">Daily opening:</div>
-        <div style="margin-left: 20px; margin-right: 20px;">10:30am - 6pm</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col" style="margin-bottom: 25px;">
-        <div style="margin-left: 20px; margin-right: 20px;">Last admission:</div>
-        <div style="margin-left: 20px; margin-right: 20px;">5:10pm</div>
-      </div>
-    </div>
-  </div>
-   -->
-  
 
     <script>
       document.getElementById("button1").addEventListener("click", function() {
@@ -432,11 +370,27 @@
       });
     </script>
 
+    <!------------------------------ TAB CONTENT ------------------------------------>
+
     <div class="d-flex flex-column" style="width:80%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 10px;">
 
-      <div class="row justify-content-center" style="font-size: larger;">
+      <div class="row justify-content-center" style="font-size: large;" id="walk-content">
+      </div>
+
+      <div class="row justify-content-center" style="font-size: large;" id="cycle-content">
+      </div>
+
+      <div class="row justify-content-center" style="font-size: large;" id="train-content">
+      </div>
+
+      <div class="row justify-content-center" style="font-size: large;" id="cycle-content-monet">
+      </div>
+
+      <!----------------------- DEFAULT BUS CONTENT ------------------------->
+
+      <!-- <div class="row justify-content-center" style="font-size: larger;">
         <div class="col-md-3">
-          <img src="assets/icons/mdi_bus.png" alt="Train Icon" class="image" style="padding: 20px;">
+          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
         </div>
         <div class="col-md-6 text-center" style="padding: 20px;" id="bus">
           The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
@@ -455,32 +409,357 @@
         
         </div>
 
-      </div>
-      <div class="row justify-content-center">
+      </div> -->
+
+      <div class="row justify-content-center" style="font-size: large;" id="bus-content">
         <div class="col-md-3">
-          <img src="assets/icons/mdi_car.png" alt="Train Icon" class="image" style="padding: 20px;">
+          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;">
+          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Figueres, Estacio
+            </div>
+            <div class="col-md">
+              End: Cadaques (+ 20 walk)
+            </div>
+            <div class="col-md">
+              Duration: approx. 1h 30m
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+
+<!------------------------------- DEFAULT CAR CONTENT ----------------------------------->
+
+      <!-- <div class="row justify-content-center" id="car-content"> -->
+      <div class="row justify-content-center" style="font-size: large;" id="car-content">
+
+        <div class="col-md-3">
+          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
+        </div>
+
+        <div class="col-md-6 text-center" style="padding: 20px; font-size: large;" id="car">
+        With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Figueres, Estacio
+            </div>
+
+            <div class="col-md">
+              End: Salvador Dalí - House Museum
+            </div>
+
+            <div class="col-md">
+              Duration: approx. 50 minutes
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div class="row justify-content-center" id="train-content">
+
+        <div class="col-md-3">
+          <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
+        </div>
+
+        <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;">
+        From Paris you can take the train from Gare Saint-Lazare to Vernon-Giverny.     
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Paris Saint-Lazare
+            </div>
+
+            <div class="col-md">
+              End: Vernon-Giverny
+            </div>
+
+            <div class="col-md">
+              Duration: approx. 50 minutes
+            </div>
+          </div>
 
         </div>
-        <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;" id="car">
+
+      </div> -->
+
+  </div>
+</div>
+
+<script>
+
+  document.getElementById("button1").addEventListener("click", function() {
+    document.getElementById("walk-content").innerHTML = ``;
+    document.getElementById("cycle-content-monet").innerHTML = ``;
+    document.getElementById("cycle-content").innerHTML = ``;
+    document.getElementById("car-content").innerHTML = `
+    <div class="col-md-3">
+          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
+        </div>
+
+        <div class="col-md-6 text-center" style="padding: 20px; font-size: large;" id="car">
         With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Figueres, Estacio
+            </div>
+
+            <div class="col-md">
+              End: Salvador Dalí - House Museum
+            </div>
+
+            <div class="col-md">
+              Duration: approx. 50 minutes
+            </div>
+          </div>
+        </div>
+    `;
+
+    document.getElementById("train-content").innerHTML = ``;
+
+    document.getElementById("bus-content").innerHTML = `
+    <div class="col-md-3">
+          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;">
+          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Figueres, Estacio
+            </div>
+            <div class="col-md">
+              End: Cadaques (+ 20 walk)
+            </div>
+            <div class="col-md">
+              Duration: approx. 1h 30m
+            </div>
+          </div>
+        
+        </div>
+    `;
+
+    // document.getElementById("car-content").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
+  });
+
+  //   document.getElementById("car-content").innerHTML = `
+
+  //     <div class="col-md-3">
+  //       <img src="assets/icons/mdi_car.png" alt="Train Icon" class="image" style="padding: 20px;">
+  //     </div>
+
+  //     <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;" id="car">
+  //     With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
+
+  //       <div class="row text-center" style="padding-top: 20px;">
+  //         <div class="col-md">
+  //           Start: Figueres, Estacio
+  //         </div>
+
+  //         <div class="col-md">
+  //           End: Salvador Dalí - House Museum
+  //         </div>
+
+  //         <div class="col-md">
+  //           Duration: approx. 50 minutes
+  //         </div>
+  //       </div>
+  //     </div>
+        
+  //   `;
+  // });
+
+//   document.getElementById("button2").addEventListener("click", function() {
+//     document.getElementById("bus").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start:  Somewhere in France </div><div class="col-md">End: Paris, France</div><div class="col-md">Duration: approx. 1h 30m</div></div>`;
+//     document.getElementById("car").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+//  Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Lyon, France  </div>  <div class="col-md">    End: Paris, France  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>`;        
+//   });
+
+
+  document.getElementById("button2").addEventListener("click", function() {
+    document.getElementById("walk-content").innerHTML = ``;
+    document.getElementById("train-content").innerHTML = `
+      <div class="col-md-3">
+        <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
+      </div>
+
+      <div class="col-md-6 text-center" style="padding: 20px;">
+      From Paris you can take the train from Gare Saint-Lazare to Vernon-Giverny. (according to <a href="https://www.sncf.com/en">SNCF</a> on a Monday morning)
 
         <div class="row text-center" style="padding-top: 20px;">
           <div class="col-md">
-            Start: Figueres, Estacio
+            Start: Paris Saint-Lazare
           </div>
+
           <div class="col-md">
-            End: Salvador Dalí - House Museum
+            End: Vernon-Giverny train station
           </div>
+
           <div class="col-md">
             Duration: approx. 50 minutes
           </div>
         </div>
-      
+
       </div>
+    `;
+
+
+    document.getElementById("car-content").innerHTML = `
+    <div class="col-md-3">
+          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;">
+          There is also the possibility of travelling by car from Paris to Giverny Parking.
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Paris, France
+            </div>
+            <div class="col-md">
+              End: Giverny Parking
+            </div>
+            <div class="col-md">
+              Duration: approx. 1h 30m
+            </div>
+          </div>
+        
+        </div>
+    `;
+
+    document.getElementById("bus-content").innerHTML = `
+    <div class="col-md-3">
+          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;">
+          When in Vernon-Giverny, you can take the SNGo shuttle bus from Vernon-Giverny train station to Giverny Parking within 20 minutes. From there you can easily walk to Monet's house. As an alternative, have a look at the touristic shuttle train <a href="https://petittrain-vernon.fr/">"Le Petit Train"</a>!
+
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Vernon-Giverny train station
+            </div>
+            <div class="col-md">
+              End: Giverny Parking
+            </div>
+            <div class="col-md">
+              Duration: 20 minutes
+            </div>
+          </div>
+        
+        </div>
+    `;
+
+    document.getElementById("cycle-content-monet").innerHTML = `
+    <div class="col-md-3">
+          <img src="assets/icons/mdi_walking.png" alt="Bus Icon" class="image" style="padding: 20px;">
+        </div>
+        <div class="col-md-6 text-center" style="padding: 20px;">
+          When in Vernon-Giverny, follow the sign “Musées de Giverny – piétons et cyclistes”.
+          
+          <div class="row text-center" style="padding-top: 20px;">
+            <div class="col-md">
+              Start: Vernon-Giverny train station
+            </div>
+            <div class="col-md">
+              End: Maison et jardins Claude Monet – Giverny
+            </div>
+            <div class="col-md">
+              Duration: cycle 20 minutes, walk 1h 15m
+            </div>
+          </div>
+        
+        </div>
+    `;
+
+
+  });
+
+  document.getElementById("button3").addEventListener("click", function() {
+    document.getElementById("cycle-content-monet").innerHTML = ``;
+    document.getElementById("cycle-content").innerHTML = ``;
+    document.getElementById("train-content").innerHTML = `
+      <div class="col-md-3">
+        <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
       </div>
 
-  </div>
-</div>
+      <div class="col-md-6 text-center" style="padding: 20px;">
+        From the Amsterdam Central station you can either take any metro outbound to Nieuwmarkt Station or the tram line 14 to Waterlooplein stop. Then you can easily walk to Rembrandt's house!
+        
+        <div class="row text-center" style="padding-top: 20px;">
+          <div class="col-md">
+            Start: Amsterdam Central Station
+          </div>
+          
+          <div class="col-md">
+            End: Nieuwmarkt Station or Waterlooplein stop
+          </div>
+          
+          <div class="col-md">
+            Duration: approx. 10 minutes (including walking)
+          </div>
+        </div>
+      
+      </div>
+    `;
+    document.getElementById("walk-content").innerHTML = `
+      <div class="col-md-3">
+        <img src="assets/icons/mdi_walking.png" alt="Walking person Icon" class="image" style="padding: 20px;">
+      </div>
+
+      <div class="col-md-6 text-center" style="padding: 20px;">
+        From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!
+        
+        <div class="row text-center" style="padding-top: 20px;">
+          <div class="col-md">
+            Start: Amsterdam Central Station
+          </div>
+          
+          <div class="col-md">
+            End: Rembrandt House Museum
+          </div>
+          
+          <div class="col-md">
+            Duration: approx. 15 minutes
+          </div>
+        </div>
+      
+      </div>
+    `;
+    document.getElementById("bus-content").innerHTML = ``;
+    document.getElementById("car-content").innerHTML = `
+      <div class="col-md-3">
+        <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
+      </div>
+
+      <div class="col-md-6 text-center" style="padding: 20px;">
+        The nearest car parks to Rembrandt's house are the Waterlooplein, Muziektheater/Stadhuis or Valkenburgerstraat car parks (approximately 3 minutes’ walk from the museum).      
+      </div>
+    `;
+    // document.getElementById("bus-content").innerHTML = `
+    // From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!
+    // <div class="row text-center" style="padding-top: 20px;">
+    //   <div class="col-md">
+    //     Start: Amsterdam Central Station
+    //   </div>
+      
+    //   <div class="col-md">
+    //     End: Rembrandt House Museum
+    //   </div>
+      
+    //   <div class="col-md">
+    //     Duration: approx. 15 minutes
+    //   </div>
+    // </div>`;
+    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Some start  </div>  <div class="col-md">    End: Somewhere  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
+  });
+
+</script>
 
 <script>
 
@@ -495,10 +774,8 @@
  Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Lyon, France  </div>  <div class="col-md">    End: Paris, France  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>`;        
   });
 
-
   document.getElementById("button3").addEventListener("click", function() {
     document.getElementById("bus").innerHTML = 'From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house! <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Amsterdam Central Station </div>  <div class="col-md">    End: Rembrandt House Museum  </div>  <div class="col-md">    Duration: approx. 15 minutes  </div></div>';
-    // document.getElementById("bus").innerHTML = 'The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí`s house you can enjoy the nature and lose yourself in the tiny city.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start: Figueres, Estacio</div><div class="col-md">End: Cadaques (+ 20 walk)</div><div class="col-md">Duration: approx. 1h 30m</div></div>';
     document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Some start  </div>  <div class="col-md">    End: Somewhere  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
   });
 
