@@ -631,15 +631,20 @@ h1 {
 
 .european-artists-title {
   margin-bottom: 30px; /* Space below the title */
+  margin-top:-50px;
   font-size: 1.5rem; /* Larger font size for the title */
   color: #ece5d5; /* Text color for the title */
   background-color: #333;
   width: 30%;
   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   padding: 25px 0;
+  margin: 0 auto; /* Center align horizontally */
+
 }
 
 .european-artists-grid {
+  margin-top:30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three items in a row */
   gap: 15px; /* Space between grid items */
@@ -754,6 +759,15 @@ h1 {
   text-align: right; /* Align author's name to the right */
   color: #222120; /* Dark grey color for the author's name */
   font-size: 60px;
+}
+
+.quotes3 {
+  font-family: "Dancing Script"; /* Different specific font for the author's name */
+  text-align: center; /* Align author's name to the right */
+  color: #222120; /* Dark grey color for the author's name */
+  font-size: 80px;
+  margin-top:40px;
+  margin-bottom: -50px;
 }
 
 /*.responsive-image {
