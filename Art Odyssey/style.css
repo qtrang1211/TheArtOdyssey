@@ -827,6 +827,7 @@ h1 {
 .artist-portrait {
   width: 100%; /* Full width of its container */
   height: auto; /* Maintains aspect ratio */
+  object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1026,15 +1027,25 @@ p {
 
 /*--------------------------ABOUT THE HOUSE_------*/
 
-.subheadings {
+/*.subheadings {
   font-size: 2em;
   text-align: center;
   background-color: #be7836;
-  color: #f8f2e6;
+  color: #ece5d5;
+  padding: 30px;
+  width: 60%;
+  margin: 0 auto; /* Center align horizontally 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
+}*/
+
+.subheadings {
+  font-size: 2em;
+  text-align: center;
+
+  color: #242222;
   padding: 30px;
   width: 60%;
   margin: 0 auto; /* Center align horizontally */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Elevation effect */
 }
 
 .houseIntroText > .takeMeThere {

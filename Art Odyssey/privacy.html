@@ -1,22 +1,113 @@
+<!--03 april changes-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>artHaus | Welcome</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icons/icons8-museum-32.png"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="privacy-policy-container">
-      <div>
-        <h1 class="main-pages-heading" style="padding-left: 50px">
-          Privacy Police
-        </h1>
+    <!------------------------------COMMON NAV BAR------------------------------------>
+    <script src="index.js"></script>
+    <header>
+      <nav
+        class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
+      >
+        <div class="container">
+          <a href="landing-page.html"
+            ><img src="assets/Logo/logo-black.svg" alt="artHaus logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="houses-page.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Houses
+                </a>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="Houses_Dali.html">Dali</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Monet.html">Monet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Rembrandt.html"
+                      >Rembrandt</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="directions.html">Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-page.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--HEADER IMAGE-->
+      <section>
         <div
-          class="heading-content-divider-horizontal"
-          style="margin-top: -20px"
+          id="intro"
+          class="bg-image vh-100"
+          style="background-image: url(assets/header/landing.jpg)"
         ></div>
-      </div>
+      </section>
+    </header>
+
+    <div class="main-pages-heading">
+      <h1>Privacy Policy</h1>
+      <div class="heading-content-divider-horizontal"></div>
+    </div>
 
       <div
         class="policy-terms"
@@ -45,7 +136,7 @@
         </p>
 
         <p>
-          <b>DO WE DISCLOSE YOUR PERSONAL INFORMATION TO ANYONE ? </b>We may
+          <b>DO WE DISCLOSE YOUR PERSONAL INFORMATION TO ANYONE ? </b><br>We may
           disclose your personal information where you have consented to us
           doing so. We may also be required or authorised by law to disclose
           your personal information.
@@ -75,5 +166,122 @@
         </p>
       </div>
     </div>
+
+    <!--Footer-->
+
+    <footer
+      style="
+        background-color: #3a3635;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      "
+    >
+      <div class="container">
+        <div class="row mt-3 mb-4 justify-content-between">
+          <div class="col-md-4">
+            <a href="landing-page.html"
+              ><img
+                class="ctm-siz"
+                src="assets/Logo/logo-black.svg"
+                alt="arthaus logo"
+                style="
+                  color: white !important;
+                  margin-bottom: 20px;
+                  max-width: 55%;
+                "
+            /></a>
+            <form>
+              <div class="mb-3 d-flex align-items-center">
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  style="background-color: #3a3635; margin-right: 10px"
+                  placeholder="Your email"
+                  aria-label="Your email"
+                  aria-describedby="subscribeButton"
+                />
+                <button
+                  style="
+                    background-color: #3a3635;
+                    border: 1px solid white;
+                    color: #ece5d5;
+                    border-radius: 4px;
+                  "
+                  class="btn btn-primary"
+                  type="submit"
+                  id="subscribeButton"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p style="color: white">
+              Subscribe for exclusive art, culture, and adventure updates.
+              Elevate your inbox with creativity!
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-md-6 p-4">
+                <a href="landing-house.html" class="footer-link ftr-link-style"
+                  >Houses</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="about.html" class="footer-link ftr-link-style"
+                  >Our Mission</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="directions.html" class="footer-link ftr-link-style"
+                  >Visit</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="contact-page.html" class="footer-link ftr-link-style"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div
+          class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly"
+        >
+          <img
+            src="assets/icons/facebook_symbol.svg.svg"
+            alt="facebook icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/instagram_logo.svg.svg"
+            alt="instagram icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/tiktok_symbol.svg.svg"
+            alt="tiktok icon"
+            class="social-icon"
+          />
+          <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
+          <img
+            src="assets/icons/youtube_symbol.svg.svg"
+            alt="youtube icon"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

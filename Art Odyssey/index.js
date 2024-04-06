@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+//-----------------------NAV BAR OLD
+
+/*document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".nav-item.dropdown");
   const dropdownMenu = dropdown.querySelector(".dropdown-menu");
 
@@ -70,52 +72,92 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.classList.remove("show");
     this.classList.remove("show");
   });
+});*/
+
+//------------------NAV BAR NEW
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.querySelector(".nav-item.dropdown");
+  const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+  const housesLink = dropdown.querySelector("a");
+
+  let timeoutId;
+
+  function setupDesktopBehavior() {
+    // Show the dropdown on mouse enter
+    dropdown.addEventListener("mouseenter", function () {
+      clearTimeout(timeoutId);
+      this.classList.add("show");
+      dropdownMenu.classList.add("show");
+    });
+
+    // Hide the dropdown on mouse leave
+    dropdown.addEventListener("mouseleave", function () {
+      timeoutId = setTimeout(() => {
+        dropdown.classList.remove("show");
+        dropdownMenu.classList.remove("show");
+      }, 200);
+    });
+
+    // Direct navigation on click
+    housesLink.addEventListener("click", function (event) {
+      if (window.innerWidth > 992) {
+        window.location.href = this.getAttribute("href");
+      }
+      // No need to prevent default or stop propagation, as we want the link to work normally
+    });
+  }
+
+  // Determine whether to apply desktop or mobile behaviors based on the initial window width
+  if (window.innerWidth > 992) {
+    setupDesktopBehavior();
+  } else {
+    setupMobileBehavior();
+  }
+
+  // Optional: Add a resize listener to handle window resizing across the 992px threshold
+  // This is not typically necessary unless you expect users to frequently resize across this breakpoint
+  window.addEventListener("resize", function () {
+    // Debounce resize events for performance
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (window.innerWidth > 992) {
+        setupDesktopBehavior();
+      } else {
+        setupMobileBehavior();
+      }
+    }, 200);
+  });
 });
 
-//POP UP COOKIE FUNCTION//
+//-----------------------------------------------POP UP COOKIE FUNCTION
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the link that triggers the cookie consent popup
   var consentLink = document.getElementById("consent_link");
-
-  // Add event listener to the consent link
   consentLink.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+    event.preventDefault();
 
-    // Show the cookie consent popup
     openCookiePreferences();
   });
 
-  // Function to hide the entire cookie consent container
   function hideCookieContainer() {
     var cookieContainer = document.getElementById("cookie_consent_container");
     cookieContainer.classList.add("cookie_hide");
   }
 
-  // Function to show the cookie consent popup
   function openCookiePreferences() {
     var cookieContainer = document.getElementById("cookie_consent_container");
     cookieContainer.classList.remove("cookie_hide");
   }
 
-  // In Ordnung Button
   var acceptButton = document.getElementById("accept_cookie_settings");
   acceptButton.addEventListener("click", function () {
-    // Hide the cookie consent popup
     hideCookieContainer();
 
-    // Set the cookie to remember the user's choice
-    createCookie("cookiePreferences", "true", 365); // Set cookie to expire in 365 days
+    createCookie("cookiePreferences", "true", 365);
     console.log("Accepted Cookie Usage");
   });
 
-  // Function to create a cookie
-  function createCookie(c_name, c_value, c_days) {
-    // Your createCookie function implementation
-  }
+  function createCookie(c_name, c_value, c_days) {}
 
-  // Function to read a cookie
-  function readCookie(name) {
-    // Your readCookie function implementation
-  }
+  function readCookie(name) {}
 });
