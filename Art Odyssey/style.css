@@ -41,7 +41,60 @@ html {
 h1 {
   font-size: 4em;
 }
+/*
+  =====================================
+     BUTTON FOR SCROLL TO TOP
+=====================================
+*/
 
+#myBtn {
+  /* Display none until JavaScript picks up scroll function */
+  display: none;
+  border-radius: 10px; /* Adjust as needed */
+  
+  /* Makes it stay to bottom */
+  bottom: 20px; /* Adjust as needed */
+  
+  /* Makes it sticky */
+  position: fixed;
+  
+  font-size: 14px; /* Decreased font size */
+  
+  border: none;
+  outline: none;
+  
+  background-color: black;
+  
+  /* Text color is white */
+  color: white;
+  
+  /* Cursor is changed to pointer so user knows that they can click */
+  cursor: pointer;
+  
+  padding: 8px; /* Decreased padding */
+  
+  /* Set a fixed width */
+  width: 100px; /* Adjust as needed */
+  
+  /* Adjust margin to position it to the right */
+  margin-left: calc(100% - 120px); /* Adjust as needed */
+}
+
+
+/* On hover change to darker color */
+#myBtn:hover {
+  background-color: #be7836; /* Adjust as needed */
+}
+
+  
+  /* responsive design - hide button on screens less than 767px */
+  @media only screen and (max-width: 767px) {
+    #myBtn {
+      visibility: always;
+    }
+  }
+  
+  
 /*POP UP function start*/
 @import url("https://use.typekit.net/mga3rlv.css");
 
@@ -649,7 +702,7 @@ h1 {
 
 .european-artists-title {
   margin-bottom: 30px; /* Space below the title */
-  margin-top: -50px;
+  margin-top:-50px;
   font-size: 1.5rem; /* Larger font size for the title */
   color: #ece5d5; /* Text color for the title */
   background-color: #333;
@@ -658,10 +711,11 @@ h1 {
   border-top-left-radius: 20px;
   padding: 25px 0;
   margin: 0 auto; /* Center align horizontally */
+
 }
 
 .european-artists-grid {
-  margin-top: 30px;
+  margin-top:30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three items in a row */
   gap: 15px; /* Space between grid items */
@@ -751,14 +805,14 @@ h1 {
 .main-pages-heading h1 {
   margin-right: 20px; /* Adjust as needed */
   text-align: left;
-  font-size: 3.5rem;
+  font-size: 8em;
   margin-top: 20px;
   padding: 0 60px;
 }
 
 .heading-content-divider-horizontal {
-  height: 1px;
-  background-color: #575757;
+  height: 2px;
+  background-color: #000;
   width: 100%;
   bottom: 0; /* Aligns to the bottom */
   left: 0; /* Aligns to the left edge of .main-pages-heading */
@@ -784,7 +838,7 @@ h1 {
 }
 
 .collection-side h2 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .search-bar {
@@ -849,7 +903,7 @@ h1 {
 
 @media (max-width: 992px) {
   .main-pages-heading h1 {
-    font-size: 3em; /* Smaller font size for smaller screens */
+    font-size: 4em; /* Smaller font size for smaller screens */
     padding: 0 30px; /* Less padding on the sides */
     margin-right: 10px; /* Adjust as needed */
     margin-top: 10px;
@@ -946,7 +1000,7 @@ h1 {
   text-align: center; /* Align author's name to the right */
   color: #222120; /* Dark grey color for the author's name */
   font-size: 80px;
-  margin-top: 40px;
+  margin-top:40px;
   margin-bottom: -50px;
 }
 
@@ -1491,7 +1545,7 @@ p {
 
 /* ------------------------------------------new landing page */
 
-/*new changes for landing-page.html!*/
+/*new changes for landing page copy!*/
 
 .welcome-container {
   width: 80%;
@@ -1666,12 +1720,12 @@ p {
 
   .dali-text-container h2 {
     align-items: center;
-    font-size: 2em;
+    font-size: 30px;
   }
 
   .dali-text-container p {
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .dali-image {
@@ -1682,10 +1736,6 @@ p {
     margin-bottom: 0;
   }
 
-  .landing-plan-visit .text-content h2,
-  .landing-back-in-time .text-content h2 {
-    font-size: 30px;
-  }
   /* Tile section adjustments for image then text, then image then text */
   .landing-back-in-time,
   .landing-plan-visit {
