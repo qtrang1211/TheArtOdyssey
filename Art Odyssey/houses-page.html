@@ -29,7 +29,7 @@
         class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
       >
         <div class="container">
-          <a href="newlanding.html"
+          <a href="landing-page.html"
             ><img src="assets/Logo/logo-black.svg" alt=""
           /></a>
           <button
@@ -97,45 +97,64 @@
     </header>
 
     <!--CONTENT SECTION-->
-    <div>
-      <h1 class="artist-heading-section">The Artists</h1>
+    <div class="main-pages-heading">
+      <h1>Artists Houses</h1>
+      <div class="heading-content-divider-horizontal"></div>
     </div>
 
-    <section class="european-artists-section">
-      <h2 class="european-artists-title">European Artists</h2>
-      <div class="european-artists-grid">
-        <div class="artist-item">
+    <div class="artist-houses-container">
+      <div class="collection-side">
+        <h2>Collection ✦</h2>
+        <input
+          type="text"
+          placeholder="Search the artist..."
+          class="search-bar"
+        />
+        <ul class="collection-list">
+          <a href="houses-page.html">
+            <li>European Artists</li>
+          </a>
+          <li>American Artists</li>
+          <li>Asian Artists</li>
+        </ul>
+      </div>
+
+      <div class="artists-side">
+        <!-- Repeat the following block for each artist -->
+        <div class="artist-block">
           <a href="Houses_Dali.html">
             <img
               src="assets/dali_images/dali2.png"
               alt="Dali"
-              class="artist-image"
-              href="Houses_Dali.html"
-          /></a>
-          <p class="artist-name">DALI</p>
+              class="artist-portrait"
+            />
+          </a>
+          <p class="artist-label">DALI</p>
         </div>
-        <div class="artist-item">
+        <div class="artist-block">
           <a href="Houses_Monet.html">
             <img
               src="assets/monet_images/monet2.PNG"
-              alt="Monet"
-              class="artist-image"
-              href="Houses_Monet.html"
-          /></a>
-          <p class="artist-name">MONET</p>
+              alt="Dali"
+              class="artist-portrait"
+            />
+          </a>
+          <p class="artist-label">MONET</p>
         </div>
-        <div class="artist-item">
+        <div class="artist-block">
           <a href="Houses_Rembrandt.html">
             <img
               src="assets/rembrandt_images/rem2.PNG"
-              alt="Rembrandt"
-              class="artist-image"
-          /></a>
-          <p class="artist-name">REMBRANDT</p>
+              alt="Dali"
+              class="artist-portrait"
+            />
+          </a>
+          <p class="artist-label">REMBRANDT</p>
         </div>
       </div>
-      <p class="coming-soon">More artists coming soon...</p>
-    </section>
+    </div>
+
+    <p class="announcement">More artists coming soon...</p>
 
     <!------------------------------FOOTER----------------------------->
     <footer

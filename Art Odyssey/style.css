@@ -47,47 +47,47 @@ h1 {
 
 /* Buttons */
 .button_1 {
-    background-color: #0f94ef;
-    font-size: 18px;
-    line-height: 46px;
-    font-weight: 500;
-    text-align: center;
-    width: 190px;
-    height: 48px;
-    border-radius: 2000px;
-    color: white;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: 0.1s ease-in;
-    transition: 0.1s ease-in;
+  background-color: #0f94ef;
+  font-size: 18px;
+  line-height: 46px;
+  font-weight: 500;
+  text-align: center;
+  width: 190px;
+  height: 48px;
+  border-radius: 2000px;
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .button_1:hover {
-    background-color: #0f99ff;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 7px 10px -2px;
-    box-shadow: rgba(0, 0, 0, 0.1) 2px 7px 10px -2px;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-in;
-    transition: 0.1s ease-in;
+  background-color: #0f99ff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 7px 10px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 7px 10px -2px;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .link_b1 {
-    display: block;
-    border-radius: 2000px;
-    width: 190px;
-    text-decoration: none;
+  display: block;
+  border-radius: 2000px;
+  width: 190px;
+  text-decoration: none;
 }
 .service_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 5em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5em 0 0 0;
 }
 /* Page Content */
 .page_content {
@@ -109,202 +109,212 @@ h1 {
 
 /* Cookie Consent */
 .cookie_consent_container {
-    background: rgba(3, 31, 50, .95);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9998;
-    overflow-y: auto;
-    animation: fadeIn 200ms ease-in;
-    -webkit-animation: fadeIn 200ms ease-in;
+  background: rgba(3, 31, 50, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  overflow-y: auto;
+  animation: fadeIn 200ms ease-in;
+  -webkit-animation: fadeIn 200ms ease-in;
 
-    /* Toggle Cookie Consent visible or not*/
-    display: flex;
+  /* Toggle Cookie Consent visible or not*/
+  display: flex;
 }
 
 .cookie_consent_box {
-    background: #fff;
-    border-radius: .25em;
-    padding: 2em 2.5em;
-    max-width: 32em;
-    width: 75%;
-    animation: fadeIn 150ms ease-in;
-    -webkit-animation: fadeIn 150ms ease-in;
+  background: #fff;
+  border-radius: 0.25em;
+  padding: 2em 2.5em;
+  max-width: 32em;
+  width: 75%;
+  animation: fadeIn 150ms ease-in;
+  -webkit-animation: fadeIn 150ms ease-in;
 }
 
 .cookie_consent_box h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.cookie_consent_box h2, .cookie_consent_box p, .cookie_consent_box a {
-    color: #596770;
+.cookie_consent_box h2,
+.cookie_consent_box p,
+.cookie_consent_box a {
+  color: #596770;
 }
 
-.cookie_consent_box p, .cookie_consent_box a {
-    font-size: 14px;
+.cookie_consent_box p,
+.cookie_consent_box a {
+  font-size: 14px;
 }
 
 .cookie_more_info {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .cookie_consent_box p {
-    margin: 1.5em 0 0 0;
+  margin: 1.5em 0 0 0;
 }
 
 .cookie_more_info:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cookie_consent_box a:hover {
-    color: #090e11;
+  color: #090e11;
 }
 
 .cookie_pop_up_buttons .service_button {
-    display: block;
-    margin: 0 0 0 3em;
+  display: block;
+  margin: 0 0 0 3em;
 }
 
 .cookie_pop_up_buttons {
-    margin: 3em 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  margin: 3em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .cookie_type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 1.5em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5em 0 0 0;
 }
 
 .cookie_type_text {
-    margin: 0 0 0 1em;
+  margin: 0 0 0 1em;
 }
 
 .cookies_always_checked {
-    height: 1.5em;
-    width: 1.5em;
-    background: url("https://mavorymedia.com/wp-content/uploads/2018/09/always_checked.svg") no-repeat center center;
-    background-size: 75%;
+  height: 1.5em;
+  width: 1.5em;
+  background: url("https://mavorymedia.com/wp-content/uploads/2018/09/always_checked.svg")
+    no-repeat center center;
+  background-size: 75%;
 }
 
 .cookie_checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-    font-size: 16px;
-    height: 1.5em;
-    width: 1.5em;
-    background: none;
-    border-radius: .25em;
-    border: 1px solid #0f94ef;
-    cursor: pointer;
-    background: none;
-    margin: 0;
-    transition: background 150ms cubic-bezier(0.25, 0.1, 0.04, 1.54);
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+  background: none;
+  border-radius: 0.25em;
+  border: 1px solid #0f94ef;
+  cursor: pointer;
+  background: none;
+  margin: 0;
+  transition: background 150ms cubic-bezier(0.25, 0.1, 0.04, 1.54);
 }
 
 .cookie_checkbox:focus {
-    outline: none;
+  outline: none;
 }
 
 .cookie_checkbox:checked {
-    background: url("https://mavorymedia.com/wp-content/uploads/2018/09/checkbox.svg") no-repeat center center, #0f94ef;
-    background-size: 75%;
-    transition: background 150ms cubic-bezier(0.25, 0.1, 0.04, 1.54);
+  background: url("https://mavorymedia.com/wp-content/uploads/2018/09/checkbox.svg")
+      no-repeat center center,
+    #0f94ef;
+  background-size: 75%;
+  transition: background 150ms cubic-bezier(0.25, 0.1, 0.04, 1.54);
 }
 
-.cookie_type_text label, .cookie_type_text h3 {
-    font-size: 20px;
-    color: #0f94ef;
-    font-weight: bold;
+.cookie_type_text label,
+.cookie_type_text h3 {
+  font-size: 20px;
+  color: #0f94ef;
+  font-weight: bold;
 }
 
 .cookie_type_text h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .cookie_type_text label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cookie_type_text p {
-    font-size: 14px;
-    margin: .25em 0 0 0;
+  font-size: 14px;
+  margin: 0.25em 0 0 0;
 }
 
 .cookie_pop_up_settings .service_button {
-    margin: 3em 0 1em 0;
+  margin: 3em 0 1em 0;
 }
 
 /* Cookie Toggle between General and Settings */
 .cookie_show {
-    display: block;
+  display: block;
 }
 
 .cookie_show_overlay {
-    display: flex;
+  display: flex;
 }
 
 .cookie_hide {
-    display: none;
+  display: none;
 }
 
 /* Mobile */
 @media screen and (max-width: 540px) {
-    .cookie_consent_box {
-        padding: 1.5em 1.5em;
-    }
+  .cookie_consent_box {
+    padding: 1.5em 1.5em;
+  }
 
-    .cookie_pop_up_buttons {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+  .cookie_pop_up_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-    .cookie_pop_up_buttons .service_button {
-        margin: 1.5em 0 0 0;
-    }
+  .cookie_pop_up_buttons .service_button {
+    margin: 1.5em 0 0 0;
+  }
 
-    .cookie_consent_box p, .cookie_consent_box a {
-        font-size: 12px;
-    }
+  .cookie_consent_box p,
+  .cookie_consent_box a {
+    font-size: 12px;
+  }
 
-    .cookie_type_text label, .cookie_type_text h3 {
-        font-size: 16px;
-    }
+  .cookie_type_text label,
+  .cookie_type_text h3 {
+    font-size: 16px;
+  }
 
-    .cookies_always_checked , .cookie_checkbox {
-        height: 1em;
-        width: 1em;
-        margin: .15em 0 0 0;
-    }
-    .cookie_type_text p {
-        padding: 0 1.5em 0 0;
-    }
+  .cookies_always_checked,
+  .cookie_checkbox {
+    height: 1em;
+    width: 1em;
+    margin: 0.15em 0 0 0;
+  }
+  .cookie_type_text p {
+    padding: 0 1.5em 0 0;
+  }
 }
- /*Pop up function end*/
+/*Pop up function end*/
 
 /*---------------------------------------------NAVIGATION BAR----------------------------*/
 
@@ -608,7 +618,7 @@ h1 {
   font-weight: 100;
 }
 
-/*-----------------------------------------------------------(ARTIST HOUSES - LANDING PAGE)-----------------------------*/
+/*-----------------------------------------------------------(ARTIST HOUSES - LANDING PAGE ver1)-----------------------------*/
 
 .heading-section {
   background-color: #e9dbbd;
@@ -617,6 +627,14 @@ h1 {
   align-items: center;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.artist-heading-section {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .european-artists-section {
@@ -646,6 +664,7 @@ h1 {
   position: relative;
   overflow: hidden; /* Hide overflowing content */
   cursor: pointer; /* Indicates the items are clickable */
+  border-radius: 600px;
 
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for scale and shadow */
 }
@@ -653,6 +672,7 @@ h1 {
 .artist-item:hover {
   transform: scale(1.05); /* Slightly scale up on hover */
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  border-radius: 600px;
 }
 
 .artist-image {
@@ -665,10 +685,12 @@ h1 {
 
 .artist-item:hover .artist-image {
   transform: scale(1.1); /* Scale the image on hover */
+  border-radius: 600px;
 }
 
 .artist-name {
   position: absolute;
+  margin-top: 200px;
   bottom: 0px; /* Position from the bottom of the artist item */
   width: 100%;
   text-align: center;
@@ -717,6 +739,163 @@ h1 {
   }
 }
 
+/*-----------------------------------------------------------(ARTIST HOUSES - HOUSES PAGE ver2)-----------------------------*/
+.main-pages-heading h1 {
+  margin-right: 20px; /* Adjust as needed */
+  text-align: left;
+  font-size: 8em;
+  margin-top: 20px;
+  padding: 0 60px;
+}
+
+.heading-content-divider-horizontal {
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  bottom: 0; /* Aligns to the bottom */
+  left: 0; /* Aligns to the left edge of .main-pages-heading */
+}
+
+.artist-houses-container {
+  display: flex;
+  margin-top: 20px; /* Space below the heading */
+  margin: 0 auto; /* This will center the container on the page */
+  max-width: 1400px;
+}
+
+.collection-side,
+.artists-side {
+  margin-top: 100px;
+}
+
+.collection-side {
+  flex: 1;
+  margin-right: 100px; /* Space between the collection side and the artists side */
+}
+
+.collection-side h2 {
+  font-size: 3em;
+}
+
+.search-bar {
+  width: 100%; /* Full width of its container */
+  margin-bottom: 10px; /* Space below the search bar */
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.collection-list {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.collection-list a {
+  margin-bottom: 10px; /* Space between list items */
+  color: black;
+}
+
+.collection-list li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.artists-side {
+  flex: 3; /* Takes up 3 times the space of the collection side */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* Adjust '100px' as needed */
+  gap: 10px; /* Spacing between images */
+}
+
+.artist-block {
+  text-align: center; /* Centers the artist name and image */
+}
+
+.artist-portrait {
+  width: 100%; /* Full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-block:hover .artist-portrait {
+  transform: scale(1.02); /* Slightly enlarges the image */
+}
+
+.artist-label {
+  margin-top: 5px; /* Space above the artist's name */
+  font-size: 20px;
+  text-align: left;
+}
+
+.announcement {
+  text-align: center;
+  margin-top: 20px; /* Space above the announcement */
+  color: #c87527;
+  margin-left: 500px;
+}
+
+@media (max-width: 992px) {
+  .main-pages-heading h1 {
+    font-size: 4em; /* Smaller font size for smaller screens */
+    padding: 0 30px; /* Less padding on the sides */
+    margin-right: 10px; /* Adjust as needed */
+    margin-top: 10px;
+  }
+
+  heading-content-divider-horizontal {
+    height: 3px;
+  }
+
+  .heading-content-divider {
+    height: 3px;
+    bottom: 0; /* Aligns to the bottom */
+  }
+
+  .collection-side,
+  .artists-side {
+    margin-top: 50px; /* Less margin on the top */
+  }
+
+  .collection-list {
+    display: none;
+  }
+
+  .collection-side {
+    margin-left: 30px; /* Less margin on the right */
+  }
+
+  .collection-side h2 {
+    font-size: 2em; /* Smaller font size for smaller screens */
+  }
+
+  .artist-houses-container {
+    flex-direction: column; /* Stack the collection and artists sides on top of each other */
+    max-width: 100%; /* Allow container to fill the width on smaller screens */
+  }
+
+  .artists-side {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Two columns for the artists grid */
+    gap: 20px; /* Adjust gap as needed */
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  .artist-label {
+    font-size: 18px; /* Smaller font size for artist names */
+  }
+
+  .announcement {
+    margin-left: 0; /* Reset the margin */
+    margin-top: 20px; /* Adjust the top margin */
+  }
+}
 /*-----------------------------------------------------------(ARTIST HOUSES PAGE)-----------------------------*/
 /*.quotes {
   text-align: center;
@@ -807,12 +986,23 @@ p {
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for background and shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2s infinite; /* Apply the pulse animation */
 }
 
 .takeMeThere:hover {
-  background-color: #4a4039; /* Slightly lighter shade on hover */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Elevation effect */
+  background-color: #4a4039;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  30% {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  }
 }
 
 /*--------------------------ABOUT THE HOUSE_------*/
@@ -874,12 +1064,6 @@ p {
 .houseInfo img {
   width: 100%;
 }*/
-
-.container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto; /* Center the container */
-}
 
 #carouselExampleCaptions {
   margin-top: 50px;
@@ -1286,9 +1470,249 @@ p {
   }
 }
 
-/* new landing page */
+/* ------------------------------------------new landing page */
+
+/*new changes for landing page copy!*/
+
+.welcome-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: -60px;
+}
 
 .welcome-txt {
+  font-size: 70px;
+  font-weight: 600 !important;
+  font-family: "Lato", sans-serif !important;
+  color: #383635;
+}
+
+.subtext {
+  font-size: 20px;
+  font-family: "Lato", sans-serif !important;
+  text-align: left;
+  color: #383635;
+}
+
+.dali-artistic-abodes-section {
+  position: relative;
+  text-align: center; /* Center align the text */
+  background-color: #e9dbbd;
+  margin-top: -30px;
+  /* Set a height if necessary, depending on your layout */
+}
+
+.dali-image {
+  width: 70%; /* Set the image width to 70% of its container */
+  height: fit-content; /* Maintain aspect ratio */
+  display: block; /* Ensures the image is treated as a block-level element */
+  margin: 0 auto; /* This will center the image horizontally within its container */
+}
+
+.dali-text-container {
+  position: absolute;
+  top: 80px; /* Adjust the value as necessary to position the text over the head */
+  left: 50%;
+  transform: translateX(-50%); /* Center the container horizontally */
+  color: #383635; /* Change the text color as needed for contrast */
+}
+
+.dali-text-container h2 {
+  font-family: "Dancing Script";
+  font-size: 50px;
+}
+
+.dali-text-container h2,
+.dali-text-container p {
+  margin: 0; /* Removes default margin from headings and paragraphs */
+  /* Additional styles for your heading and paragraph text */
+}
+
+/*landing-tile-section*/
+.landing-back-in-time,
+.landing-plan-visit {
+  display: flex;
+  align-items: center;
+}
+
+.landing-back-in-time {
+  background-color: #242222; /* Black background for the 'back-in-time' tile */
+}
+
+.landing-plan-visit {
+  background-color: #e9dbbd; /* Brown background for the 'plan-visit' tile */
+}
+
+.tile-content {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.text-content {
+  color: #fff; /* White text for contrast */
+  flex-basis: 50%;
+  display: flex; /* Use flexbox to align content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align content to the start (left-aligned) */
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 200px; /* Add padding to prevent text from touching the edges */
+}
+
+.tile-content.image-right,
+.tile-content.image-left {
+  position: relative; /* Establishes a positioning context for absolute positioning */
+  overflow: hidden; /* Ensures no parts of the image spill out of the container */
+}
+
+.tile-content img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover the container with the image */
+  display: block;
+  position: absolute; /* Positioned absolutely to fit the parent's dimensions */
+  top: 0;
+  left: 0;
+}
+
+.landing-plan-visit .text-content h2,
+.landing-back-in-time .text-content h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.landing-plan-visit .text-content h2,
+.landing-plan-visit .text-content p {
+  color: #242222;
+}
+
+/* Add a specific height to the image containers */
+.tile-content.image-right,
+.tile-content.image-left {
+  height: 600px; /* Example fixed height, you may adjust this value */
+}
+
+.discover-btn {
+  background-color: #fff; /* White background for the button */
+  color: #000; /* Black text color for the button */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  align-self: start; /* Aligns button to the top of the text-content area */
+}
+
+@media (max-width: 992px) {
+  /* Remove the heading divider line */
+  .heading-content-divider {
+    display: none;
+  }
+
+  /* Stack the .welcome-txt over .subtext */
+  .welcome-container {
+    text-align: center; /* Center aligns the text if desired */
+    margin-top: 0; /* Adjust top margin as the negative value is no longer needed */
+  }
+
+  .welcome-txt {
+    font-size: 60px; /* Adjusted for smaller screens */
+  }
+
+  .subtext {
+    font-size: 16px; /* Adjusted for smaller screens */
+    margin-top: -20px;
+  }
+
+  .dali-artistic-abodes-section {
+    /* Ensure the container is a flexbox to apply 'order' to its children */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align the items */
+    text-align: center; /* Center align the text */
+    background-color: #e9dbbd; /* Presumed background color */
+  }
+
+  .dali-text-container {
+    /* Order -1 will place the text above the image */
+    order: -1;
+    position: relative;
+    margin-bottom: 30px; /* Provide some space below the text */
+    margin-top: -50px;
+    margin-right: 100px;
+  }
+
+  .dali-text-container h2 {
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .dali-text-container p {
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .dali-image {
+    /* Make the image full width and let it take up natural height */
+    width: 100%;
+    height: auto;
+    order: 0; /* Image will come after the text due to 'order: -1' on text container */
+    margin-bottom: 0;
+  }
+
+  /* Tile section adjustments for image then text, then image then text */
+  .landing-back-in-time,
+  .landing-plan-visit {
+    flex-direction: column; /* Stack the children vertically */
+  }
+
+  .tile-content {
+    flex-basis: auto; /* Reset the basis and allow it to be determined by content size */
+    width: 100%; /* Full width for all tile contents */
+    padding: 20px 0; /* Add some padding for spacing */
+  }
+
+  /* Image and text order */
+  .tile-content.image-right,
+  .tile-content.image-left {
+    order: 1; /* Images come first */
+    margin-top: -20px;
+  }
+
+  .landing-back-in-time .text-content h2,
+  .landing-back-in-time .text-content p {
+    color: white;
+  }
+
+  .text-content {
+    order: 2; /* Text content comes after the images */
+    text-align: center; /* Center-align text */
+    color: #000; /* Make text color black or any color desired for visibility */
+    margin-top: -18em;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 25px;
+  }
+
+  /* Reset any specific heights for images */
+  .tile-content img {
+    height: 300px;
+    position: static; /* Remove absolute positioning */
+  }
+}
+
+/*new changes for landing page copy!*/
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*.welcome-txt {
   font-size: 80px;
   font-weight: 400 !important;
   font-family: "Lato", sans-serif !important;
@@ -1300,7 +1724,7 @@ p {
   font-family: "Lato", sans-serif !important;
   text-align: left;
   color: #383635;
-}
+}*/
 
 .cstm-pad {
   padding: 200px;
@@ -1403,7 +1827,7 @@ p {
 }
 
 .cstm-bg-land {
-  background-color: #e9dbbd;
+  background-color: rgb(255, 255, 255);
 }
 
 .cstm-pad-100 {
