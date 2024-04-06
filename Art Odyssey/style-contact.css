@@ -1,0 +1,55 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.12)),
+    url("assets/header/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-container {
+  width: 50%;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.79);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-headings {
+  padding-left: 20px;
+}
+
+.contact-heading {
+  font-family: "Lato", sans-serif;
+  padding-top: 50px;
+  font-size: 3.5rem;
+}
+
+.faq-container {
+  width: 50%;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.79);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  .contact-container,
+  .faq-container {
+    width: 100%; /* Increase width for smaller screens */
+    margin: 50px auto; /* Reduce margin */
+  }
+
+  .contact-heading {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .contact-headings,
+  .contact-container,
+  .faq-container {
+    padding: 10px; /* Adjust padding */
+  }
+}
