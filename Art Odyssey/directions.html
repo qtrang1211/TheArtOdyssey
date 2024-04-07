@@ -157,11 +157,6 @@
     <div class="heading-content-divider-horizontal"></div>
   </div>
 
-  <!------------------------------ PARAGRAPH SECTION ------------------------------>
-  <!-- <p class="abt-txt" style="width:60%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 30px;">
-    This page will show all the information you need to visit the artists' houses! Below you can pick one artist and depending on the artist you will see the different ticket prices, opening hours, directions and the location changing. Just go ahead and try it!
-  </p> -->
-
   <!------------------------------ BUTTONS TO PICK ARTIST ------------------------------>
   <div style="margin-bottom: 5%;" class="artist-buttons">
 
@@ -239,7 +234,6 @@
         <div style="font-size: 0.6em; color: #7C7468;">information in 2024</div>`;
     });
   </script>
-
 
   <!-- OPENING HOURS -->
   <div class="container" style="margin-bottom: 10%;">
@@ -485,7 +479,6 @@
     </div>
   </div>
 
-
   <!-- LOCATION -->
   <div class="container" style="margin-bottom: 5%;">
     <div class="row">
@@ -656,213 +649,6 @@
         });
       </script>
 
-  </div>
-
-      <!------------------------------ DEFAULT TIMES HEADING ------------------------------>
-      <!-- <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">
-        <div style="color: #c87527;">DALÍ'S HOUSE</div>
-        <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
-      </h1> -->
-
-      <!------------------------------ DEFAULT TIMES CONTENT ------------------------------>
-      <!-- <div class="container text-center d-flex justify-content-evenly" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
-        <div class="row row-cols-2" id="timing">
-          <div class="col">Daily opening:</div>
-          <div class="col">10:30am - 6pm</div>
-          <div class="col">Last admission:</div>
-          <div class="col">5:10pm</div>
-        </div>
-      </div> -->
-
-  <!------------------------------ THE ACTUAL TABS - START ------------------------------>
-  <div class="tab-content" id="myTabContent">
-
-    <!------------------------------ TIMES TAB ------------------------------>
-    <div class="tab-pane fade show active" id="opening" role="tabpanel" aria-labelledby="opening-tab">
-
-      <!------------------------------ LOGIC TO CHANGE TIMES HEADING ------------------------------>
-      <!-- <script>
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("hours").innerHTML = `
-            <div style="color: #c87527;">DALÍ'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
-            `;
-        });
-    
-        document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("hours").innerHTML = `
-            <div style="color: #c87527;">MONET'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">
-              opening hours in 2024</b>
-              <div style="font-size: medium;">(open March 29th to November 1st)</div>
-            </div>`;
-        });
-    
-        document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("hours").innerHTML = `
-            <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>`;
-        });
-      </script> -->
-
-      <!------------------------------ LOGIC TO CHANGE TIMES CONTENT ------------------------------>
-      <script>
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = `
-            <div class="col">Daily opening:</div>
-            <div class="col">10:30am - 6pm</div>
-            <div class="col">Last admission:</div>
-            <div class="col">5:10pm</div>`;
-        });
-        document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = `
-            <div class="col">Daily opening:</div>
-            <div class="col">9:30am - 6pm</div>
-            <div class="col">Last admission:</div>
-            <div class="col">5:30pm</div>`;
-        });
-        document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("timing").innerHTML = `
-            <div class="col">Daily opening:</div>
-            <div class="col">10am - 6pm</div>
-            <div class="col">Last admission:</div>
-            <div class="col">5:40pm</div>`;
-        });
-      </script>
-
-    </div>
-
-    <!------------------------------ PRICES TAB ------------------------------>
-    <div class="tab-pane fade" id="prices" role="prices" aria-labelledby="prices-tab">
-
-      <!------------------------------ DEFAULT PRICES HEADING ------------------------------>
-      <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="artist-name">
-        <div style="color: #c87527;">DALÍ'S HOUSE</div>
-        <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-      </h1>
-
-      <!------------------------------ DEFAULT PRICES CONTENT ------------------------------>
-      <div class="container text-center" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
-        <div class="row justify-content-center" style="margin-bottom: 30px;">
-          <div class="col-md-2">Adults</div>
-          <div class="col-md-2" id="adults-price">15 €</div>
-        </div>
-        <div class="row justify-content-center" style="margin-bottom: 30px;">
-          <div class="col-md-2">Students</div>
-          <div class="col-md-2" id="students-price">12 €</div>
-        </div>
-        <div class="row justify-content-center" id="children-over" style="margin-bottom: 30px;">
-          <div class="col-md-2">Children (age 9-18)</div>
-          <div class="col-md-2">12 €</div>
-        </div>
-        <div class="row justify-content-center" id="children-under" style="margin-bottom: 30px;">
-          <div class="col-md-2">Children (until age 8)</div>
-          <div class="col-md-2">Free</div>
-        </div>
-        <div class="row justify-content-center" id="disabilities" style="margin-bottom: 30px;">
-          <div class="col-md-2">People with Disabilities (50%)</div>
-          <div class="col-md-2">Free</div>
-        </div>
-      </div>
-
-      <!------------------------------ LOGIC TO CHANGE PRICES HEADING ------------------------------>
-      <script>
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("artist-name").innerHTML = `
-            <div style="color: #c87527;">DALÍ'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-            `;
-        });
-    
-        document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("artist-name").innerHTML = `
-            <div style="color: #c87527;">MONET'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-            `;
-        });
-    
-        document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("artist-name").innerHTML = `
-            <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
-            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-            `;
-        });
-      </script>
-
-      <!------------------------------ LOGIC TO CHANGE PRICES CONTENT ------------------------------>
-      <script>
-        document.getElementById("button1").addEventListener("click", function() {
-            document.getElementById("adults-price").innerText = "15 €";
-            document.getElementById("students-price").innerText = "12 €";
-            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 9+)</div> <div class="col">12 €</div>';
-            document.getElementById("children-under").innerHTML = '<div class="col">Children (until age 8)</div> <div class="col">Free</div>';
-            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities (50%)</div> <div class="col">Free</div>';
-        });
-    
-        document.getElementById("button2").addEventListener("click", function() {
-            document.getElementById("adults-price").innerText = "11.50 €";
-            document.getElementById("students-price").innerText = "11.50 €";
-            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 7+)</div> <div class="col">7 €</div>';
-            document.getElementById("children-under").innerHTML = '<div class="col">Children (age under 7)</div> <div class="col">Free</div>';
-            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities</div> <div class="col">6 €</div>';
-        });
-    
-        document.getElementById("button3").addEventListener("click", function() {
-            document.getElementById("adults-price").innerText = "19.50 €";
-            document.getElementById("students-price").innerText = "10 €";
-            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 6+)</div> <div class="col">6 €</div>';
-            document.getElementById("children-under").innerHTML = '<div class="col">Children (age under 5)</div> <div class="col">Free</div>';
-            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities</div> <div class="col">n/a</div>';
-        });
-      </script>
-
-    </div>
-
-    <!------------------------------ LOCATION TAB ------------------------------>
-    <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-      <div class="d-flex justify-content-center align-items-center flex-column">
-
-        <!------------------------------ DEFAULT LOCATION HEADING ------------------------------>
-        <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
-          <div style="color: #c87527;" id="location-title">DALÍ'S HOUSE</div>
-          <div style="font-size: 0.6em; color: #7C7468;">location</div>
-        </h1>
-
-        <!------------------------------ DEFAULT LOCATION CONTENT ------------------------------>
-        <div class="mapContainer" id="map" style="margin-bottom: 50px;">
-          <iframe class="responsive-iframe" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        <!------------------------------ LOGIC TO CHANGE LOCATION HEADING ------------------------------>
-        <script>
-          document.getElementById("button1").addEventListener("click", function() {
-              document.getElementById("location-title").innerText = `DALÍ'S HOUSE`;
-          });
-      
-          document.getElementById("button2").addEventListener("click", function() {
-              document.getElementById("location-title").innerHTML = `MONET'S HOUSE`;
-          });
-      
-          document.getElementById("button3").addEventListener("click", function() {
-              document.getElementById("location-title").innerHTML = `REMBRANDT'S HOUSE`;
-          });
-        </script>
-
-        <!------------------------------ LOGIC TO CHANGE LOCATION CONTENT ------------------------------>
-        <script>
-          document.getElementById("button1").addEventListener("click", function() {
-              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-          });
-          document.getElementById("button2").addEventListener("click", function() {
-              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.593386086478!2d1.5311568764687857!3d49.075363285412884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6c8fe682ec1f7%3A0x267d6d3983cba15e!2s84%20Rue%20Claude%20Monet%2C%2027620%20Giverny%2C%20Frankreich!5e0!3m2!1sde!2sus!4v1711322554323!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-          });
-          document.getElementById("button3").addEventListener("click", function() {
-              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0577829019876!2d4.898660076643224!3d52.36937224737072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609be7fe3842f%3A0x88ff33d3372eee6d!2sJodenbreestraat%204%2C%201011%20NK%20Amsterdam%2C%20Niederlande!5e0!3m2!1sde!2sus!4v1711322644407!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-          });
-        </script>
-
-      </div>
-    </div>
   </div>
 
   <!------------------------------ FOOTER ------------------------------>
