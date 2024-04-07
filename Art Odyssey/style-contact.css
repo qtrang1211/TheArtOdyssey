@@ -1,7 +1,10 @@
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.12)),
+  background-image: linear-gradient(
+      rgba(250, 228, 168, 0.2),
+      rgba(0, 0, 0, 0.12)
+    ),
     url("assets/header/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,12 +13,12 @@ body {
 
 .contact-container {
   width: 50%;
-  margin: 50px auto 100px; /* Change the margin-top value */
+  margin: 100px auto 100px; /* Change the margin-top value */
   background-color: rgba(255, 255, 255, 0.79);
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
 .contact-headings {

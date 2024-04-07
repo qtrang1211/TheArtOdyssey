@@ -1167,11 +1167,10 @@ p {
 }*/
 
 .subheadings {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
-
   color: #242222;
-  padding: 30px;
+  padding: 10px;
   width: 60%;
   margin: 0 auto; /* Center align horizontally */
 }
@@ -1279,7 +1278,7 @@ p {
 
 .history-heading h2 {
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.5em; /* Adjust as needed */
   color: #c87527;
 }
@@ -1513,9 +1512,17 @@ p {
   .houseIntroText p {
     align-items: center; /* Center align the flex items */
     text-align: center; /* Center align text */
-    margin-bottom: 10px; /* Reduce margin between heading and paragraph */
     text-align: justify;
     text-justify: inter-word;
+  }
+
+  .houseIntroText p {
+    padding: 0 20px 0 20px;
+  }
+
+  .history-heading h2 {
+    text-align: left;
+    font-size: 1.5em;
   }
 
   .houseIntroText > .takeMeThere {
@@ -1534,8 +1541,7 @@ p {
   }
 
   .subheadings {
-    font-size: 1.2em; /* Reduce font size for smaller screens */
-    padding: 20px;
+    font-size: 1.6em; /* Reduce font size for smaller screens */
     width: 90%;
   }
 
