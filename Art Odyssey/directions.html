@@ -61,23 +61,23 @@
         background-color: #f9f9f9; /* Light grey background */
         color: #333; /* Dark text color */
         margin-bottom: 10px; /* Add margin between boxes */
-    }
+      }
 
-    .image {
-        max-width: 200px; /* Set max width for the image */
-        margin-right: 10px; /* Add margin to create space between image and div */
-    }
+      .image {
+          max-width: 200px; /* Set max width for the image */
+          margin-right: 10px; /* Add margin to create space between image and div */
+      }
 
-    /* Styling for buttons */
-    .button {
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        border-radius: 5px;
-        margin: 5px;
-        transition: background-color 0.3s ease;
-    }
+      /* Styling for buttons */
+      .button {
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          border-radius: 5px;
+          margin: 5px;
+          transition: background-color 0.3s ease;
+      }
 
     /* Default button style */
     .button-default {
@@ -93,6 +93,17 @@
     .direction-info {
         font-weight: 500;
         font-size: larger;
+    }
+
+    .artist-buttons {
+      margin-left: 5%;
+      text-align: start;
+    }
+
+    @media (max-width: 567px) {
+      .artist-buttons {
+        text-align: center;
+      }
     }
 
     </style>
@@ -218,7 +229,7 @@
   </p> -->
 
   <!------------------------------ BUTTONS TO PICK ARTIST ------------------------------>
-  <div style="margin-bottom: 5%; margin-right: 5%;" class="text-end">
+  <div style="margin-bottom: 5%;" class="artist-buttons">
 
     <p class="directionsPickOptionText" style="font-size: 2em; color: #3a3635; margin-bottom: 50px; margin-top: 3%;">Pick your artist:</p>
 
