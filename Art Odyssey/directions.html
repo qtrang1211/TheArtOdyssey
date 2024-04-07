@@ -18,6 +18,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <style>
       /* Basic styling */
       body {
@@ -84,802 +85,832 @@
         color: #fff;
     }
 
-  </style>
+    .direction-info {
+        font-weight: 500;
+        font-size: larger;
+    }
+
+    </style>
+    
   </head>
+
   <body>
 
-    <!------------------------------COMMON NAV BAR------------------------------------>
-    <script src="index.js"></script>
+  <!------------------------------ COMMON NAV BAR ------------------------------------>
+  <script src="index.js"></script>
 
-    <header>
-      <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
-        <div class="container">
-          <a href="landing-page.html"><img src="assets/Logo/logo-black.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Houses
-                </a>
-                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
-                  <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
-                  <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="directions.html">Visit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Our Mission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+  <header>
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <a href="landing-page.html"><img src="assets/Logo/logo-black.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Houses
+              </a>
+              <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
+                <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
+                <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="directions.html">Visit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    
-      <!--HEADER IMAGE-->
-      <section>
-        <div id="intro" class="bg-image vh-100" style="background-image: url(assets/header/landing.jpg)"></div>
-      </section>
-    </header>
-
-    <!--CONTENT SECTION--> 
-    <div class="quotes3">Plan your visit
-    </div>
-
-    <p class="abt-txt" style="width:60%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 30px;">
-      This page will show all the information you need to visit the artists' houses! Below you can pick one artist and depending on the artist you will see the different ticket prices, opening hours, directions and the location changing. Just go ahead and try it!
-    </p>
-
-    <!-- Buttons -->
-
-    <div style="margin-bottom: 5%;">
-      <p class="directionsPickOptionText" style="font-size: 2em; color: #c87527; margin-bottom: 50px;">Pick your artist:</p>
-  
-      <style>
-          .button {
-              width: 140px; /* Adjust the width as needed */
-              background-color: #3a3635;
-              color: #ece5d5;
-          }
-  
-          .button:hover {
-              background-color: #636363;
-              color: #ece5d5;
-              /* transition: 0.3s; */
-          }
-  
-          .button.button-active {
-              background-color: white;
-              color: #000; /* Change text color when active */
-          }
-      </style>
-  
-      <button class="button button-default button-active" id="button1" onclick="selectButton(1)">DALÍ</button>
-      <button class="button button-default" id="button2" onclick="selectButton(2)">MONET</button>
-      <button class="button button-default" id="button3" onclick="selectButton(3)">REMBRANDT</button>
-  
-      <script>
-          // Function to handle button click
-          function selectButton(selectedButton) {
-              // Get all buttons
-              var buttons = document.querySelectorAll('.button');
-  
-              // Loop through all buttons
-              buttons.forEach(function(button) {
-                  // Remove active class from all buttons
-                  button.classList.remove('button-active');
-              });
-  
-              // Add active class to the selected button
-              buttons[selectedButton - 1].classList.add('button-active');
-          }
-      </script>
-  </div>
-  
-
-    <div>
-      <p class="directionsPickOptionText" style="font-size: 1.6em; color: #c87527;">Click a tab below to see more information:</p>
-    </div>
-    
-    <div id="content">
-
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="button nav-link active" id="opening-tab" data-bs-toggle="tab" data-bs-target="#opening" type="button" role="tab" aria-controls="opening" aria-selected="true">TIMES</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="button nav-link" id="prices-tab" data-bs-toggle="tab" data-bs-target="#prices" type="button" role="tab" aria-controls="prices" aria-selected="false">PRICES</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="button nav-link" id="dircetions-tab" data-bs-toggle="tab" data-bs-target="#directions" type="button" role="tab" aria-controls="directions" aria-selected="false">DIRECTIONS</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="button nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">LOCATION</button>
-        </li>
-      </ul>
-
-    </div>
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="opening" role="tabpanel" aria-labelledby="opening-tab">
-    
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">
-      <div style="color: #c87527;">DALÍ'S HOUSE</div>
-      <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
-    </h1>
-
-    <div class="container text-center d-flex justify-content-evenly" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
-      <div class="row row-cols-2" id="timing">
-        <div class="col">Daily opening:</div>
-        <div class="col">10:30am - 6pm</div>
-        <div class="col">Last admission:</div>
-        <div class="col">5:10pm</div>
       </div>
-    </div>
+    </nav>
 
+  <!------------------------------ COMMON NAV BAR - END ------------------------------------>
+  
+    <!------------------------------ HEADER IMAGE ------------------------------>
+    <section>
+      <div id="intro" class="bg-image vh-100" style="background-image: url(assets/header/landing.jpg)"></div>
+    </section>
+
+  </header>
+
+  <!------------------------------ CONTENT SECTION ------------------------------> 
+  <div class="main-pages-heading">
+    <h1>Plan your visit</h1>
+    <div class="heading-content-divider-horizontal"></div>
+  </div>
+
+  <!------------------------------ PARAGRAPH SECTION ------------------------------>
+  <!-- <p class="abt-txt" style="width:60%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 30px;">
+    This page will show all the information you need to visit the artists' houses! Below you can pick one artist and depending on the artist you will see the different ticket prices, opening hours, directions and the location changing. Just go ahead and try it!
+  </p> -->
+
+  <!------------------------------ BUTTONS TO PICK ARTIST ------------------------------>
+  <div style="margin-bottom: 5%; margin-right: 5%;" class="text-end">
+
+    <p class="directionsPickOptionText" style="font-size: 2em; color: #3a3635; margin-bottom: 50px; margin-top: 3%;">Pick your artist:</p>
+
+    <style>
+      .button {
+          width: 140px; /* Adjust the width as needed */
+          background-color: #3a3635;
+          color: #ece5d5;
+      }
+
+      .button:hover {
+          background-color: #636363;
+          color: #ece5d5;
+          /* transition: 0.3s; */
+      }
+
+      .button.button-active {
+          background-color: white;
+          color: #000; /* Change text color when active */
+      }
+    </style>
+  
+    <button class="button button-default button-active" id="button1" onclick="selectButton(1)">DALÍ</button>
+    <button class="button button-default" id="button2" onclick="selectButton(2)">MONET</button>
+    <button class="button button-default" id="button3" onclick="selectButton(3)">REMBRANDT</button>
+  
+    <!------------------------------ BUTTON LOGIC - ONLY ONE BUTTON AT A TIME CAN BE SELECTED ------------------------------>
     <script>
-      document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("hours").innerHTML = `
-          <div style="color: #c87527;">DALÍ'S HOUSE</div>
-          <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
-          `;
-      });
-  
-      document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("hours").innerHTML = `<div style="color: #c87527;">MONET'S HOUSE</div> <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</b> <div style="font-size: medium;">(open March 29th to November 1st)</div>
- </div>`;
-      });
-  
-      document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("hours").innerHTML = `<div style="color: #c87527;">REMBRANDT'S HOUSE</div> <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>`;
-      });
+      // Function to handle button click
+      function selectButton(selectedButton) {
+          // Get all buttons
+          var buttons = document.querySelectorAll('.button');
+
+          // Loop through all buttons
+          buttons.forEach(function(button) {
+              // Remove active class from all buttons
+              button.classList.remove('button-active');
+          });
+
+          // Add active class to the selected button
+          buttons[selectedButton - 1].classList.add('button-active');
+      }
     </script>
 
   </div>
+  <!------------------------------ BUTTONS TO PICK ARTIST - END ------------------------------>
+
+  <h1 style="text-align: left; margin-top: 50px; margin-bottom: 5%; margin-left: 5%;" id="title">
+    <div style="color: #3a3635;">DALÍ'S HOUSE</div>
+    <div style="font-size: 0.6em; color: #7C7468;">information 2024</div>
+  </h1>
 
   <script>
     document.getElementById("button1").addEventListener("click", function() {
-        document.getElementById("timing").innerHTML = `
-        <div class="col">Daily opening:</div>
-        <div class="col">10:30am - 6pm</div>
-        <div class="col">Last admission:</div>
-        <div class="col">5:10pm</div>`;
+        document.getElementById("title").innerHTML = `
+        <div style="color: #3a3635;">DALÍ'S HOUSE</div>
+        <div style="font-size: 0.6em; color: #7C7468;">information 2024</div>
+        `;
     });
+
     document.getElementById("button2").addEventListener("click", function() {
-        document.getElementById("timing").innerHTML = `
-        <div class="col">Daily opening:</div>
-        <div class="col">9:30am - 6pm</div>
-        <div class="col">Last admission:</div>
-        <div class="col">5:30pm</div>`;
+        document.getElementById("title").innerHTML = `
+        <div style="color: #3a3635;">MONET'S HOUSE</div>
+        <div style="font-size: 0.6em; color: #7C7468;">
+            information 2024</b>
+          <div style="font-size: medium;">(open March 29th to November 1st)</div>
+        </div>`;
     });
+
     document.getElementById("button3").addEventListener("click", function() {
-        document.getElementById("timing").innerHTML = `
-        <div class="col">Daily opening:</div>
-        <div class="col">10am - 6pm</div>
-        <div class="col">Last admission:</div>
-        <div class="col">5:40pm</div>`;
+        document.getElementById("title").innerHTML = `
+        <div style="color: #3a3635;">REMBRANDT'S HOUSE</div>
+        <div style="font-size: 0.6em; color: #7C7468;">information in 2024</div>`;
     });
-</script>
-
-  <div class="tab-pane fade" id="prices" role="prices" aria-labelledby="prices-tab">
-
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="artist-name">
-      <div style="color: #c87527;">DALÍ'S HOUSE</div>
-      <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-    </h1>
-
-    <script>
-      document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("artist-name").innerHTML = `
-          <div style="color: #c87527;">DALÍ'S HOUSE</div>
-          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-          `;
-      });
-  
-      document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("artist-name").innerHTML = `
-          <div style="color: #c87527;">MONET'S HOUSE</div>
-          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-          `;
-      });
-  
-      document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("artist-name").innerHTML = `
-          <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
-          <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
-          `;
-      });
-    </script>
-
-    <div class="container text-center" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
-      <div class="row justify-content-center" style="margin-bottom: 30px;">
-        <div class="col-md-2">Adults</div>
-        <div class="col-md-2" id="adults-price">15 €</div>
-      </div>
-      <div class="row justify-content-center" style="margin-bottom: 30px;">
-        <div class="col-md-2">Students</div>
-        <div class="col-md-2" id="students-price">12 €</div>
-      </div>
-      <div class="row justify-content-center" id="children-over" style="margin-bottom: 30px;">
-        <div class="col-md-2">Children (age 9-18)</div>
-        <div class="col-md-2">12 €</div>
-      </div>
-      <div class="row justify-content-center" id="children-under" style="margin-bottom: 30px;">
-        <div class="col-md-2">Children (until age 8)</div>
-        <div class="col-md-2">Free</div>
-      </div>
-      <div class="row justify-content-center" id="disabilities" style="margin-bottom: 30px;">
-        <div class="col-md-2">People with Disabilities (50%)</div>
-        <div class="col-md-2">Free</div>
-      </div>
-    </div>
-
-    <script>
-      document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("adults-price").innerText = "15 €";
-          document.getElementById("students-price").innerText = "12 €";
-          document.getElementById("children-over").innerHTML = '<div class="col-md-2">Children (age 9+)</div> <div class="col-md-2">12 €</div>';
-          document.getElementById("children-under").innerHTML = '<div class="col-md-2">Children (until age 8)</div> <div class="col-md-2">Free</div>';
-          document.getElementById("disabilities").innerHTML = '<div class="col-md-2">People with Disabilities (50%)</div> <div class="col-md-2">Free</div>';
-      });
-  
-      document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("adults-price").innerText = "11.50 €";
-          document.getElementById("students-price").innerText = "11.50 €";
-          document.getElementById("children-over").innerHTML = '<div class="col-md-2">Children (age 7+)</div> <div class="col-md-2">7 €</div>';
-          document.getElementById("children-under").innerHTML = '<div class="col-md-2">Children (age under 7)</div> <div class="col-md-2">Free</div>';
-          document.getElementById("disabilities").innerHTML = '<div class="col-md-2">People with Disabilities</div> <div class="col-md-2">6 €</div>';
-      });
-  
-      document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("adults-price").innerText = "19.50 €";
-          document.getElementById("students-price").innerText = "10 €";
-          document.getElementById("children-over").innerHTML = '<div class="col-md-2">Children (age 6+)</div> <div class="col-md-2">6 €</div>';
-          document.getElementById("children-under").innerHTML = '<div class="col-md-2">Children (age under 5)</div> <div class="col-md-2">Free</div>';
-          document.getElementById("disabilities").innerHTML = '<div class="col-md-2">People with Disabilities</div> <div class="col-md-2">n/a</div>';
-      });
   </script>
 
-  </div>
-  <div class="tab-pane fade" id="directions" role="directions" aria-labelledby="directions-tab">
 
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
-      <div style="color: #c87527;" id="transport-title">DALÍ'S HOUSE</div>
-      <div style="font-size: 0.6em; color: #7C7468;">mode of transport in 2024</div>
-    </h1>
-
-    <script>
-      document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("transport-title").innerText = `DALÍ'S HOUSE`;
-      });
+  <!-- OPENING HOURS -->
+  <div class="container" style="margin-bottom: 10%;">
+    <div class="row">
+      <!-- Heading Column -->
+      <div class="col-md-4 text-start">
+        <h1 style="font-size: 36px;">Times</h1>
+      </div>
+      
+      <!-- Content Column -->
+      <div class="col-md-8 text-start">
+        <div class="row flex-column d-flex">
+          <div class="col" style="margin-bottom: 2%;">
+            The <b>opening hours</b> of the artist's houses are as follows:
+          </div>
   
-      document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("transport-title").innerHTML = `MONET'S HOUSE`;
-      });
-  
-      document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("transport-title").innerHTML = `REMBRANDT'S HOUSE`;
-      });
-    </script>
-
-    <!------------------------------ TAB CONTENT ------------------------------------>
-
-    <div class="d-flex flex-column" style="width:80%; margin: auto; margin-top: 80px; margin-bottom: 5%; background-color: #e9dbbd; padding: 10px;">
-
-      <div class="row justify-content-center" style="font-size: large;" id="walk-content">
+          <div class="col">
+            <!-- Opening Hours -->
+            <div class="row row-cols-2 direction-info" id="timing">
+              <div class="col" style="margin-bottom: 3%;">Daily opening:</div>
+              <div class="col">10:30am - 6pm</div>
+              <div class="col">Last admission:</div>
+              <div class="col">5:10pm</div>
+            </div>
+            <!-- End Opening Hours -->
+          </div>
+        </div>
       </div>
-
-      <div class="row justify-content-center" style="font-size: large;" id="cycle-content">
-      </div>
-
-      <div class="row justify-content-center" style="font-size: large;" id="train-content">
-      </div>
-
-      <div class="row justify-content-center" style="font-size: large;" id="cycle-content-monet">
-      </div>
-
-      <!----------------------- DEFAULT BUS CONTENT ------------------------->
-
-      <!-- <div class="row justify-content-center" style="font-size: larger;">
-        <div class="col-md-3">
-          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;" id="bus">
-          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Figueres, Estacio
-            </div>
-            <div class="col-md">
-              End: Cadaques (+ 20 walk)
-            </div>
-            <div class="col-md">
-              Duration: approx. 1h 30m
-            </div>
-          </div>
-        
-        </div>
-
-      </div> -->
-
-      <div class="row justify-content-center" style="font-size: large;" id="bus-content">
-        <div class="col-md-3">
-          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Figueres, Estacio
-            </div>
-            <div class="col-md">
-              End: Cadaques (+ 20 walk)
-            </div>
-            <div class="col-md">
-              Duration: approx. 1h 30m
-            </div>
-          </div>
-        
-        </div>
-
-      </div>
-
-<!------------------------------- DEFAULT CAR CONTENT ----------------------------------->
-
-      <!-- <div class="row justify-content-center" id="car-content"> -->
-      <div class="row justify-content-center" style="font-size: large;" id="car-content">
-
-        <div class="col-md-3">
-          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
-        </div>
-
-        <div class="col-md-6 text-center" style="padding: 20px; font-size: large;">
-        With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Figueres, Estacio
-            </div>
-
-            <div class="col-md">
-              End: Salvador Dalí - House Museum
-            </div>
-
-            <div class="col-md">
-              Duration: approx. 50 minutes
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- <div class="row justify-content-center" id="train-content">
-
-        <div class="col-md-3">
-          <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
-        </div>
-
-        <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;">
-        From Paris you can take the train from Gare Saint-Lazare to Vernon-Giverny.     
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Paris Saint-Lazare
-            </div>
-
-            <div class="col-md">
-              End: Vernon-Giverny
-            </div>
-
-            <div class="col-md">
-              Duration: approx. 50 minutes
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-
-  </div>
-</div>
-
-<script>
-
-  document.getElementById("button1").addEventListener("click", function() {
-    document.getElementById("walk-content").innerHTML = ``;
-    document.getElementById("cycle-content-monet").innerHTML = ``;
-    document.getElementById("cycle-content").innerHTML = ``;
-    document.getElementById("car-content").innerHTML = `
-    <div class="col-md-3">
-          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
-        </div>
-
-        <div class="col-md-6 text-center" style="padding: 20px; font-size: large;" id="car">
-        With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Figueres, Estacio
-            </div>
-
-            <div class="col-md">
-              End: Salvador Dalí - House Museum
-            </div>
-
-            <div class="col-md">
-              Duration: approx. 50 minutes
-            </div>
-          </div>
-        </div>
-    `;
-
-    document.getElementById("train-content").innerHTML = ``;
-
-    document.getElementById("bus-content").innerHTML = `
-    <div class="col-md-3">
-          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí's house you can enjoy the nature and lose yourself in the tiny city.  
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Figueres, Estacio
-            </div>
-            <div class="col-md">
-              End: Cadaques (+ 20 walk)
-            </div>
-            <div class="col-md">
-              Duration: approx. 1h 30m
-            </div>
-          </div>
-        
-        </div>
-    `;
-
-    // document.getElementById("car-content").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
-  });
-
-  //   document.getElementById("car-content").innerHTML = `
-
-  //     <div class="col-md-3">
-  //       <img src="assets/icons/mdi_car.png" alt="Train Icon" class="image" style="padding: 20px;">
-  //     </div>
-
-  //     <div class="col-md-6 text-center" style="padding: 20px; font-size: larger;" id="car">
-  //     With the car from Figueres directly to Salvador Dalí's house you need about 50 minutes. Some more text about how beautiful the landscape is.
-
-  //       <div class="row text-center" style="padding-top: 20px;">
-  //         <div class="col-md">
-  //           Start: Figueres, Estacio
-  //         </div>
-
-  //         <div class="col-md">
-  //           End: Salvador Dalí - House Museum
-  //         </div>
-
-  //         <div class="col-md">
-  //           Duration: approx. 50 minutes
-  //         </div>
-  //       </div>
-  //     </div>
-        
-  //   `;
-  // });
-
-//   document.getElementById("button2").addEventListener("click", function() {
-//     document.getElementById("bus").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start:  Somewhere in France </div><div class="col-md">End: Paris, France</div><div class="col-md">Duration: approx. 1h 30m</div></div>`;
-//     document.getElementById("car").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-//  Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Lyon, France  </div>  <div class="col-md">    End: Paris, France  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>`;        
-//   });
-
-
-  document.getElementById("button2").addEventListener("click", function() {
-    document.getElementById("walk-content").innerHTML = ``;
-    document.getElementById("train-content").innerHTML = `
-      <div class="col-md-3">
-        <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
-      </div>
-
-      <div class="col-md-6 text-center" style="padding: 20px;">
-      From Paris you can take the train from Gare Saint-Lazare to Vernon-Giverny. (according to <a href="https://www.sncf.com/en">SNCF</a> on a Monday morning)
-
-        <div class="row text-center" style="padding-top: 20px;">
-          <div class="col-md">
-            Start: Paris Saint-Lazare
-          </div>
-
-          <div class="col-md">
-            End: Vernon-Giverny train station
-          </div>
-
-          <div class="col-md">
-            Duration: approx. 50 minutes
-          </div>
-        </div>
-
-      </div>
-    `;
-
-
-    document.getElementById("car-content").innerHTML = `
-    <div class="col-md-3">
-          <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          There is also the possibility of travelling by car from Paris to Giverny Parking.
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Paris, France
-            </div>
-            <div class="col-md">
-              End: Giverny Parking
-            </div>
-            <div class="col-md">
-              Duration: approx. 1h 30m
-            </div>
-          </div>
-        
-        </div>
-    `;
-
-    document.getElementById("bus-content").innerHTML = `
-    <div class="col-md-3">
-          <img src="assets/icons/mdi_bus.png" alt="Bus Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          When in Vernon-Giverny, you can take the SNGo shuttle bus from Vernon-Giverny train station to Giverny Parking within 20 minutes. From there you can easily walk to Monet's house. As an alternative, have a look at the touristic shuttle train <a href="https://petittrain-vernon.fr/">"Le Petit Train"</a>!
-
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Vernon-Giverny train station
-            </div>
-            <div class="col-md">
-              End: Giverny Parking
-            </div>
-            <div class="col-md">
-              Duration: 20 minutes
-            </div>
-          </div>
-        
-        </div>
-    `;
-
-    document.getElementById("cycle-content-monet").innerHTML = `
-    <div class="col-md-3">
-          <img src="assets/icons/mdi_walking.png" alt="Bus Icon" class="image" style="padding: 20px;">
-        </div>
-        <div class="col-md-6 text-center" style="padding: 20px;">
-          When in Vernon-Giverny, follow the sign “Musées de Giverny – piétons et cyclistes”.
-          
-          <div class="row text-center" style="padding-top: 20px;">
-            <div class="col-md">
-              Start: Vernon-Giverny train station
-            </div>
-            <div class="col-md">
-              End: Maison et jardins Claude Monet – Giverny
-            </div>
-            <div class="col-md">
-              Duration: cycle 20 minutes, walk 1h 15m
-            </div>
-          </div>
-        
-        </div>
-    `;
-
-
-  });
-
-  document.getElementById("button3").addEventListener("click", function() {
-    document.getElementById("cycle-content-monet").innerHTML = ``;
-    document.getElementById("cycle-content").innerHTML = ``;
-    document.getElementById("train-content").innerHTML = `
-      <div class="col-md-3">
-        <img src="assets/icons/material-symbols-light_train.png" alt="Train Icon" class="image" style="padding: 20px;">
-      </div>
-
-      <div class="col-md-6 text-center" style="padding: 20px;">
-        From the Amsterdam Central station you can either take any metro outbound to Nieuwmarkt Station or the tram line 14 to Waterlooplein stop. Then you can easily walk to Rembrandt's house!
-        
-        <div class="row text-center" style="padding-top: 20px;">
-          <div class="col-md">
-            Start: Amsterdam Central Station
-          </div>
-          
-          <div class="col-md">
-            End: Nieuwmarkt Station or Waterlooplein stop
-          </div>
-          
-          <div class="col-md">
-            Duration: approx. 10 minutes (including walking)
-          </div>
-        </div>
-      
-      </div>
-    `;
-    document.getElementById("walk-content").innerHTML = `
-      <div class="col-md-3">
-        <img src="assets/icons/mdi_walking.png" alt="Walking person Icon" class="image" style="padding: 20px;">
-      </div>
-
-      <div class="col-md-6 text-center" style="padding: 20px;">
-        From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!
-        
-        <div class="row text-center" style="padding-top: 20px;">
-          <div class="col-md">
-            Start: Amsterdam Central Station
-          </div>
-          
-          <div class="col-md">
-            End: Rembrandt House Museum
-          </div>
-          
-          <div class="col-md">
-            Duration: approx. 15 minutes
-          </div>
-        </div>
-      
-      </div>
-    `;
-    document.getElementById("bus-content").innerHTML = ``;
-    document.getElementById("car-content").innerHTML = `
-      <div class="col-md-3">
-        <img src="assets/icons/mdi_car.png" alt="Car Icon" class="image" style="padding: 20px;">
-      </div>
-
-      <div class="col-md-6 text-center" style="padding: 20px;">
-        The nearest car parks to Rembrandt's house are the Waterlooplein, Muziektheater/Stadhuis or Valkenburgerstraat car parks (approximately 3 minutes’ walk from the museum).      
-      </div>
-    `;
-    // document.getElementById("bus-content").innerHTML = `
-    // From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!
-    // <div class="row text-center" style="padding-top: 20px;">
-    //   <div class="col-md">
-    //     Start: Amsterdam Central Station
-    //   </div>
-      
-    //   <div class="col-md">
-    //     End: Rembrandt House Museum
-    //   </div>
-      
-    //   <div class="col-md">
-    //     Duration: approx. 15 minutes
-    //   </div>
-    // </div>`;
-    // document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Some start  </div>  <div class="col-md">    End: Somewhere  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
-  });
-
-</script>
-
-<!-- <script>
-
-  document.getElementById("button1").addEventListener("click", function() {
-    document.getElementById("bus").innerHTML = 'The bus company moventis offers the bus line number 12 from Figueres to Cadaques which takes you within an hour to Cadaques. On your 20 minute walk from the bus stop to Salvador Dalí`s house you can enjoy the nature and lose yourself in the tiny city.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start: Figueres, Estacio</div><div class="col-md">End: Cadaques (+ 20 walk)</div><div class="col-md">Duration: approx. 1h 30m</div></div>';
-    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Figueres, Estacio  </div>  <div class="col-md">    End: Salvador Dalí - House Museum  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
-  });
-
-  document.getElementById("button2").addEventListener("click", function() {
-    document.getElementById("bus").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<div class="row text-center" style="padding-top: 20px;"><div class="col-md">Start:  Somewhere in France </div><div class="col-md">End: Paris, France</div><div class="col-md">Duration: approx. 1h 30m</div></div>`;
-    document.getElementById("car").innerHTML = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
- Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Lyon, France  </div>  <div class="col-md">    End: Paris, France  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>`;        
-  });
-
-  document.getElementById("button3").addEventListener("click", function() {
-    document.getElementById("bus").innerHTML = 'From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house! <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Amsterdam Central Station </div>  <div class="col-md">    End: Rembrandt House Museum  </div>  <div class="col-md">    Duration: approx. 15 minutes  </div></div>';
-    document.getElementById("car").innerHTML = 'With the car from Figueres directly to Salvador Dalí`s house you need about 50 minutes. Some more text about how beautiful the landscape is. <div class="row text-center" style="padding-top: 20px;">  <div class="col-md">    Start: Some start  </div>  <div class="col-md">    End: Somewhere  </div>  <div class="col-md">    Duration: approx. 50 minutes  </div></div>';        
-  });
-
-</script> -->
-
-<div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-
-  <div class="d-flex justify-content-center align-items-center flex-column">
-    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
-      <div style="color: #c87527;" id="location-title">DALÍ'S HOUSE</div>
-      
-      <div style="font-size: 0.6em; color: #7C7468;">location</div>
-    </h1>
-
-
-    <script>
-      document.getElementById("button1").addEventListener("click", function() {
-          document.getElementById("location-title").innerText = `DALÍ'S HOUSE`;
-      });
-  
-      document.getElementById("button2").addEventListener("click", function() {
-          document.getElementById("location-title").innerHTML = `MONET'S HOUSE`;
-      });
-  
-      document.getElementById("button3").addEventListener("click", function() {
-          document.getElementById("location-title").innerHTML = `REMBRANDT'S HOUSE`;
-      });
-    </script>
-
-    <div class="mapContainer" id="map" style="margin-bottom: 50px;">
-      <iframe class="responsive-iframe" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- End Content Column -->
     </div>
-
   </div>
-</div>
 
-<script>
-    document.getElementById("button1").addEventListener("click", function() {
-        document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-    });
-
-    document.getElementById("button2").addEventListener("click", function() {
-        document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.593386086478!2d1.5311568764687857!3d49.075363285412884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6c8fe682ec1f7%3A0x267d6d3983cba15e!2s84%20Rue%20Claude%20Monet%2C%2027620%20Giverny%2C%20Frankreich!5e0!3m2!1sde!2sus!4v1711322554323!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-    });
-
-    document.getElementById("button3").addEventListener("click", function() {
-        document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0577829019876!2d4.898660076643224!3d52.36937224737072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609be7fe3842f%3A0x88ff33d3372eee6d!2sJodenbreestraat%204%2C%201011%20NK%20Amsterdam%2C%20Niederlande!5e0!3m2!1sde!2sus!4v1711322644407!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-    });
-
-</script>
-
-    <footer style="
-    background-color: #3a3635;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    ">
-      <div class="container">
-        <div class="row mt-3 mb-4 justify-content-between">
-          <div class="col-md-4">
-            <a href="newlanding.html"><img class="ctm-siz" src="assets/Logo/logo-black.svg" alt="arthaus logo" style="color: white !important; margin-bottom: 20px; max-width: 55%;"></a>
-            <form>
-              <div class="mb-3 d-flex align-items-center">
-                <input type="email" class="form-control custom-input" style="background-color: #3a3635; margin-right: 10px;" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" />
-                <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
-              </div>
-            </form>
-            <p style="color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</p>
+  <!-- PRICES -->
+  <div class="container" style="margin-bottom: 5%;">
+    <div class="row">
+      <!-- Heading Column -->
+      <div class="col-md-4 text-start">
+        <h1 style="font-size: 36px;">Prices</h1>
+      </div>
+  
+      <!-- Content Column -->
+      <div class="col-md-8 text-start">
+        <div class="row flex-column d-flex">
+          <div class="col" style="margin-bottom: 2%;">
+            The <b>ticket prices</b> for the artist's houses are as follows:
           </div>
-          <div class="col-md-4 text-center">
+  
+          <div class="col direction-info">
+            <div class="row justify-content-start" style="margin-bottom: 30px;">
+                <div class="col">Adults</div>
+                <div class="col" id="adults-price">15 €</div>
+              </div>
+              <div class="row justify-content-start" style="margin-bottom: 30px;">
+                <div class="col">Students</div>
+                <div class="col" id="students-price">12 €</div>
+              </div>
+              <div class="row justify-content-start" id="children-over" style="margin-bottom: 30px;">
+                <div class="col">Children (age 9-18)</div>
+                <div class="col">12 €</div>
+              </div>
+              <div class="row justify-content-start" id="children-under" style="margin-bottom: 30px;">
+                <div class="col">Children (until age 8)</div>
+                <div class="col">Free</div>
+              </div>
+              <div class="row justify-content-start" id="disabilities" style="margin-bottom: 30px;">
+                <div class="col">People with Disabilities (50%)</div>
+                <div class="col">Free</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content Column -->
+    </div>
+  </div>
+
+  <!-- DIRECTIONS -->
+  <div class="container" style="margin-bottom: 5%;">
+    <div class="row">
+      <!-- Heading Column -->
+      <div class="col-md-4 text-start">
+        <h1 style="font-size: 36px;">Directions</h1>
+      </div>
+  
+      <!-- Content Column -->
+      <div class="col-md-8 text-start">
+        <div class="row flex-column d-flex">
+          <div class="col" style="margin-bottom: 2%;">
+            How to get to the artist's house:
+          </div>
+  
+          <div class="col direction-info">
             <div class="row">
-              <div class="col-md-6 p-4">
-                <a href="landing-house.html" class="footer-link ftr-link-style">Artists' Houses</a>
-              </div>
-              <div class="col-md-6 p-4">
-                <a href="about.html" class="footer-link ftr-link-style">About Us</a>
-              </div>
-              <div class="col-md-6 p-4">
-                <a href="directions.html" class="footer-link ftr-link-style">Prices & Directions</a>
-              </div>
-              <div class="col-md-6 p-4">
-                <a href="contact.html" class="footer-link ftr-link-style">Contact Us</a>
-              </div>
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm">By foot:</div>
+                    <div class="col-sm" id="foot">n/a</div>
+                </div>
+
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm">By bike:</div>
+                    <div class="col-sm" id="bike">n/a</div>
+                </div>
+
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm">By train:</div>
+                    <div class="col-sm" id="train"> n/a
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm">By bus:</div>
+                    <div class="col-sm" id="bus">
+                        <ul>
+                            <li>Bus company moventis offers bus line number 12 from Figueres, Estacio to Cadaques</li>
+                            <li>From the Cadaques stop there walk 20 minutes to Dalí's house</li>
+                            <br>
+                            <li><b>Duration: approx. 1h 30m (1h 10m train + 20 minute walk)</b></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm">By car:</div>
+                    <div class="col-sm" id="car">
+                        <ul>
+                            <li>From Figueres drive directly to Dalí's house</li>
+                            <br>
+                            <li> <b>Duration: approx. 50 minutes</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- End Opening Hours -->
+        </div>
+
+        <script>
+            document.getElementById("button1").addEventListener("click", function() {
+                document.getElementById("foot").innerText = `n/a`;
+                document.getElementById("bike").innerText = `n/a`;
+                document.getElementById("train").innerText = `n/a`;
+                document.getElementById("bus").innerHTML = `
+                    <ul>
+                        <li>Bus company moventis offers bus line number 12 from Figueres, Estacio to Cadaques</li>
+                        <li>From the Cadaques stop there walk 20 minutes to Dalí's house</li>
+                        <br>
+                        <li><b>Duration: approx. 1h 30m (1h 10m train + 20 minute walk)</b></li>
+                    </ul>
+                `;
+                document.getElementById("car").innerHTML = `
+                    <ul>
+                        <li>From Figueres drive directly to Dalí's house</li>
+                        <br>
+                        <li> <b>Duration: approx. 50 minutes</b></li>
+                    </ul>                
+                `;
+            });
+        
+            document.getElementById("button2").addEventListener("click", function() {
+                document.getElementById("foot").innerHTML = `
+                    <ul>
+                        <li>If you have arrived in Vernon-Giverny with the train, follow the sign "Musées de Giverny – piétons et cyclistes" to Monet's house</li>
+                        <li>For alternatives please read the section "By bus"</li>
+                        <br>
+                        <li> <b>Duration: walk 1h 15m</b> </li>
+                    </ul>
+                
+                `;
+                document.getElementById("bike").innerHTML = `
+                    <ul>
+                        <li>If you have arrived in Vernon-Giverny with the train, follow the sign "Musées de Giverny – piétons et cyclistes" to Monet's house</li>
+                        <li>For alternatives please read the section "By bus"</li>
+                        <br>
+                        <li> <b>Duration: cycle 20 minutes</b></li>
+                    </ul>  
+                
+                
+                `;
+                document.getElementById("train").innerHTML = `
+                    <ul>
+                        <li>From Paris take the train from Gare Saint-Lazare to Vernon-Giverny</li>
+                        <li>From Vernon-Giverny train station there are multiple options to get to Monet's house (see options "By foot" and "By bus")</li>
+                        <br>
+                        <li> <b>Duration: train ride 50 minutes (according to SNCF on a Monday morning)</b></li>
+                    </ul>                
+                `;
+                document.getElementById("bus").innerHTML = `
+                    <ul>
+                        <li>Get the SNGo shuttle bus from Vernon-Giverny train station to Giverny Parking.</li>
+                        <li>From there you can easily walk to Monet's house.</li>
+                        <li>As an alternative, have a look at the touristic shuttle train "Le Petit Train"!</li>
+                        <br>
+                        <li> <b>Duration: 20 minutes</b></li>
+                    </ul>
+                `;
+                document.getElementById("car").innerHTML = `
+                    <ul>
+                        <li>From Paris you can drive to Giverny Parking as well to reach Monet's house.</li>
+                        <br>
+                        <li> <b>Duration: approx. 1h 30m</b></li>
+                    </ul>                
+                `;
+            });
+        
+            document.getElementById("button3").addEventListener("click", function() {
+                document.getElementById("foot").innerHTML = `
+                    <ul>
+                        <li>From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!</li>
+                        <br>
+                        <li> <b>Duration: approx. 15 minutes</b></li>
+                    </ul>
+                `;
+                document.getElementById("bike").innerHTML = `
+                    <ul>
+                        <li>With the bike from the Amsterdam Central station to Rembrandt's house you need about 6 minutes.</li>
+                        <br>
+                        <li> <b>Duration: approx. 6 minutes</b> </li>
+                    </ul>
+                `;
+                document.getElementById("train").innerHTML = `
+                    <ul>
+                        <li>Metro: from Amsterdam Central station take any outbound metro and get off at Nieuwmarkt Station</li>
+                        <li>Tram: take line 14 to Waterlooplein stop</li>
+                        <li>From both these stops you can easily walk to Rembrandt's house!</li>
+                        <br>
+                        <li> <b>Duration: approx. 10 minutes</b></li>
+                    </ul>
+                `;
+                document.getElementById("bus").innerHTML = `
+                    <ul>
+                        <li>There is no bus information for this artist. Please consider other options.</li>
+                    </ul>
+                `;
+                document.getElementById("car").innerHTML = `
+                    <ul>
+                        <li>The nearest car parks to Rembrandt's house are the Waterlooplein, Muziektheater/Stadhuis or Valkenburgerstraat car parks (approximately 3 minutes’ walk from the museum).</li>
+                    </ul>
+                `;
+            });
+          </script>
+
+      </div>
+      <!-- End Content Column -->
+    </div>
+  </div>
+
+
+  <!-- LOCATION -->
+  <div class="container" style="margin-bottom: 5%;">
+    <div class="row">
+
+        
+      <div class="col-md-4 text-start">
+        <h1 style="font-size: 36px;">Location</h1>
+      </div>
+      <div class="col-md-8 text-start">
+
+        <div class="row">
+
+            <div class="col direction-info" id="address">
+                Address: <br><br>
+                <b>
+                Platja de, <br>
+                17488 Port Lligat, <br>
+                Girona, Spain
+                </b>
+            </div>
+
+            <div class="col">
+                <div class="mapContainer" id="map" style="margin-bottom: 50px;">
+                    <iframe class="responsive-iframe" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("address").innerHTML = `
+            Address: <br><br>
+            <b>
+            Platja de, <br>
+            17488 Port Lligat, <br>
+            Girona, Spain
+            </b>`;
+        });
+
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("address").innerHTML = `
+            Address: <br><br>
+            <b>
+            84 Rue Claude Monet, <br>
+            27620 Giverny, <br>
+            France
+            </b>`;
+        });
+
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("address").innerHTML = `
+            Address: <br><br>
+            <b>
+            Jodenbreestraat 4, <br>
+            1011 NK Amsterdam, <br>
+            Netherlands
+            </b>`;
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("foot").innerText = `n/a`;
+            document.getElementById("bike").innerText = `n/a`;
+            document.getElementById("train").innerText = `n/a`;
+            document.getElementById("bus").innerHTML = `
+                <ul>
+                    <li>Bus company moventis offers bus line number 12 from Figueres, Estacio to Cadaques</li>
+                    <li>From the Cadaques stop there walk 20 minutes to Dalí's house</li>
+                    <br>
+                    <li> <b>Duration: approx. 1h 30m (1h 10m train + 20 minute walk)</b> </li>
+                </ul>
+            `;
+            document.getElementById("car").innerHTML = `
+                <ul>
+                    <li>From Figueres drive directly to Dalí's house</li>
+                    <br>
+                    <li> <b>Duration: approx. 50 minutes</b> </li>
+                </ul>                
+            `;
+        });
+    
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("foot").innerHTML = `
+                <ul>
+                    <li>If you have arrived in Vernon-Giverny with the train, follow the sign "Musées de Giverny – piétons et cyclistes" to Monet's house</li>
+                    <li>For alternatives please read the section "By bus"</li>
+                    <br>
+                    <li> <b>Duration: walk 1h 15m</b> </li>
+                </ul>
+            
+            `;
+            document.getElementById("bike").innerHTML = `
+                <ul>
+                    <li>If you have arrived in Vernon-Giverny with the train, follow the sign "Musées de Giverny – piétons et cyclistes" to Monet's house</li>
+                    <li>For alternatives please read the section "By bus"</li>
+                    <br>
+                    <li> <b>Duration: cycle 20 minutes</b> </li>
+                </ul>  
+            
+            
+            `;
+            document.getElementById("train").innerHTML = `
+                <ul>
+                    <li>From Paris take the train from Gare Saint-Lazare to Vernon-Giverny</li>
+                    <li>From Vernon-Giverny train station there are multiple options to get to Monet's house (see options "By foot" and "By bus")</li>
+                    <br>
+                    <li> <b>Duration: train ride 50 minutes (according to <a href="https://www.sncf.com/en">SNCF</a> on a Monday morning)</b></li>
+                </ul>                
+            `;
+            document.getElementById("bus").innerHTML = `
+                <ul>
+                    <li>Get the SNGo shuttle bus from Vernon-Giverny train station to Giverny Parking.</li>
+                    <li>From there you can easily walk to Monet's house.</li>
+                    <li>As an alternative, have a look at the touristic shuttle train <a href="https://petittrain-vernon.fr/">"Le Petit Train"</a>!</li>
+                    <br>
+                    <li> <b>Duration: 20 minutes</b></li>
+                </ul>
+            `;
+            document.getElementById("car").innerHTML = `
+                <ul>
+                    <li>From Paris you can drive to Giverny Parking as well to reach Monet's house.</li>
+                    <br>
+                    <li> <b>Duration: approx. 1h 30m</b></li>
+                </ul>                
+            `;
+        });
+    
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("foot").innerHTML = `
+                <ul>
+                    <li>From the Amsterdam Central station it is only a 15 minute walk to Rembrandt´s house!</li>
+                    <br>
+                    <li> <b>Duration: approx. 15 minutes</b></li>
+                </ul>
+            `;
+            document.getElementById("bike").innerHTML = `
+                <ul>
+                    <li>With the bike from the Amsterdam Central station to Rembrandt's house you need about 6 minutes.</li>
+                    <br>
+                    <li> <b>Duration: approx. 6 minutes</b> </li>
+                </ul>
+            `;
+            document.getElementById("train").innerHTML = `
+                <ul>
+                    <li>Metro: from Amsterdam Central station take any outbound metro and get off at Nieuwmarkt Station</li>
+                    <li>Tram: take line 14 to Waterlooplein stop</li>
+                    <li>From both these stops you can easily walk to Rembrandt's house!</li>
+                    <br>
+                    <li> <b>Duration: approx. 10 minutes</b></li>
+                </ul>
+            `;
+            document.getElementById("bus").innerHTML = `
+                <ul>
+                    <li>There is no bus information for this artist. Please consider other options.</li>
+                </ul>
+            `;
+            document.getElementById("car").innerHTML = `
+                <ul>
+                    <li>The nearest car parks to Rembrandt's house are the Waterlooplein, Muziektheater/Stadhuis or Valkenburgerstraat car parks (approximately 3 minutes’ walk from the museum).</li>
+                </ul>
+            `;
+        });
+      </script>
+
+  </div>
+
+      <!------------------------------ DEFAULT TIMES HEADING ------------------------------>
+      <!-- <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="hours">
+        <div style="color: #c87527;">DALÍ'S HOUSE</div>
+        <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
+      </h1> -->
+
+      <!------------------------------ DEFAULT TIMES CONTENT ------------------------------>
+      <!-- <div class="container text-center d-flex justify-content-evenly" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
+        <div class="row row-cols-2" id="timing">
+          <div class="col">Daily opening:</div>
+          <div class="col">10:30am - 6pm</div>
+          <div class="col">Last admission:</div>
+          <div class="col">5:10pm</div>
+        </div>
+      </div> -->
+
+  <!------------------------------ THE ACTUAL TABS - START ------------------------------>
+  <div class="tab-content" id="myTabContent">
+
+    <!------------------------------ TIMES TAB ------------------------------>
+    <div class="tab-pane fade show active" id="opening" role="tabpanel" aria-labelledby="opening-tab">
+
+      <!------------------------------ LOGIC TO CHANGE TIMES HEADING ------------------------------>
+      <!-- <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("hours").innerHTML = `
+            <div style="color: #c87527;">DALÍ'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>
+            `;
+        });
+    
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("hours").innerHTML = `
+            <div style="color: #c87527;">MONET'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">
+              opening hours in 2024</b>
+              <div style="font-size: medium;">(open March 29th to November 1st)</div>
+            </div>`;
+        });
+    
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("hours").innerHTML = `
+            <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">opening hours in 2024</div>`;
+        });
+      </script> -->
+
+      <!------------------------------ LOGIC TO CHANGE TIMES CONTENT ------------------------------>
+      <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("timing").innerHTML = `
+            <div class="col">Daily opening:</div>
+            <div class="col">10:30am - 6pm</div>
+            <div class="col">Last admission:</div>
+            <div class="col">5:10pm</div>`;
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("timing").innerHTML = `
+            <div class="col">Daily opening:</div>
+            <div class="col">9:30am - 6pm</div>
+            <div class="col">Last admission:</div>
+            <div class="col">5:30pm</div>`;
+        });
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("timing").innerHTML = `
+            <div class="col">Daily opening:</div>
+            <div class="col">10am - 6pm</div>
+            <div class="col">Last admission:</div>
+            <div class="col">5:40pm</div>`;
+        });
+      </script>
+
+    </div>
+
+    <!------------------------------ PRICES TAB ------------------------------>
+    <div class="tab-pane fade" id="prices" role="prices" aria-labelledby="prices-tab">
+
+      <!------------------------------ DEFAULT PRICES HEADING ------------------------------>
+      <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;" id="artist-name">
+        <div style="color: #c87527;">DALÍ'S HOUSE</div>
+        <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+      </h1>
+
+      <!------------------------------ DEFAULT PRICES CONTENT ------------------------------>
+      <div class="container text-center" style="width:60%; margin-bottom: 5%; font-size: larger; font-weight: 500; margin-top: 80px; background-color: #e9dbbd; padding: 30px;">
+        <div class="row justify-content-center" style="margin-bottom: 30px;">
+          <div class="col-md-2">Adults</div>
+          <div class="col-md-2" id="adults-price">15 €</div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 30px;">
+          <div class="col-md-2">Students</div>
+          <div class="col-md-2" id="students-price">12 €</div>
+        </div>
+        <div class="row justify-content-center" id="children-over" style="margin-bottom: 30px;">
+          <div class="col-md-2">Children (age 9-18)</div>
+          <div class="col-md-2">12 €</div>
+        </div>
+        <div class="row justify-content-center" id="children-under" style="margin-bottom: 30px;">
+          <div class="col-md-2">Children (until age 8)</div>
+          <div class="col-md-2">Free</div>
+        </div>
+        <div class="row justify-content-center" id="disabilities" style="margin-bottom: 30px;">
+          <div class="col-md-2">People with Disabilities (50%)</div>
+          <div class="col-md-2">Free</div>
+        </div>
+      </div>
+
+      <!------------------------------ LOGIC TO CHANGE PRICES HEADING ------------------------------>
+      <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("artist-name").innerHTML = `
+            <div style="color: #c87527;">DALÍ'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+            `;
+        });
+    
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("artist-name").innerHTML = `
+            <div style="color: #c87527;">MONET'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+            `;
+        });
+    
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("artist-name").innerHTML = `
+            <div style="color: #c87527;">REMBRANDT'S HOUSE</div>
+            <div style="font-size: 0.6em; color: #7C7468;">prices in 2024</div>
+            `;
+        });
+      </script>
+
+      <!------------------------------ LOGIC TO CHANGE PRICES CONTENT ------------------------------>
+      <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("adults-price").innerText = "15 €";
+            document.getElementById("students-price").innerText = "12 €";
+            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 9+)</div> <div class="col">12 €</div>';
+            document.getElementById("children-under").innerHTML = '<div class="col">Children (until age 8)</div> <div class="col">Free</div>';
+            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities (50%)</div> <div class="col">Free</div>';
+        });
+    
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("adults-price").innerText = "11.50 €";
+            document.getElementById("students-price").innerText = "11.50 €";
+            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 7+)</div> <div class="col">7 €</div>';
+            document.getElementById("children-under").innerHTML = '<div class="col">Children (age under 7)</div> <div class="col">Free</div>';
+            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities</div> <div class="col">6 €</div>';
+        });
+    
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("adults-price").innerText = "19.50 €";
+            document.getElementById("students-price").innerText = "10 €";
+            document.getElementById("children-over").innerHTML = '<div class="col">Children (age 6+)</div> <div class="col">6 €</div>';
+            document.getElementById("children-under").innerHTML = '<div class="col">Children (age under 5)</div> <div class="col">Free</div>';
+            document.getElementById("disabilities").innerHTML = '<div class="col">People with Disabilities</div> <div class="col">n/a</div>';
+        });
+      </script>
+
+    </div>
+
+    <!------------------------------ LOCATION TAB ------------------------------>
+    <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+      <div class="d-flex justify-content-center align-items-center flex-column">
+
+        <!------------------------------ DEFAULT LOCATION HEADING ------------------------------>
+        <h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">
+          <div style="color: #c87527;" id="location-title">DALÍ'S HOUSE</div>
+          <div style="font-size: 0.6em; color: #7C7468;">location</div>
+        </h1>
+
+        <!------------------------------ DEFAULT LOCATION CONTENT ------------------------------>
+        <div class="mapContainer" id="map" style="margin-bottom: 50px;">
+          <iframe class="responsive-iframe" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <!------------------------------ LOGIC TO CHANGE LOCATION HEADING ------------------------------>
+        <script>
+          document.getElementById("button1").addEventListener("click", function() {
+              document.getElementById("location-title").innerText = `DALÍ'S HOUSE`;
+          });
+      
+          document.getElementById("button2").addEventListener("click", function() {
+              document.getElementById("location-title").innerHTML = `MONET'S HOUSE`;
+          });
+      
+          document.getElementById("button3").addEventListener("click", function() {
+              document.getElementById("location-title").innerHTML = `REMBRANDT'S HOUSE`;
+          });
+        </script>
+
+        <!------------------------------ LOGIC TO CHANGE LOCATION CONTENT ------------------------------>
+        <script>
+          document.getElementById("button1").addEventListener("click", function() {
+              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d368.9145836242354!2d3.286169!3d42.293108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba6f113c8b042b%3A0xc34cd1d9c591759d!2sSalvador%20Dal%C3%AD%20House%20Museum!5e0!3m2!1sde!2sus!4v1711322026408!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+          });
+          document.getElementById("button2").addEventListener("click", function() {
+              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.593386086478!2d1.5311568764687857!3d49.075363285412884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6c8fe682ec1f7%3A0x267d6d3983cba15e!2s84%20Rue%20Claude%20Monet%2C%2027620%20Giverny%2C%20Frankreich!5e0!3m2!1sde!2sus!4v1711322554323!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+          });
+          document.getElementById("button3").addEventListener("click", function() {
+              document.getElementById("map").innerHTML = '<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0577829019876!2d4.898660076643224!3d52.36937224737072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609be7fe3842f%3A0x88ff33d3372eee6d!2sJodenbreestraat%204%2C%201011%20NK%20Amsterdam%2C%20Niederlande!5e0!3m2!1sde!2sus!4v1711322644407!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+          });
+        </script>
+
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------ FOOTER ------------------------------>
+  <footer style="
+  background-color: #3a3635;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  ">
+    <div class="container">
+      <div class="row mt-3 mb-4 justify-content-between">
+        <div class="col-md-4">
+          <a href="newlanding.html"><img class="ctm-siz" src="assets/Logo/logo-black.svg" alt="arthaus logo" style="color: white !important; margin-bottom: 20px; max-width: 55%;"></a>
+          <form>
+            <div class="mb-3 d-flex align-items-center">
+              <input type="email" class="form-control custom-input" style="background-color: #3a3635; margin-right: 10px;" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" />
+              <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
+            </div>
+          </form>
+          <p style="color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="row">
+            <div class="col-md-6 p-4">
+              <a href="landing-house.html" class="footer-link ftr-link-style">Artists' Houses</a>
+            </div>
+            <div class="col-md-6 p-4">
+              <a href="about.html" class="footer-link ftr-link-style">About Us</a>
+            </div>
+            <div class="col-md-6 p-4">
+              <a href="directions.html" class="footer-link ftr-link-style">Prices & Directions</a>
+            </div>
+            <div class="col-md-6 p-4">
+              <a href="contact.html" class="footer-link ftr-link-style">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-      <div class="col-md-4"></div>
-      <div class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly">
-        <img src="assets/icons/facebook_symbol.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/instagram_logo.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/tiktok_symbol.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/youtube_symbol.svg.svg" alt="" class="social-icon" />
-      </div>
-      <div class="col-md-4"></div>
     </div>
-    </footer>
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly">
+      <img src="assets/icons/facebook_symbol.svg.svg" alt="" class="social-icon" />
+      <img src="assets/icons/instagram_logo.svg.svg" alt="" class="social-icon" />
+      <img src="assets/icons/tiktok_symbol.svg.svg" alt="" class="social-icon" />
+      <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
+      <img src="assets/icons/youtube_symbol.svg.svg" alt="" class="social-icon" />
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    >
-    </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  >
+  </script>
+
   </body>
 </html>
