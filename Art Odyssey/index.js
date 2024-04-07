@@ -138,83 +138,92 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openCookiePreferences();
 
-//POP UP COOKIE FUNCTION//
+    //POP UP COOKIE FUNCTION//
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Get the link that triggers the cookie consent popup
-  var consentLink = document.getElementById('consent_link');
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the link that triggers the cookie consent popup
+      var consentLink = document.getElementById("consent_link");
 
-  // Add event listener to the consent link
-  consentLink.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+      // Add event listener to the consent link
+      consentLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior (e.g., following the href)
 
-      // Show the cookie consent popup
-      openCookiePreferences();
+        // Show the cookie consent popup
+        openCookiePreferences();
+      });
 
-  });
+      function hideCookieContainer() {
+        var cookieContainer = document.getElementById(
+          "cookie_consent_container"
+        );
+        cookieContainer.classList.add("cookie_hide");
+      }
 
-  function hideCookieContainer() {
-      var cookieContainer = document.getElementById('cookie_consent_container');
-      cookieContainer.classList.add('cookie_hide');
-  }
+      function openCookiePreferences() {
+        var cookieContainer = document.getElementById(
+          "cookie_consent_container"
+        );
+        cookieContainer.classList.remove("cookie_hide");
+      }
 
-  function openCookiePreferences() {
-      var cookieContainer = document.getElementById('cookie_consent_container');
-      cookieContainer.classList.remove('cookie_hide');
-  }
+      var acceptButton = document.getElementById("accept_cookie_settings");
+      acceptButton.addEventListener("click", function () {
+        hideCookieContainer();
 
-  var acceptButton = document.getElementById("accept_cookie_settings");
-  acceptButton.addEventListener("click", function () {
-    hideCookieContainer();
+        createCookie("cookiePreferences", "true", 365);
+        console.log("Accepted Cookie Usage");
+      });
 
-    createCookie("cookiePreferences", "true", 365);
-    console.log("Accepted Cookie Usage");
-  });
+      function createCookie(c_name, c_value, c_days) {}
 
-  function createCookie(c_name, c_value, c_days) {}
+      function readCookie(name) {}
+    });
 
-  function readCookie(name) {}
-});
-
-  var acceptButton = document.getElementById('accept_cookie_settings');
-  acceptButton.addEventListener('click', function() {
+    var acceptButton = document.getElementById("accept_cookie_settings");
+    acceptButton.addEventListener("click", function () {
       // Hide the cookie consent popup
       hideCookieContainer();
 
       // Set the cookie to remember the user's choice
-      createCookie('cookiePreferences', 'true', 365); // Set cookie to expire in 365 days
-      console.log('Accepted Cookie Usage');
+      createCookie("cookiePreferences", "true", 365); // Set cookie to expire in 365 days
+      console.log("Accepted Cookie Usage");
+    });
+
+    // Function to create a cookie
+    function createCookie(c_name, c_value, c_days) {
+      // Your createCookie function implementation
+    }
+
+    // Function to read a cookie
+    function readCookie(name) {
+      // Your readCookie function implementation
+    }
   });
 
-  // Function to create a cookie
-  function createCookie(c_name, c_value, c_days) {
-      // Your createCookie function implementation
-  }
-
-  // Function to read a cookie
-  function readCookie(name) {
-      // Your readCookie function implementation
-  }
-});
-
-/*
+  /*
   ======================================
             BACK TO TOP LINK
 ======================================
 */
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
   }
-}
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+});
