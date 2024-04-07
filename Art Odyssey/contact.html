@@ -1,54 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Art Odyssey</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-     body {
-          font-family: Arial, sans-serif;
-          text-align: center;
-          background-image: url("assets/header/landing.jpg");
-          background-repeat: no-repeat;
-          /* background-attachment: fixed; */
-          background-size: cover;
-      }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | artHaus</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icons/icons8-museum-32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+  <!-- Cookie Consent Screen -->
+<div class="cookie_consent_container cookie_hide" id="cookie_consent_container">
+  <div class="cookie_consent_box">
+      <!-- Cookie Pop-Up-->
+      <div class="cookie_pop_up" id="cookie_pop_up">
+          <h2><b>Cookies Policy</b></h2>
+          <p>Welcome to <b>artHaus</b>! <br><br> We utilize cookies to enhance your browsing experience and personalize content on our website. Cookies are small text files stored on your device that help us understand how you interact with our site.
+
+            By continuing to browse <b>artHaus</b>, you consent to the use of cookies. These cookies may collect information such as your IP address, browser type, and browsing behavior to improve our services and provide you with a seamless experience.
+            
+            For more information on how we use cookies and your options, please review our <a href="cookiepolicy.html">Cookies Policy.</a>
+    
+          </p>
+          <div class="cookie_pop_up_buttons">
+              <a class="cookie_more_info" id="cookies_more_info"><a href="https://commission.europa.eu/cookies-policy_en">For More Information</a>
+              <div class="service_button">
+                  <a class="link_b1" id="accept_cookie_settings"><div class="button_1">I accept</div></a>
+              </div>
+          </div>
+      </div>
+  
+          </div>
+      </div>
+  </div>
+  </div>
 
     <!------------------------------COMMON NAV BAR------------------------------------>
     <script src="index.js"></script>
-
     <header>
-      <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <nav
+        class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
+      >
         <div class="container">
-          <a href="newlanding.html"><img src="assets/Logo/logo-black.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="index.html"
+            ><img src="assets/Logo/logo-black.svg" alt="artHaus logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse text-end"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="houses.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Houses
                 </a>
-                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
-                  <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
-                  <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+
+                  <li>
+                    <a class="dropdown-item" href="Houses_Dali.html">Dali</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Monet.html">Monet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Rembrandt.html"
+                      >Rembrandt</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="houses.html">All Houses</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="directions.html">Visit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Our Mission</a>
+                <a class="nav-link" href="mission.html">Our Mission</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -57,171 +122,256 @@
           </div>
         </div>
       </nav>
-    
-      <!--HEADER IMAGE-->
-      <!-- <section>
-        <div id="intro" class="bg-image vh-100" style="background-image: url(assets/header/landing.jpg)"></div>
-      </section> -->
 
-    </header>
 
-    <!-- <nav class="navbar navbar-expand-lg bg-color-cstm">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse order-lg-1 order-3 navigation-menu">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active artists-page-margin" aria-current="page" href="landing-house.html">Artists' Houses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="directions.html">Prices & Directions</a>
-            </li>
-          </ul>
-        </div>
-        <a class="navbar-brand order-1 mr-lg-0" href="index.html">
-          <svg width="193" height="39" viewBox="0 0 193 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.68 17.12C14.68 6.92 12.92 1.72 9.24 1.44V33H6.48V1.44C2.8 1.72 1.04 6.92 1.04 17.12H0.96V1H14.8V17.12H14.68ZM24.5422 33C25.9022 23.68 27.6622 9.16 22.5822 9.16C21.6622 9.16 20.5822 9.64 19.7422 10.48V33H17.1422V1H19.7422V9.92C20.9822 8.92 22.3422 8.6 23.7422 8.6C30.7022 8.6 28.9022 20.8 27.3822 33H24.5422ZM37.6753 33.44C33.4353 33.44 31.0353 28.92 31.0353 21C31.0353 13.12 33.5153 8.6 37.8353 8.6C44.2753 8.6 43.0753 19.28 33.9553 25.08C34.8353 29.8 36.5953 32.64 38.9153 32.64C39.8353 32.64 40.7153 31.68 40.9153 30.72L41.4753 32C40.1953 33.04 38.9953 33.44 37.6753 33.44ZM33.2353 16.76C33.2353 19.72 33.4353 22.36 33.8353 24.6C40.9153 19.84 40.6353 9.28 36.4753 9.28C34.4353 9.28 33.2353 12.24 33.2353 16.76ZM50.5534 33C52.8334 31.6 55.4334 27.12 55.4334 23.48C55.4334 18.88 51.3534 14.16 51.3534 8.56C51.3534 4.04 54.0734 0.839999 60.8334 0.839999C62.6334 0.839999 64.2334 1.08 65.8334 1.32V33H63.0734V9.2C61.2734 9.68 57.7134 10.76 54.6734 12.6C55.3134 15.6 56.2734 18.52 56.2734 22.64C56.2734 25.72 55.7534 29.52 54.8734 33H50.5534ZM54.1534 8.04C54.1534 8.88 54.1934 9.64 54.3134 10.4C57.4734 8.44 61.3134 7.28 63.0734 6.84V2.28C63.0734 1.56 62.7134 1.32 60.8334 1.32C56.1134 1.32 54.1534 3.4 54.1534 8.04ZM54.3934 10.92C54.4334 11.32 54.5134 11.76 54.5934 12.16C57.7134 10.28 61.3534 9.2 63.0734 8.72V7.32C61.2334 7.8 57.4334 8.96 54.3934 10.92ZM68.9438 9C69.9438 9 70.9438 9.2 71.3838 9.8C72.3038 8.92 73.3038 8.6 74.5438 8.6C76.8638 8.6 78.3038 9.68 78.5438 10.04C77.7838 10.68 77.1438 11.84 76.7038 13.6C76.4238 11.12 75.0638 9.56 73.2237 9.56C72.5038 9.56 71.9838 9.8 71.5438 10.28V33H68.9438V9ZM83.7231 33.4C81.8031 33.4 79.9631 31.88 79.9631 28.56V9.48H78.2431V9C80.2831 9 81.9631 5.96 82.5631 4.56V9H87.1231L86.6831 11.24C86.4431 9.88 84.4031 9.48 82.8831 9.48H82.5631V30.44C82.5631 32.32 83.0831 32.96 84.0831 32.96C85.1231 32.96 86.0831 32 86.3231 31.04L86.8831 32.32C85.8031 33.12 84.8031 33.4 83.7231 33.4ZM104.595 33.44C99.3153 33.44 96.3153 27.44 96.3153 17C96.3153 6.56 99.3953 0.599998 104.795 0.599998C109.995 0.599998 112.995 6.36 112.995 16.48C112.995 27.28 109.955 33.44 104.595 33.44ZM98.7553 11.52C98.7553 24.24 101.715 32.64 106.195 32.64C108.875 32.64 110.635 28.28 110.635 21.64C110.635 9.56 107.635 1.6 103.075 1.6C100.475 1.6 98.7553 5.52 98.7553 11.52ZM101.115 16.16V15.8H103.755L104.355 15.2V5.08H104.715V15.2L105.275 15.8H107.955V16.16H105.275L104.715 16.76V27.84H104.355V16.76L103.755 16.16H101.115ZM121.182 33.4C117.422 33.4 114.902 28.76 114.902 21.88C114.902 15.08 117.342 8.56 122.182 8.56C122.942 8.56 123.742 8.72 124.582 9V1H127.182V33H124.582V31.08C123.862 32.52 122.782 33.4 121.182 33.4ZM117.262 17.68C117.262 25.76 118.902 32.52 121.862 32.52C122.822 32.52 123.862 31.8 124.582 29.8V10.84C123.662 9.84 122.662 9.32 121.382 9.32C117.422 9.32 117.262 14.28 117.262 17.68ZM131.3 38.32C129.5 38.32 128.3 36.96 128.26 35.84C128.82 35.32 129.26 34.92 129.74 33.52C129.78 34.68 130.5 36.04 132.22 36.04C133.62 36.04 134.86 34.92 135.94 33.24C132.3 28.16 130.22 16.64 130.22 9H133.06C133.06 15.76 134.5 24.92 137.3 30.64C137.58 30 137.86 29.36 138.1 28.68C139.06 25.88 139.9 22.2 139.9 18.36C139.9 13.76 139.74 9.56 138.74 9H142.26C142.26 19.32 137.58 38.32 131.3 38.32ZM148.442 33.4C144.642 33.4 143.002 29.92 143.202 25.8C143.842 25.48 144.522 25.04 145.562 23.68C145.162 28.48 145.842 32.68 149.362 32.68C151.602 32.68 152.922 31 152.922 27.96C152.922 20.04 144.402 19.16 144.402 13.12C144.402 10.12 146.562 8.6 149.842 8.6C151.562 8.6 153.362 9 154.322 10.04C153.242 10.92 152.842 12.04 152.482 13.6C151.962 10.84 150.442 9.2 148.402 9.2C147.082 9.2 146.082 9.88 146.082 11.6C146.082 16.76 154.762 18 154.762 26.32C154.762 31.32 151.442 33.4 148.442 33.4ZM160.473 33.4C156.673 33.4 155.033 29.92 155.233 25.8C155.873 25.48 156.553 25.04 157.593 23.68C157.193 28.48 157.873 32.68 161.393 32.68C163.633 32.68 164.953 31 164.953 27.96C164.953 20.04 156.433 19.16 156.433 13.12C156.433 10.12 158.593 8.6 161.873 8.6C163.593 8.6 165.393 9 166.353 10.04C165.273 10.92 164.873 12.04 164.513 13.6C163.993 10.84 162.473 9.2 160.433 9.2C159.113 9.2 158.113 9.88 158.113 11.6C158.113 16.76 166.793 18 166.793 26.32C166.793 31.32 163.473 33.4 160.473 33.4ZM174.785 33.44C170.545 33.44 168.145 28.92 168.145 21C168.145 13.12 170.625 8.6 174.945 8.6C181.385 8.6 180.185 19.28 171.065 25.08C171.945 29.8 173.705 32.64 176.025 32.64C176.945 32.64 177.825 31.68 178.025 30.72L178.585 32C177.305 33.04 176.105 33.44 174.785 33.44ZM170.345 16.76C170.345 19.72 170.545 22.36 170.945 24.6C178.025 19.84 177.745 9.28 173.585 9.28C171.545 9.28 170.345 12.24 170.345 16.76ZM181.886 38.32C180.086 38.32 178.886 36.96 178.846 35.84C179.406 35.32 179.846 34.92 180.326 33.52C180.366 34.68 181.086 36.04 182.806 36.04C184.206 36.04 185.446 34.92 186.526 33.24C182.886 28.16 180.806 16.64 180.806 9H183.646C183.646 15.76 185.086 24.92 187.886 30.64C188.166 30 188.446 29.36 188.686 28.68C189.646 25.88 190.486 22.2 190.486 18.36C190.486 13.76 190.326 9.56 189.326 9H192.846C192.846 19.32 188.166 38.32 181.886 38.32Z" fill="black"/>
-            </svg>
-        </a>
-        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse" data-bs-target=".navigation-menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse order-lg-1 order-4 navigation-menu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn btn-primary btn-background contact-page-margin">Contact Us</button>
-            </li>
-          </ul>
-        </div>
+    <!--------------------------Contact page-------------------->
+
+    <div class="contact-container">
+      <div class="contact-headings">
+        <h1 class="contact-heading">Contact Us</h1>
+        <!-- Fixed class assignment -->
+        <p class="contact-subtitle">
+          Get in touch with us if you have any queries or suggestions.
+        </p>
       </div>
-    </nav> -->
 
-    <div class="container w-50" style="margin-top: 100px; margin-bottom: 100px; background-color: rgba(236,229,213,.7);">
-
-      <h1 class="mb-5" style='font-family: "Lato", sans-serif !important; padding-top: 50px;'>Contact Us</h1>
-        <form action="" class="row g-3 text-start" style="margin: 5px;">
+      <form action="" class="row g-3 text-start" style="margin: 5px">
         <div class="col-md-6">
-          <label for="firstName" class="form-label fnt-fmly">First Name</label>
-          <input type="text" class="form-control fnt-fmly" id="firstName" required>
+          <input
+            type="text"
+            class="form-control fnt-fmly"
+            id="firstName"
+            placeholder="First Name*"
+            required
+          />
         </div>
         <div class="col-md-6">
-          <label for="lastName" class="form-label fnt-fmly">Last Name</label>
-          <input type="text" class="form-control fnt-fmly" id="lastName" required>
+          <input
+            type="text"
+            class="form-control fnt-fmly"
+            id="lastName"
+            placeholder="Last Name*"
+            required
+          />
         </div>
         <div class="col-md-8">
-          <label for="emailInfo" class="form-label fnt-fmly">E-mail</label>
-          <input type="email" class="form-control fnt-fmly" id="emailInfo" required>
+          <input
+            type="email"
+            class="form-control fnt-fmly"
+            id="emailInfo"
+            required
+            placeholder="E-mail*"
+          />
         </div>
         <div class="col-md-4">
-          <label for="phoneNumber" class="form-label fnt-fmly">Phone Number</label>
-          <input type="text" class="form-control fnt-fmly" id="phoneNumber" placeholder="+(353) 85 123 4567">
-          </div>
+          <input
+            type="text"
+            class="form-control fnt-fmly"
+            id="phoneNumber"
+            placeholder="+(353) XX XXX XXXX"
+          />
+        </div>
+        <div class="col-md-12">
+          <textarea
+            class="form-control fnt-fmly"
+            name=""
+            id="comments"
+            rows="3"
+            placeholder="Message*"
+            required
+          ></textarea>
+        </div>
+        <label class="privacy-policy-agreement">
+          <input type="checkbox" name="agreeToPrivacyPolicy" />
+          I agree to share my data according to
+          <a href="privacy.html" target="_blank" style="color: #8c4c03"
+            >privacy policy.</a
+          >
+        </label>
+        <div style="margin-bottom: 30px">
           <div class="col-md-12">
-            <label for="comments" class="form-label fnt-fmly">Comments, questions?</label>
-            <textarea class="form-control fnt-fmly" name="" id="comments" rows="3" required></textarea>
+            <button type="submit" class="takeMeThere">Submit</button>
           </div>
-          <div style="margin-bottom: 30px;">
-            <div class="col-md-12">
-              <button type="submit" class="btn btn-style">Submit</button>
-            </div>
-          </div>
+        </div>
       </form>
     </div>
 
-    <footer style="
-    background-color: #3a3635;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    ">
+    <!--FAQs Section--------------------------------------->
+
+    <div class="faq-container">
+      <h2>General FAQs</h2>
+      <p>
+        <b>Note:</b> Some answers to frequently asked questions. Contact us if
+        they are not answered here.
+      </p>
+      <div id="accordion">
+        <!-- Accordion items -->
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Will there be more artists covered in future?
+            </a>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            data-bs-parent="#accordion"
+          >
+            <div class="card-body">
+              Yes, we wish to cover more artists including american, asian,
+              african artists,
+            </div>
+          </div>
+        </div>
+        <!-- More accordion items -->
+      </div>
+    </div>
+
+    <!-----------------------FOOTER------------------------------------>
+
+   
+    <!--Footer-->
+
+    <footer
+      style="
+        background-color: #3a3635;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      "
+    >
       <div class="container">
         <div class="row mt-3 mb-4 justify-content-between">
           <div class="col-md-4">
-            <a href="newlanding.html"><img class="ctm-siz" src="assets/Logo/logo-black.svg" alt="arthaus logo" style="color: white !important; margin-bottom: 20px; max-width: 55%;"></a>
+            <a href="index.html"
+              ><img
+                class="ctm-siz"
+                src="assets/Logo/logo-black.svg"
+                alt="arthaus logo"
+                style="
+                  color: white !important;
+                  margin-bottom: 20px;
+                  max-width: 55%;
+                "
+            /></a>
             <form>
               <div class="mb-3 d-flex align-items-center">
-                <input type="email" class="form-control custom-input" style="background-color: #3a3635; margin-right: 10px;" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" />
-                <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  style="background-color: #3a3635; margin-right: 10px"
+                  placeholder="Your email"
+                  aria-label="Your email"
+                  aria-describedby="subscribeButton"
+                />
+                <button
+                  style="
+                    background-color: #3a3635;
+                    border: 1px solid white;
+                    color: #ece5d5;
+                    border-radius: 4px;
+                  "
+                  class="btn btn-primary"
+                  type="submit"
+                  id="subscribeButton"
+                >
+                  Subscribe
+                </button>
               </div>
             </form>
-            <p style="color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</p>
+            <p style="color: white">
+              Subscribe for exclusive art, culture, and adventure updates.
+              Elevate your inbox with creativity!
+            </p>
           </div>
           <div class="col-md-4 text-center">
             <div class="row">
               <div class="col-md-6 p-4">
-                <a href="landing-house.html" class="footer-link ftr-link-style">Artists' Houses</a>
+                <a href="houses.html" class="footer-link ftr-link-style"
+                  >Houses</a
+                >
               </div>
               <div class="col-md-6 p-4">
-                <a href="about.html" class="footer-link ftr-link-style">About Us</a>
+                <a href="mission.html" class="footer-link ftr-link-style"
+                  >Our Mission</a
+                >
               </div>
               <div class="col-md-6 p-4">
-                <a href="directions.html" class="footer-link ftr-link-style">Prices & Directions</a>
+                <a href="directions.html" class="footer-link ftr-link-style"
+                  >Visit</a
+                >
               </div>
               <div class="col-md-6 p-4">
-                <a href="contact.html" class="footer-link ftr-link-style">Contact Us</a>
+                <a href="contact.html" class="footer-link ftr-link-style"
+                  >Contact Us</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-      <div class="col-md-4"></div>
-      <div class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly">
-        <img src="assets/icons/facebook_symbol.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/instagram_logo.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/tiktok_symbol.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
-        <img src="assets/icons/youtube_symbol.svg.svg" alt="" class="social-icon" />
-      </div>
-      <div class="col-md-4"></div>
-    </div>
-    </footer>
 
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div
+          class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly"
+        >
+          <img
+            src="assets/icons/facebook_symbol.svg.svg"
+            alt="facebook icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/instagram_logo.svg.svg"
+            alt="instagram icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/tiktok_symbol.svg.svg"
+            alt="tiktok icon"
+            class="social-icon"
+          />
+          <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
+          <img
+            src="assets/icons/youtube_symbol.svg.svg"
+            alt="youtube icon"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+
+
+      <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+
+        <div class="col-md-8">
+          <p class="txt-white cstm-center" style="padding-left: 80px;">idm-2024@arthaus.com</p>
+        </div>
+        <div class="col-md-1">
+            <p class="txt-white text-center"><a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">Legal</a></p> 
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">
+            <a href="privacy.html">Privacy</a> 
+          </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="cookiepolicy.html" id="consent_link">Cookies</a> </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="https://digital-strategy.ec.europa.eu/en/policies/copyright-legislation">Copyright</a> </p> 
+        </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
-    >
-    </script>
-
-    <!-- <div class="container-fluid" style="background-color: #3A3635; padding: 40px;">
-      <div class="row mt-3 mb-4">
-        <div class="col-md-8">
-          <img  class="ctm-siz"src="assets/icons/The Art Odyssey.svg" alt="" style="color: white !important; margin-bottom: 40px;">
-          <form class="w-50 form-elements">
-            <div class="input-group mb-3">
-              <input type="email" style="background-color: #3A3635; margin-right: 10px;" class="form-control custom-input" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton">
-              <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
-            </div>
-          </form>
-          <div class="txt-ele-center" style="width: 50%; color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</div>
-        </div>
-        <div class="col-md-4 cstm-margin cstm-margin-left">
-
-          <div class="row">
-            <div class="col-md-6 p-4 "><a class="ftr-lnk-sz" href="landing-house.html">Artists' Houses</a></div>
-            <div class="col-md-6 p-4"><a class="ftr-lnk-sz" href="about.html">About Us</a></div>
-          </div>
-          <div class="row cstm-mt ">
-            <div class="col-md-6 p-4 ftr-lnks-margin"><a class="ftr-lnk-sz" href="directions.html">Directions</a></div>
-            <div class="col-md-6 p-4 ftr-lnks-margin"><a class="ftr-lnk-sz" href="contact.html">Contact Us</a></div>
-          </div>
-          </div>
-        </div>  
-        <div class="row row-nobtm">
-          <div class="col-md-7"></div>
-          <div class="col-md-5">
-            <div class="d-flex justify-content-evenly">
-              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/youtube_symbol.svg.svg" alt=""></a>
-              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/x_logo.svg.svg" alt=""></a>
-              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/tiktok_symbol.svg.svg" alt=""></a>
-              <a href=""><img style="height: 25px; width: 25px;" src="assets/icons/instagram_logo.svg.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    ></script>
   </body>
 </html>

@@ -5,7 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Houses | Rembrandt</title>
+    <title>Rembrandt | Houses</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icons/icons8-museum-32.png"
+    />
     <link rel="icon" type="image/x-icon" href="assets/icons/icons8-museum-32.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +62,7 @@
         class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
       >
         <div class="container">
-          <a href="landing-page.html"
+          <a href="index.html"
             ><img src="assets/Logo/logo-black.svg" alt="artHaus logo"
           /></a>
           <button
@@ -79,7 +84,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="houses-page.html"
+                  href="houses.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -104,7 +109,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="houses-page.html">All Houses</a>
+                    <a class="dropdown-item" href="houses.html">All Houses</a>
                   </li>
                 </ul>
               </li>
@@ -112,15 +117,16 @@
                 <a class="nav-link" href="directions.html">Visit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mission-page.html">Our Mission</a>
+                <a class="nav-link" href="mission.html">Our Mission</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-page.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
 
   <!--HEADER IMAGE-->
   <section>
@@ -161,7 +167,7 @@
             especially in the impressive residence he purchased in 1639 (now the
             Rembrandt House Museum).
           </p>
-          <a class="takeMeThere" href="directions.html">Visit House</a>
+          <a class="takeMeThere" href="directions.html">Visit Rembrandt's House</a>
         </div>
       </div>
     </div><br><br><br><br>
@@ -326,6 +332,9 @@
 
     <!--------------------Footer----------------------->
 
+    
+    <!--Footer-->
+
     <footer
       style="
         background-color: #3a3635;
@@ -333,26 +342,26 @@
         padding-bottom: 100px;
       "
     >
-      <div class="newsltter-footer d-flex justify-content-evenly">
-        <div
-          class="d-flex flex-column"
-          style="margin-left: 40px; margin-right: 200px"
-        >
-          <div class="">
-            <img
-              class="ctm-siz"
-              src="assets/icons/The Art Odyssey.svg"
-              alt=""
-              style="color: white !important; margin-bottom: 40px"
-            />
-          </div>
-          <div>
-            <form style="width: 70%">
-              <div class="input-group mb-3">
+      <div class="container">
+        <div class="row mt-3 mb-4 justify-content-between">
+          <div class="col-md-4">
+            <a href="index.html"
+              ><img
+                class="ctm-siz"
+                src="assets/Logo/logo-black.svg"
+                alt="arthaus logo"
+                style="
+                  color: white !important;
+                  margin-bottom: 20px;
+                  max-width: 55%;
+                "
+            /></a>
+            <form>
+              <div class="mb-3 d-flex align-items-center">
                 <input
                   type="email"
-                  style="background-color: #3a3635; margin-right: 10px"
                   class="form-control custom-input"
+                  style="background-color: #3a3635; margin-right: 10px"
                   placeholder="Your email"
                   aria-label="Your email"
                   aria-describedby="subscribeButton"
@@ -372,70 +381,96 @@
                 </button>
               </div>
             </form>
-            <div style="width: 80%; color: white">
+            <p style="color: white">
               Subscribe for exclusive art, culture, and adventure updates.
               Elevate your inbox with creativity!
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-md-6 p-4">
+                <a href="houses.html" class="footer-link ftr-link-style"
+                  >Houses</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="mission.html" class="footer-link ftr-link-style"
+                  >Our Mission</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="directions.html" class="footer-link ftr-link-style"
+                  >Visit</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="contact.html" class="footer-link ftr-link-style"
+                  >Contact Us</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column">
-          <div style="margin-bottom: 50px">
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-                margin-right: 150px;
-              "
-              href="landing-house.html"
-              >Artists' Houses</a
-            >
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-              "
-              href="about.html"
-              >About Us</a
-            >
-          </div>
-          <div>
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-                margin-right: 150px;
-              "
-              href="directions.html"
-              >Prices & Directions</a
-            >
-            <a
-              class="footer-txt"
-              style="
-                margin-right: 50px;
-                text-decoration: none !important;
-                color: #ece5d5;
-              "
-              href="contact.html"
-              >Contact Us</a
-            >
-          </div>
-        </div>
       </div>
-      <div class="socials d-flex" style="margin-top: 70px; margin-left: 960px">
-        <img style="margin-right: 40px" src="assets/icons/facebook_symbol.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="assets/icons/instagram_logo.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="assets/icons/tiktok_symbol.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="assets/icons/x_logo.svg.svg" alt="" />
-        <img style="margin-right: 40px" src="assets/icons/youtube_symbol.svg.svg" alt="" />
-      </div>
-    </footer>
 
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div
+          class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly"
+        >
+          <img
+            src="assets/icons/facebook_symbol.svg.svg"
+            alt="facebook icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/instagram_logo.svg.svg"
+            alt="instagram icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/tiktok_symbol.svg.svg"
+            alt="tiktok icon"
+            class="social-icon"
+          />
+          <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
+          <img
+            src="assets/icons/youtube_symbol.svg.svg"
+            alt="youtube icon"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+
+
+      <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+
+        <div class="col-md-8">
+          <p class="txt-white cstm-center" style="padding-left: 80px;">idm-2024@arthaus.com</p>
+        </div>
+        <div class="col-md-1">
+            <p class="txt-white text-center"><a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">Legal</a></p> 
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">
+            <a href="privacy.html">Privacy</a> 
+          </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="cookiepolicy.html" id="consent_link">Cookies</a> </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="https://digital-strategy.ec.europa.eu/en/policies/copyright-legislation">Copyright</a> </p> 
+        </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
