@@ -1659,8 +1659,8 @@ p {
 
 .landing-plan-visit .text-content h2,
 .landing-back-in-time .text-content h2 {
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 35px;
+
   margin-bottom: 20px;
 }
 
@@ -1675,15 +1675,11 @@ p {
   height: 600px; /* Example fixed height, you may adjust this value */
 }
 
-.discover-btn {
-  background-color: #fff; /* White background for the button */
-  color: #000; /* Black text color for the button */
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-top: 20px;
-  align-self: start; /* Aligns button to the top of the text-content area */
+.discover-btn,
+.takeMeThere {
+  position: relative; /* Adjust if necessary */
+  z-index: 10; /* Increase z-index */
+  /* Add any additional styles that ensure visibility and interactivity */
 }
 
 @media (max-width: 992px) {
@@ -1711,7 +1707,7 @@ p {
     /* Ensure the container is a flexbox to apply 'order' to its children */
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center align the items */
+
     text-align: center; /* Center align the text */
     background-color: #e9dbbd; /* Presumed background color */
   }
@@ -1781,7 +1777,6 @@ p {
     padding: 25px;
   }
 
-  /* Reset any specific heights for images */
   .tile-content img {
     height: 300px;
     position: static; /* Remove absolute positioning */
