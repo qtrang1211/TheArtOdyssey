@@ -1,5 +1,3 @@
-//------------------- NAV BAR FUNCTION
-
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".nav-item.dropdown");
   const dropdownMenu = dropdown.querySelector(".dropdown-menu");
@@ -73,52 +71,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //POP UP COOKIE FUNCTION//
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the link that triggers the cookie consent popup
-    var consentLink = document.getElementById("consent_link");
+  // Get the link that triggers the cookie consent popup
+  var consentLink = document.getElementById("consent_link");
 
-    // Add event listener to the consent link
-    consentLink.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+  // Add event listener to the consent link
+  consentLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior (e.g., following the href)
 
-      // Show the cookie consent popup
-      openCookiePreferences();
-    });
-
-    // Function to hide the entire cookie consent container
-    function hideCookieContainer() {
-      var cookieContainer = document.getElementById("cookie_consent_container");
-      cookieContainer.classList.add("cookie_hide");
-    }
-
-    // Function to show the cookie consent popup
-    function openCookiePreferences() {
-      var cookieContainer = document.getElementById("cookie_consent_container");
-      cookieContainer.classList.remove("cookie_hide");
-    }
-
-    // In Ordnung Button
-    var acceptButton = document.getElementById("accept_cookie_settings");
-    acceptButton.addEventListener("click", function () {
-      // Hide the cookie consent popup
-      hideCookieContainer();
-
-      // Set the cookie to remember the user's choice
-      createCookie("cookiePreferences", "true", 365); // Set cookie to expire in 365 days
-      console.log("Accepted Cookie Usage");
-    });
-
-    // Function to create a cookie
-    function createCookie(c_name, c_value, c_days) {
-      // Your createCookie function implementation
-    }
-
-    // Function to read a cookie
-    function readCookie(name) {
-      // Your readCookie function implementation
-    }
+    // Show the cookie consent popup
+    openCookiePreferences();
   });
+
+  // Function to hide the entire cookie consent container
+  function hideCookieContainer() {
+    var cookieContainer = document.getElementById("cookie_consent_container");
+    cookieContainer.classList.add("cookie_hide");
+  }
+
+  // Function to show the cookie consent popup
+  function openCookiePreferences() {
+    var cookieContainer = document.getElementById("cookie_consent_container");
+    cookieContainer.classList.remove("cookie_hide");
+  }
+
+  // In Ordnung Button
+  var acceptButton = document.getElementById("accept_cookie_settings");
+  acceptButton.addEventListener("click", function () {
+    // Hide the cookie consent popup
+    hideCookieContainer();
+
+    // Set the cookie to remember the user's choice
+    createCookie("cookiePreferences", "true", 365); // Set cookie to expire in 365 days
+    console.log("Accepted Cookie Usage");
+  });
+
+  // Function to create a cookie
+  function createCookie(c_name, c_value, c_days) {
+    // Your createCookie function implementation
+  }
+
+  // Function to read a cookie
+  function readCookie(name) {
+    // Your readCookie function implementation
+  }
 });
+
+//SCROLL UP//
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
