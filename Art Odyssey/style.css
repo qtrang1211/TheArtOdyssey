@@ -45,6 +45,7 @@ a:hover {
   color: black; /* Change the color to red when mouse is over links */
 }
 
+body,
 html {
   background-color: #ece5d5 !important;
   font-family: "Lato", sans-serif !important;
@@ -908,10 +909,9 @@ h1 {
 }
 
 .announcement {
-  text-align: center;
   margin-top: 20px; /* Space above the announcement */
   color: #c87527;
-  margin-left: 500px;
+  margin-left: 485px;
 }
 
 @media (max-width: 992px) {
