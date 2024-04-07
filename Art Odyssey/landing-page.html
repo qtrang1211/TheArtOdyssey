@@ -26,6 +26,35 @@
     />
   </head>
   <body>
+
+
+<!----Cookie Pop Up 1-->
+<!-- Cookie Consent Screen -->
+<div class="cookie_consent_container cookie_hide" id="cookie_consent_container">
+  <div class="cookie_consent_box">
+      <!-- Cookie Pop-Up-->
+      <div class="cookie_pop_up" id="cookie_pop_up">
+          <h2><b>Copyright Notice</b></h2>
+          <p>All content on this website, including text, images, graphics, and other materials, is protected by copyright law and is the property of <b>artHaus</b> unless otherwise stated. This content may not be reproduced, distributed, transmitted, or otherwise used without the prior written permission of <b>artHaus.</b>
+
+            If you believe that any content on this website infringes upon your copyright, please notify us immediately so that we can take appropriate action.
+            
+            Thank you for respecting the intellectual property rights of <b>artHaus.</b>
+    
+          </p>
+          <div class="cookie_pop_up_buttons">
+              <a class="cookie_more_info" id="cookies_more_info"><a href="https://digital-strategy.ec.europa.eu/en/policies/copyright-legislation">For More Information</a>
+              <div class="service_button">
+                  <a class="link_b1" id="accept_cookie_settings"><div class="button_1">I accept</div></a>
+              </div>
+          </div>
+      </div>
+  
+          </div>
+      </div>
+  </div>
+  </div>
+
     <!------------------------------COMMON NAV BAR------------------------------------>
     <script src="index.js"></script>
     <header>
@@ -84,7 +113,7 @@
                 <a class="nav-link" href="directions.html">Visit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Our Mission</a>
+                <a class="nav-link" href="new-mission.html">Our Mission</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact-page.html">Contact</a>
@@ -227,7 +256,7 @@
                 >
               </div>
               <div class="col-md-6 p-4">
-                <a href="about.html" class="footer-link ftr-link-style"
+                <a href="new-mission.html" class="footer-link ftr-link-style"
                   >Our Mission</a
                 >
               </div>
@@ -275,7 +304,74 @@
         </div>
         <div class="col-md-4"></div>
       </div>
+
+
+
+      <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+
+        <div class="col-md-8">
+          <p class="txt-white cstm-center" style="padding-left: 80px;">idm-2024@arthaus.com</p>
+        </div>
+        <div class="col-md-1">
+            <p class="txt-white text-center"><a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">Legal</a></p> 
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">
+            <a href="privacy.html">Privacy</a> 
+          </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="https://commission.europa.eu/cookies-policy_en">Cookies</a> </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"><a href="#" id="consent_link">Copyright</a></p> 
+        </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+
     </footer>
+
+    <script>
+      // Your JavaScript code
+      document.addEventListener('DOMContentLoaded', function() {
+          // Get the link that triggers the cookie consent popups
+          var consentLink = document.getElementById('consent_link');
+  
+          // Add event listener to the consent link
+          consentLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+  
+              // Show the cookie consent popup
+              openCookiePreferences();
+          });
+  
+          // Function to hide the entire cookie consent container
+          function hideCookieContainer() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.add('cookie_hide');
+          }
+  
+          // Function to show the cookie consent popup
+          function openCookiePreferences() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.remove('cookie_hide');
+          }
+  
+          // Function to create a cookie
+          function createCookie(c_name, c_value, c_days) {
+              // Your createCookie function implementation
+          }
+  
+          // Function to read a cookie
+          function readCookie(name) {
+              // Your readCookie function implementation
+          }
+      });
+  </script>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

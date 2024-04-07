@@ -29,6 +29,22 @@
 }
 
 body,
+
+/* Unvisited links */
+a:link {
+  color: #be7836; /* Change the color to blue for unvisited links */
+}
+
+/* Visited links */
+a:visited {
+  color: white; /* Change the color to purple for visited links */
+}
+
+/* Mouse over links */
+a:hover {
+  color: black; /* Change the color to red when mouse is over links */
+}
+
 html {
   background-color: #ece5d5 !important;
   font-family: "Lato", sans-serif !important;

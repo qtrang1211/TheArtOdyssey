@@ -1,4 +1,5 @@
 //------------------- NAV BAR FUNCTION
+
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".nav-item.dropdown");
   const dropdownMenu = dropdown.querySelector(".dropdown-menu");
@@ -54,59 +55,49 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdown.classList.remove("show");
       dropdownMenu.classList.remove("show");
     }
+
+    dropdown.addEventListener("mouseleave", function () {
+      timeoutId = setTimeout(() => {
+        this.classList.remove("show");
+        dropdownMenu.classList.remove("show");
+      }, 500);
+    });
+    dropdownMenu.addEventListener("mouseenter", function () {
+      clearTimeout(timeoutId);
+    });
+    dropdownMenu.addEventListener("mouseleave", function () {
+      dropdown.classList.remove("show");
+      this.classList.remove("show");
+    });
   });
-});
 
-//-----------------------------------------------POP UP COOKIE FUNCTION
+  //POP UP COOKIE FUNCTION//
 
-document.addEventListener("DOMContentLoaded", function () {
-  var consentLink = document.getElementById("consent_link");
-  consentLink.addEventListener("click", function (event) {
-    event.preventDefault();
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the link that triggers the cookie consent popup
+    var consentLink = document.getElementById("consent_link");
 
-    openCookiePreferences();
+    // Add event listener to the consent link
+    consentLink.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default link behavior (e.g., following the href)
 
-    //POP UP COOKIE FUNCTION//
-
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the link that triggers the cookie consent popup
-      var consentLink = document.getElementById("consent_link");
-
-      // Add event listener to the consent link
-      consentLink.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default link behavior (e.g., following the href)
-
-        // Show the cookie consent popup
-        openCookiePreferences();
-      });
-
-      function hideCookieContainer() {
-        var cookieContainer = document.getElementById(
-          "cookie_consent_container"
-        );
-        cookieContainer.classList.add("cookie_hide");
-      }
-
-      function openCookiePreferences() {
-        var cookieContainer = document.getElementById(
-          "cookie_consent_container"
-        );
-        cookieContainer.classList.remove("cookie_hide");
-      }
-
-      var acceptButton = document.getElementById("accept_cookie_settings");
-      acceptButton.addEventListener("click", function () {
-        hideCookieContainer();
-
-        createCookie("cookiePreferences", "true", 365);
-        console.log("Accepted Cookie Usage");
-      });
-
-      function createCookie(c_name, c_value, c_days) {}
-
-      function readCookie(name) {}
+      // Show the cookie consent popup
+      openCookiePreferences();
     });
 
+    // Function to hide the entire cookie consent container
+    function hideCookieContainer() {
+      var cookieContainer = document.getElementById("cookie_consent_container");
+      cookieContainer.classList.add("cookie_hide");
+    }
+
+    // Function to show the cookie consent popup
+    function openCookiePreferences() {
+      var cookieContainer = document.getElementById("cookie_consent_container");
+      cookieContainer.classList.remove("cookie_hide");
+    }
+
+    // In Ordnung Button
     var acceptButton = document.getElementById("accept_cookie_settings");
     acceptButton.addEventListener("click", function () {
       // Hide the cookie consent popup
@@ -116,6 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
       createCookie("cookiePreferences", "true", 365); // Set cookie to expire in 365 days
       console.log("Accepted Cookie Usage");
     });
+
+    //-----------------BACK TO TOP-----------
 
     // Function to create a cookie
     function createCookie(c_name, c_value, c_days) {
@@ -128,7 +121,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  //-----------------BACK TO TOP-----------
+  /*
+  ======================================
+            BACK TO TOP LINK
+======================================
+*/
 
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
@@ -146,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
