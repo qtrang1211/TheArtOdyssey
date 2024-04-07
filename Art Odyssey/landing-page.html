@@ -26,6 +26,57 @@
     />
   </head>
   <body>
+
+
+<!----Cookie Pop Up 1-->
+<!-- Cookie Consent Screen -->
+<div class="cookie_consent_container cookie_hide" id="cookie_consent_container">
+  <div class="cookie_consent_box">
+      <!-- Cookie Pop-Up-->
+      <div class="cookie_pop_up" id="cookie_pop_up">
+          <h2>Cookie Einstellungen</h2>
+          <p>Unsere Website mavorymedia.com setzt Cookies, JavaSricpt und HTML5 ein, die uns die Erhebung von Informationen Ihres Gerätes ermöglichen. Cookies haben verschiedene Einsatzmöglichkeiten. Sie werden verwendet, um die Website funktionsfähig zu machen, die Nutzung der Website zu
+          analysieren, das Teilen über Social Media zu ermöglichen, oder auch um
+          Werbung zu schalten. Wenn Sie auf „In Ordnung“ klicken, erteilen Sie uns Ihre Genehmigung, diese Cookies gemäß unserer <a href="https://mavorymedia.com/cookies">Cookie-Richtlinie</a> auf Ihrem Gerät abzulegen. Wenn Sie Ihre Einwilligung verweigern möchten, klicken Sie bitte unten auf den Link „Weitere Informationen“ und deaktivieren Sie das Kästchen Ihrer Wahl. Sofern die erhobenen Informationen persönliche Daten enthalten, verarbeiten wir diese Daten gemäß unserer
+          <a href="https://mavorymedia.com/datenschutz">Datenschutzerklärung</a>.
+          </p>
+          <div class="cookie_pop_up_buttons">
+              <a class="cookie_more_info" id="cookies_more_info">Weitere Informationen</a>
+              <div class="service_button">
+                  <a class="link_b1" id="accept_cookie_settings"><div class="button_1">In Ordnung</div></a>
+              </div>
+          </div>
+      </div>
+      <!-- Cookie Settings-->
+      <div class="cookie_pop_up_settings cookie_hide" id="cookie_pop_up_settings">
+          <h2>Cookie Einstellungen</h2>
+          <!-- Cookie Type -->
+          <div class="cookie_type">
+              <div class="">
+                  <div class="cookies_always_checked"></div>
+              </div>
+              <div class="cookie_type_text">
+                  <h3>Funktionsrelevante Cookies</h3>
+                  <p class="cookie_type_p">Diese Cookies sorgen dafür, dass alle Funktionen der Website genutzt werden können. Sie speichern Ihre Auswahl und Ihre Einstellungen und optimieren somit Ihren Aufenthalt. Durch Sie können wir gesetzliche Vorschriften einhalten und Ihnen die Website in Ihrer Sprache anzeigen.</p>
+              </div>
+          </div>
+          <!-- Cookie Type -->
+          <div class="cookie_type">
+              <div class="">
+                  <input type="checkbox" class="cookie_checkbox" name="needed_cookies" value="" id="tracking_cookies" onchange="validateTrackingCookies()" checked>
+              </div>
+              <div class="cookie_type_text">
+                  <label for="tracking_cookies">Tracking Cookies</label>
+                  <p class="cookie_type_p">Durch diese Cookies erhalten wir Informationen über Ihre Nutzung der Website. Diese Infos helfen uns bei der Verbesserung unserer Website und unseres Angebots. Die Deaktivierung hat für Sie als Nutzer keine Folgen. Weitere Informationen finden sie in unserer <a href="https://mavorymedia.com/datenschutz">Datenschutzerklärung</a>.</p>
+              </div>
+          </div>
+          <div class="service_button">
+              <a class="link_b1" id="save_cookie_settings"><div class="button_1">Speichern</div></a>
+          </div>
+      </div>
+  </div>
+  </div>
+
     <!------------------------------COMMON NAV BAR------------------------------------>
     <script src="index.js"></script>
     <header>
@@ -275,7 +326,74 @@
         </div>
         <div class="col-md-4"></div>
       </div>
+
+
+
+      <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+
+        <div class="col-md-8">
+          <p class="txt-white cstm-center" style="padding-left: 80px;">idm-2024@arthaus.com</p>
+        </div>
+        <div class="col-md-1">
+            <p class="txt-white text-center"><a href="#" id="consent_link">Legal</a></p> 
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">
+            Privacy
+          </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">Cookies</p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">Copyright</p>
+        </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+
     </footer>
+
+    <script>
+      // Your JavaScript code
+      document.addEventListener('DOMContentLoaded', function() {
+          // Get the link that triggers the cookie consent popups
+          var consentLink = document.getElementById('consent_link');
+  
+          // Add event listener to the consent link
+          consentLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevent default link behavior (e.g., following the href)
+  
+              // Show the cookie consent popup
+              openCookiePreferences();
+          });
+  
+          // Function to hide the entire cookie consent container
+          function hideCookieContainer() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.add('cookie_hide');
+          }
+  
+          // Function to show the cookie consent popup
+          function openCookiePreferences() {
+              var cookieContainer = document.getElementById('cookie_consent_container');
+              cookieContainer.classList.remove('cookie_hide');
+          }
+  
+          // Function to create a cookie
+          function createCookie(c_name, c_value, c_days) {
+              // Your createCookie function implementation
+          }
+  
+          // Function to read a cookie
+          function readCookie(name) {
+              // Your readCookie function implementation
+          }
+      });
+  </script>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
