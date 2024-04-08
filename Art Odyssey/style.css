@@ -1761,3 +1761,21 @@ p {
     margin-top: 50px !important;
   }
 }
+
+.policy-terms {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 50px;
+  padding-right: 800px;
+}
+
+@media (max-width: 992px) {
+  .policy-terms {
+    margin-top: px;
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 50px;
+  }
+}
