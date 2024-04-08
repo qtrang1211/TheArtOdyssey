@@ -1,49 +1,30 @@
-/*---03rd April---*/
-
-@import url("https://fonts.cdnfonts.com/css/lato");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/petit-formal-script"); /*font-family: 'Petit Formal Script', sans-serif;---for quotes*/
+@import url("https://fonts.cdnfonts.com/css/lato"); /*Lato*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); /*'Dancing Script'*/
+@import url("https://use.typekit.net/mga3rlv.css");
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/*navbar scroll kit*/
 ::-webkit-scrollbar-thumb:vertical {
-  /*navbar scroll kit*/
   background-color: #000000;
   height: 50px;
 }
 
 ::-webkit-scrollbar {
-  /*navbar scroll kit*/
   height: 10px;
   width: 9px;
   background-color: white;
 }
 
-body,
-
-/* Unvisited links */
 a:link {
-  color: #be7836; /* Change the color to blue for unvisited links */
+  color: #be7836;
 }
 
-
-/* Visited links */
 a:visited {
-  color: white; /* Change the color to purple for visited links */
+  color: white;
 }
 
-/* Mouse over links */
 a:hover {
-  color: white; /* Change the color to red when mouse is over links */
+  color: white;
 }
 
 body,
@@ -56,62 +37,47 @@ html {
   animation: fadeIn 1.5s ease forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h1 {
   font-size: 4em;
 }
-/*
-  =====================================
-     BUTTON FOR SCROLL TO TOP
-=====================================
-*/
+/*------------- BUTTON FOR SCROLL TO TOP---------------------*/
 
 #myBtn {
-  /* Display none until JavaScript picks up scroll function */
   display: none;
-  border-radius: 10px; /* Adjust as needed */
-
-  /* Makes it stay to bottom */
-  bottom: 20px; /* Adjust as needed */
-
-  /* Makes it sticky */
+  border-radius: 10px;
+  bottom: 20px;
   position: fixed;
-
-  font-size: 14px; /* Decreased font size */
-
+  font-size: 14px;
   border: none;
   outline: none;
-
   background-color: black;
-
-  /* Text color is white */
   color: white;
-
-  /* Cursor is changed to pointer so user knows that they can click */
   cursor: pointer;
-
-  padding: 8px; /* Decreased padding */
-
-  /* Set a fixed width */
-  width: 100px; /* Adjust as needed */
-
-  /* Adjust margin to position it to the right */
-  margin-left: calc(100% - 120px); /* Adjust as needed */
+  padding: 8px;
+  width: 100px;
+  margin-left: calc(100% - 120px);
 }
 
-/* On hover change to darker color */
 #myBtn:hover {
-  background-color: #be7836; /* Adjust as needed */
+  background-color: #be7836;
 }
 
-/* responsive design - hide button on screens less than 767px */
 @media only screen and (max-width: 767px) {
   #myBtn {
     visibility: always;
   }
 }
 
-/*POP UP function start*/
-@import url("https://use.typekit.net/mga3rlv.css");
+/*------------------------POP UP function start------------------------------------------------*/
 
 /* Buttons */
 .button_1 {
@@ -388,11 +354,8 @@ h1 {
 }
 /*Pop up function end*/
 
-/*---------------------------------------------NAVIGATION BAR----------------------------*/
+/*---------------------------------------------NAVIGATION BAR--------------------------------------*/
 
-/*just for rembrandt page*/
-
-/* Directly targeting the #intro element and using !important to override other styles if necessary */
 #intro {
   height: 500px !important;
   background-repeat: no-repeat !important;
@@ -408,14 +371,9 @@ h1 {
 }
 
 .custom-navbar .navbar-nav .nav-item {
-  margin-right: 10px; /* Adds space to the right of each nav item */
-  margin-left: 20px; /* Adds space to the right of each nav item */
+  margin-right: 10px;
+  margin-left: 20px;
 }
-
-/* Ensures the last item doesn't have extra space on the right */
-/* .custom-navbar .navbar-nav .nav-item:last-child {
-  margin-right: 0;
-} */
 
 .custom-brand {
   font-size: 1.75rem;
@@ -426,23 +384,22 @@ h1 {
 
 .custom-navbar .nav-link,
 .custom-navbar .navbar-toggler-icon {
-  color: #383635; /* White color for navbar items */
-  position: relative; /* Setup for underline effect */
+  color: #383635;
+  position: relative;
 }
 
 .custom-navbar .dropdown-toggle::after {
-  display: none; /* Hide default dropdown arrow */
+  display: none;
 }
 
-/* Updated to include dropdown-toggle for the underline effect */
 .custom-navbar .navbar-nav .nav-link::after,
 .custom-navbar .navbar-nav .dropdown-toggle::after {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #3a3635; /* Underline color */
-  bottom: -2px; /* Positioning the underline correctly */
+  background-color: #3a3635;
+  bottom: -2px;
   left: 50%;
   transition: width 0.3s ease, left 0.3s ease;
 }
@@ -462,112 +419,41 @@ h1 {
 .custom-navbar .dropdown-toggle.active,
 .custom-navbar .dropdown-toggle[aria-current="page"] {
   outline: none;
-  color: #3a3635; /* Focused or active link color */
-  background-color: transparent; /* Clear background */
+  color: #3a3635;
+  background-color: transparent;
 }
 
 .navbar-scrolled {
-  background-color: #cbbcb1; /* Scrolled navbar color */
+  background-color: #cbbcb1;
 }
 
 .custom-navbar .dropdown-menu {
-  margin-top: 11px; /* Aesthetic spacing */
-  backdrop-filter: blur(5px); /* Cohesive styling with navbar */
+  margin-top: 11px;
+  backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.15);
   border: none;
   border-radius: 0;
 }
 
 .custom-navbar .dropdown-item {
-  color: #3a3635; /* Dropdown item text color */
+  color: #3a3635;
 }
 
 .custom-navbar .dropdown-item:hover {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.25
-  ); /* Dropdown item hover background */
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-/* Ensures navbar items align to the right */
 .navbar-nav {
   margin-left: auto;
 }
 
-/* Ensure dropdown menu is displayed on hover for larger screens */
 @media (min-width: 992px) {
   .navbar .nav-item.dropdown:hover .dropdown-menu {
     display: block;
   }
 }
 
-/*responsive nav*/
-
-/*@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    width: 100%;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 18px;
-  }
-
-  .navbar-brand.order-1.mr-lg-0 {
-    margin-right: 0 !important; 
-  }
-
-  .navbar-nav.me-auto > .nav-item:first-child {
-    margin-right: 20px; 
-  }
-
-  .artists-page-margin {
-    margin-left: 40px;
-    margin-right: 100px;
-  }
-
-  .directions-page-margin {
-    margin-left: 100px; 
-    margin-right: 100px;
-  }
-
-  .contact-page-margin {
-    margin-right: 50px;
-    margin-left: 100px;
-  }
-}
-
-.bg-color-cstm {
-  background-color: #ece5d5 !important;
-}
-
-.btn-background {
-  background-color: #3a3635 !important;
-  border: 0px #3a3635 !important;
-}
-
-.artist-name-bar {
-  display: flex;
-  align-items: center;
-  width: 35%;
-  height: 60px;
-  background-color: #3a3635;
-  color: #ece5d5;
-  margin-bottom: 3%;
-}
-
-.abt-txt {
-  font-family: "Lato", sans-serif !important;
-  font-size: 20px;
-}
-
-.nav-text {
-  color: black !important;
-  font-family: "Lato", sans-serif !important;
-  font-size: 20px !important;
-  margin-right: 180px;
-}*/
+/*------------------------------------Visit Page----------------------------------------------------*/
 
 .abt-txt {
   font-family: "Lato", sans-serif !important;
@@ -608,7 +494,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-/*Artist House Links*/
 .linkhouses {
   display: flex;
   justify-content: center; /* Center the items */
@@ -690,134 +575,9 @@ h1 {
   font-weight: 100;
 }
 
-/*-----------------------------------------------------------(ARTIST HOUSES - LANDING PAGE ver1)-----------------------------*/
-
-.heading-section {
-  background-color: #e9dbbd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-}
-
-.artist-heading-section {
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.european-artists-section {
-  text-align: center;
-
-  padding: 80px 0; /* Space above and below the section content */
-}
-
-.european-artists-title {
-  margin-bottom: 30px; /* Space below the title */
-  margin-top: -50px;
-  font-size: 1.5rem; /* Larger font size for the title */
-  color: #ece5d5; /* Text color for the title */
-  background-color: #333;
-  width: 30%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 25px 0;
-  margin: 0 auto; /* Center align horizontally */
-}
-
-.european-artists-grid {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three items in a row */
-  gap: 15px; /* Space between grid items */
-  padding: 0 15%; /* Horizontal padding for grid */
-}
-
-.artist-item {
-  position: relative;
-  overflow: hidden; /* Hide overflowing content */
-  cursor: pointer; /* Indicates the items are clickable */
-  border-radius: 600px;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for scale and shadow */
-}
-
-.artist-item:hover {
-  transform: scale(1.05); /* Slightly scale up on hover */
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
-  border-radius: 600px;
-}
-
-.artist-image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-
-  transition: transform 0.3s ease; /* Smooth transition for the transform */
-}
-
-.artist-item:hover .artist-image {
-  transform: scale(1.1); /* Scale the image on hover */
-  border-radius: 600px;
-}
-
-.artist-name {
-  position: absolute;
-  margin-top: 200px;
-  bottom: 0px; /* Position from the bottom of the artist item */
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
-  color: white; /* Text color for artist name */
-  font-weight: bold; /* Make the artist name bold */
-  padding: 5px; /* Padding above and below the text */
-}
-
-.coming-soon {
-  margin-top: 20px; /* Space above the 'coming soon' text */
-  color: #8c4c03; /* Text color for the 'coming soon' text */
-  font-style: italic; /* Italicize the 'coming soon' text */
-}
-
-@media (max-width: 992px) {
-  .european-artists-title {
-    /* Adjust the title size and width for smaller screens */
-    font-size: 1.2rem;
-    width: 50%; /* Increase the width percentage for smaller screens */
-    padding: 20px 0; /* Adjust the padding as necessary */
-  }
-
-  .european-artists-grid {
-    /* Adjust the grid to have two columns instead of three */
-    grid-template-columns: repeat(2, 1fr); /* Two items in a row */
-    gap: 15px;
-    padding: 0 10%; /* Adjust the horizontal padding for the grid */
-  }
-
-  .artist-image {
-    /* Adjust the height of images for smaller screens */
-    height: 300px; /* Decrease the fixed height for smaller screens */
-  }
-
-  .artist-item {
-    /* If necessary, adjust the scaling factor for hover */
-    &:hover {
-      transform: scale(1.02); /* Slightly reduce the scale up on hover */
-    }
-  }
-
-  .coming-soon {
-    /* Adjust 'coming soon' text font-size for smaller screens */
-    font-size: 1em; /* Adjust the font size as necessary */
-  }
-}
-
-/*-----------------------------------------------------------(ARTIST HOUSES - HOUSES PAGE ver2)-----------------------------*/
+/*-----------------------------------------------------------🛖 ARTIST HOUSES - HOUSES PAGE -----------------------------*/
 .main-pages-heading h1 {
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 20px;
   text-align: left;
   font-size: 3.5rem;
   margin-top: 20px;
@@ -829,15 +589,15 @@ h1 {
   background-color: #a5a4a2;
 
   width: 100%;
-  bottom: 0; /* Aligns to the bottom */
-  left: 0; /* Aligns to the left edge of .main-pages-heading */
+  bottom: 0;
+  left: 0;
   align-items: center;
 }
 
 .artist-houses-container {
   display: flex;
-  margin-top: 20px; /* Space below the heading */
-  margin: 0 auto; /* This will center the container on the page */
+  margin-top: 20px;
+  margin: 0 auto;
   max-width: 1400px;
   margin-left: 5%;
 }
@@ -850,7 +610,7 @@ h1 {
 
 .collection-side {
   flex: 1;
-  margin-right: 100px; /* Space between the collection side and the artists side */
+  margin-right: 100px;
 }
 
 .collection-side h2 {
@@ -858,70 +618,67 @@ h1 {
 }
 
 .search-bar {
-  width: 100%; /* Full width of its container */
-  margin-bottom: 10px; /* Space below the search bar */
+  width: 100%;
+  margin-bottom: 10px;
   background-color: transparent;
   padding: 8px;
   border-radius: 5px;
 }
 
 .collection-list {
-  list-style-type: none; /* Removes default list styling */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .collection-list a {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px;
   color: black;
 }
 
 .collection-list li {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px;
 }
 
 .artists-side {
-  flex: 3; /* Takes up 3 times the space of the collection side */
+  flex: 3;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(100px, 1fr)
-  ); /* Adjust '100px' as needed */
-  gap: 10px; /* Spacing between images */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
 }
 
 .artist-block {
-  text-align: center; /* Centers the artist name and image */
+  text-align: center;
 }
 
 .artist-portrait {
-  width: 100%; /* Full width of its container */
-  height: auto; /* Maintains aspect ratio */
+  width: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .artist-block:hover .artist-portrait {
-  transform: scale(1.02); /* Slightly enlarges the image */
+  transform: scale(1.02);
 }
 
 .artist-label {
-  margin-top: 5px; /* Space above the artist's name */
+  margin-top: 5px;
   font-size: 20px;
   text-align: left;
 }
 
 .announcement {
-  margin-top: 20px; /* Space above the announcement */
+  margin-top: 20px;
   color: #c87527;
   margin-left: 485px;
 }
 
 @media (max-width: 992px) {
   .main-pages-heading h1 {
-    font-size: 3em; /* Smaller font size for smaller screens */
-    padding: 0 30px; /* Less padding on the sides */
-    margin-right: 10px; /* Adjust as needed */
+    font-size: 3em;
+    padding: 0 30px;
+    margin-right: 10px;
     margin-top: 10px;
   }
 
@@ -931,12 +688,12 @@ h1 {
 
   .heading-content-divider {
     height: 3px;
-    bottom: 0; /* Aligns to the bottom */
+    bottom: 0;
   }
 
   .collection-side,
   .artists-side {
-    margin-top: 50px; /* Less margin on the top */
+    margin-top: 50px;
   }
 
   .collection-list {
@@ -944,44 +701,41 @@ h1 {
   }
 
   .collection-side {
-    margin-left: 30px; /* Less margin on the right */
+    margin-left: 30px;
   }
 
   .collection-side h2 {
-    font-size: 2em; /* Smaller font size for smaller screens */
+    font-size: 2em;
   }
 
   .artist-houses-container {
-    flex-direction: column; /* Stack the collection and artists sides on top of each other */
-    max-width: 100%; /* Allow container to fill the width on smaller screens */
+    flex-direction: column;
+    max-width: 100%;
   }
 
   .artists-side {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* Two columns for the artists grid */
-    gap: 20px; /* Adjust gap as needed */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     width: 90%;
     margin-left: 30px;
     margin-top: 0;
   }
 
   .artist-label {
-    font-size: 18px; /* Smaller font size for artist names */
+    font-size: 18px;
   }
 
   .announcement {
-    margin-left: 0; /* Reset the margin */
-    margin-top: 20px; /* Adjust the top margin */
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
-/*------------------NEW OUR MISSION---------------*/
+/*-------------------------------------NEW OUR MISSION--------------------------------------------*/
 .mission-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures spacing between image and text */
+  justify-content: space-between;
 }
 
 .mission-image-left,
@@ -996,19 +750,19 @@ h1 {
 
 .mission-image-left img {
   width: 100%;
-  height: auto; /* Adjust height automatically to maintain aspect ratio */
-  object-fit: cover; /* Cover the area of the container without losing aspect ratio */
+  height: auto;
+  object-fit: cover;
 }
 
 .mission-text-content {
-  color: #090e11; /* Adjust text color as needed */
+  color: #090e11;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align text to the start */
+  align-items: flex-start;
   text-align: justify;
   text-justify: inter-word;
-  padding: 0 150px; /* Adjust padding as needed */
+  padding: 0 150px;
 }
 
 .mission-text-content h1 {
@@ -1017,79 +771,60 @@ h1 {
 
 @media (max-width: 992px) {
   .mission-container {
-    flex-direction: column; /* Stack vertically on mobile */
+    flex-direction: column;
     text-align: center;
   }
 
   .mission-image-left,
   .mission-text-content {
-    flex-basis: 100%; /* Each takes full width */
-    padding: 0; /* Remove additional padding */
+    flex-basis: 100%;
+    padding: 0;
   }
 
   .mission-text-content {
-    align-items: left; /* Center text content for mobile */
-    padding: 20px; /* Add some padding around the text for better readability */
+    align-items: left;
+    padding: 20px;
   }
 
   .mission-text-content h1 {
-    font-size: 28px; /* Adjust heading size for mobile */
-    text-align: left; /* Ensure headings are centered */
+    font-size: 28px;
+    text-align: left;
   }
-} /*-----------------------------------------------------------(ARTIST HOUSES PAGE)-----------------------------*/
-/*.quotes {
-  text-align: center;
-  margin-top: 80px;
-  font-size: 1.5em;
-  padding-left: 400px;
-  padding-right: 400px;
-  font-weight: bold;
-}*/
+} /*-----------------------------------------------------------(Individual HOUSES PAGE - Dali, Monet, Rem)-----------------------------*/
 
 /*-----QUOTE SECTION----*/
 .quote-section {
-  background-color: #f7e8c9; /* Or any color you wish to use for the background */
-  display: flex; /* Use flexbox for layout */
+  background-color: #f7e8c9;
+  display: flex;
   justify-content: center;
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Add some padding around the text */
+  align-items: center;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quotes {
-  margin: 0; /* Remove default margins */
-  padding: 0 300px 0 0px; /* Add some padding on the left and right */
-  text-align: left; /* Align quote text to the left */
-  color: #222120; /* Dark grey color for text */
+  margin: 0;
+  padding: 0 300px 0 0px;
+  text-align: left;
+  color: #222120;
   font-style: italic;
 }
 
 .quotes2 {
-  font-family: "Dancing Script"; /* Different specific font for the author's name */
-  text-align: right; /* Align author's name to the right */
-  color: #222120; /* Dark grey color for the author's name */
+  font-family: "Dancing Script";
+  text-align: right;
+  color: #222120;
   font-size: 60px;
 }
 
 .quotes3 {
-  font-family: "Dancing Script"; /* Different specific font for the author's name */
-  text-align: center; /* Align author's name to the right */
-  color: #222120; /* Dark grey color for the author's name */
+  font-family: "Dancing Script";
+  text-align: center;
+  color: #222120;
   font-size: 80px;
   margin-top: 40px;
   margin-bottom: -50px;
 }
-
-/*.responsive-image {
-  width: 250px;
-  height: auto;
-  margin-right: 20px;
-  transition: transform 0.3s ease;
-}
-
-.responsive-image:hover {
-  transform: scale(1.05); 
-}*/
 
 /*----WELCOME SECTION- ABOUT ARTIST----*/
 
@@ -1104,7 +839,7 @@ h1 {
   align-items: center;
   justify-content: center;
   max-width: 60%;
-  gap: 20px; /* This will create space between the image and the text */
+  gap: 20px;
 }
 
 .houseIntroText {
@@ -1121,7 +856,7 @@ p {
 .responsive-image {
   width: 250px;
   height: auto;
-  margin-right: 100px; /* Adjust this value as needed to create more space */
+  margin-right: 100px;
 }
 
 .takeMeThere {
@@ -1136,7 +871,7 @@ p {
   outline: none;
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  animation: pulse 2s infinite; /* Apply the pulse animation */
+  animation: pulse 2s infinite;
 }
 
 .takeMeThere:hover {
@@ -1154,18 +889,7 @@ p {
   }
 }
 
-/*--------------------------ABOUT THE HOUSE_------*/
-
-/*.subheadings {
-  font-size: 2em;
-  text-align: center;
-  background-color: #be7836;
-  color: #ece5d5;
-  padding: 30px;
-  width: 60%;
-  margin: 0 auto; /* Center align horizontally 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
-}*/
+/*----------------ABOUT THE HOUSE------------------------*/
 
 .subheadings {
   font-size: 2.5em;
@@ -1173,7 +897,7 @@ p {
   color: #242222;
   padding: 10px;
   width: 60%;
-  margin: 0 auto; /* Center align horizontally */
+  margin: 0 auto;
 }
 
 .houseIntroText > .takeMeThere {
@@ -1191,7 +915,7 @@ p {
   margin-top: 100px;
 }
 
-/*------------------------ About the House-----------------------*/
+/*------------------------ Image Carousel-----------------------*/
 /*#content-wrapper2 {
   display: flex;
   align-items: center;
@@ -1244,61 +968,60 @@ p {
 }
 
 .text-section {
-  /*background-color: #f8f8f8;  A light background for the text */
   padding: 20px;
-  border-radius: 4px; /* Optional: adds rounded corners */
-  margin-bottom: 30px; /* Space between text and image */
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .section-heading {
-  color: #a07636; /* A gold color for headings */
+  color: #a07636;
   margin-bottom: 15px;
 }
 
 .parallax-image {
   width: 100%;
-  max-height: 400px; /* Adjust as necessary */
-  object-fit: cover; /* Ensure the image covers the area without stretching */
+  max-height: 400px;
+  object-fit: cover;
   margin-bottom: 30px;
-  display: block; /* Remove any extra space below the image */
+  display: block;
 }
 
 /*--------------HISTORY, TODAY AND FR MORE-------------*/
 .history-container {
   display: flex;
-  align-items: flex-start; /* Aligns items to the top */
+  align-items: flex-start;
   justify-content: space-between;
-  margin: 70px 5%; /* Reduce lateral margins */
-  animation: fadeInUp 1.5s ease forwards; /* Added 'forwards' to keep the final state */
+  margin: 70px 5%;
+  animation: fadeInUp 1.5s ease forwards;
 }
 
 .history-heading {
-  flex-basis: 40%; /* Adjust width as necessary */
-  max-width: 40%; /* Ensure that the basis is not exceeded */
+  flex-basis: 40%;
+  max-width: 40%;
 }
 
 .history-heading h2 {
   font-weight: 600;
   font-size: 2em;
-  margin-bottom: 0.5em; /* Adjust as needed */
+  margin-bottom: 0.5em;
   color: #c87527;
 }
 
 .history-heading img {
-  width: 100%; /* Makes the image take the full width of its container */
-  height: auto; /* Keeps the aspect ratio of the image */
+  width: 100%;
+  height: auto;
   margin-top: 10px;
 }
 
 .history-text {
-  flex-basis: 55%; /* Adjust width as necessary */
-  max-width: 55%; /* Ensure that the basis is not exceeded */
-  padding-left: 20px; /* Adds some spacing between the text and the image */
+  flex-basis: 55%;
+  max-width: 55%;
+  padding-left: 20px;
 }
 
 .history-text p {
   text-align: justify;
-  text-justify: inter-word; /* This helps to improve the spacing between words */
+  text-justify: inter-word;
 }
 
 .modern-container {
@@ -1322,10 +1045,9 @@ p {
   animation-name: fadeInUp;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  /* Add "animation-delay" if you want to delay the start of the animation */
 }
 
-/*Greatest work*/
+/*--------Greatest work section-----------*/
 
 .greatest-works {
   width: 90%;
@@ -1333,8 +1055,8 @@ p {
   margin: 100px auto;
 
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of items */
-  justify-content: space-around; /* Evenly distribute with space around items */
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -1349,31 +1071,31 @@ p {
 }
 
 .section-title {
-  width: 100%; /* Full width to break line */
+  width: 100%;
   text-align: center;
-  margin-bottom: 30px; /* Space below the section title */
+  margin-bottom: 30px;
 }
 
 .image-grid {
   display: flex;
-  flex-wrap: wrap; /* Wrap items */
-  justify-content: space-around; /* Distribute with space around */
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
 .image-grid .grid-item {
-  width: 250px; /* Fixed width */
-  height: 300px; /* Fixed height */
-  margin: 10px; /* Margin around each box */
-  transition: transform 1s, z-index 0s, box-shadow 1s; /* Smooth transition for transform and shadow */
-  position: relative; /* Needed for z-index to work */
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  transition: transform 1s, z-index 0s, box-shadow 1s;
+  position: relative;
 }
 
 .image-grid .grid-item img {
-  width: 100%; /* Make image take full width of its container */
-  height: 100%; /* Make image take full height of its container */
-  object-fit: cover; /* Cover the container completely */
-  transition: transform 1s; /* Smooth transition for transform */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
 }
 
 .image-grid a::after {
@@ -1386,23 +1108,23 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0); /* Transparent background */
+  background: rgba(0, 0, 0, 0);
   color: white;
   text-align: center;
   opacity: 0;
   transition: background-color 0.3s ease, opacity 0.3s ease;
-  pointer-events: none; /* Ensure the click passes through */
+  pointer-events: none;
 }
 
 .image-grid a:hover::after {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
-  opacity: 1; /* Make title visible */
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 
 .image-grid .grid-item:hover {
-  transform: scale(1.1); /* Enlarge */
-  z-index: 2; /* Bring to front */
-  box-shadow: 2px 2px 2px #000; /* Add shadow */
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
 }
 
 /* Responsive adjustments */
@@ -1419,13 +1141,12 @@ p {
   }
 
   .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two images per row */
-    gap: 20px; /* Optionally increase the gap */
-    /* Adjust other styles as needed */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
-/* ------------------------Container holding image grid (What else to do around?)--------------------------- */
+/* ------------(What else to do around?)------------------ */
 .image-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1473,46 +1194,43 @@ p {
 
 @media (max-width: 992px) {
   .content-wrapper {
-    flex-direction: column; /* Stack the items vertically */
-    margin-top: 3em; /* Reduce the top margin */
+    flex-direction: column;
+    margin-top: 3em;
   }
 
   .quote-section {
-    /* Change flex direction to column */
     flex-direction: column;
-    text-align: center; /* Center the text for smaller screens */
-    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    padding: 20px;
   }
 
   .quotes {
-    /* Adjust padding and text alignment for smaller screens */
-    padding: 0; /* Reset padding to 0 */
-    order: 2; /* Ensure the quote comes after the author's name */
+    padding: 0;
+    order: 2;
   }
 
   .quotes2 {
-    /* Adjust text alignment and font size for smaller screens */
     text-align: center;
-    font-size: 48px; /* Decrease the font size for smaller screens */
-    order: 1; /* Ensure the author's name comes before the quote */
+    font-size: 48px;
+    order: 1;
   }
 
   .image-text-container {
-    flex-direction: column; /* Stack image and text vertically */
-    max-width: 100%; /* Use full width */
-    gap: 10px; /* Reduce the gap between image and text */
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
   }
 
   .responsive-image {
-    width: 20%; /* Full width images */
-    margin-right: 0; /* Remove margin to the right of the image */
+    width: 20%;
+    margin-right: 0;
   }
 
   .houseIntroText,
   .houseIntroText h1,
   .houseIntroText p {
-    align-items: center; /* Center align the flex items */
-    text-align: center; /* Center align text */
+    align-items: center;
+    text-align: center;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -1527,7 +1245,7 @@ p {
   }
 
   .houseIntroText > .takeMeThere {
-    align-self: center; /* Center the button */
+    align-self: center;
   }
 
   .image-grid-container {
@@ -1538,33 +1256,33 @@ p {
   }
 
   .carousel-inner img {
-    height: auto; /* Adjust height to be auto to maintain aspect ratio */
+    height: auto;
   }
 
   .subheadings {
-    font-size: 1.6em; /* Reduce font size for smaller screens */
+    font-size: 1.6em;
     width: 90%;
   }
 
   .history-container {
     flex-direction: column;
-    text-align: center; /* Center text for smaller screens */
-    margin: 20px 2%; /* Reduce lateral margins for smaller screens */
+    text-align: center;
+    margin: 20px 2%;
   }
 
   .history-heading,
   .history-text {
     flex-basis: auto;
-    max-width: 96%; /* Account for the reduced lateral margins */
+    max-width: 96%;
   }
 
   .history-heading img {
-    margin: 20px auto; /* Space above and below the image */
+    margin: 20px auto;
   }
 
   .history-text {
-    padding-top: 0; /* No additional padding above the text */
-    padding-left: 0; /* Align text to the edge on smaller screens */
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -1612,7 +1330,7 @@ p {
   }
 
   .form-elements.w-50 {
-    width: auto !important; /* Override w-50 class */
+    width: auto !important;
   }
 
   .txt-ele-center {
@@ -1635,9 +1353,7 @@ p {
   }
 }
 
-/* ------------------------------------------new landing page */
-
-/*new changes for landing-page.html!*/
+/* ------------------------------------------landing page (INDEX)----------------------------- */
 
 .welcome-container {
   width: 80%;
@@ -1662,25 +1378,24 @@ p {
 
 .dali-artistic-abodes-section {
   position: relative;
-  text-align: center; /* Center align the text */
+  text-align: center;
   background-color: #e9dbbd;
   margin-top: -30px;
-  /* Set a height if necessary, depending on your layout */
 }
 
 .dali-image {
-  width: 70%; /* Set the image width to 70% of its container */
-  height: fit-content; /* Maintain aspect ratio */
-  display: block; /* Ensures the image is treated as a block-level element */
-  margin: 0 auto; /* This will center the image horizontally within its container */
+  width: 70%;
+  height: fit-content;
+  display: block;
+  margin: 0 auto;
 }
 
 .dali-text-container {
   position: absolute;
-  top: 80px; /* Adjust the value as necessary to position the text over the head */
+  top: 80px;
   left: 50%;
-  transform: translateX(-50%); /* Center the container horizontally */
-  color: #383635; /* Change the text color as needed for contrast */
+  transform: translateX(-50%);
+  color: #383635;
 }
 
 .dali-text-container h2 {
@@ -1690,11 +1405,9 @@ p {
 
 .dali-text-container h2,
 .dali-text-container p {
-  margin: 0; /* Removes default margin from headings and paragraphs */
-  /* Additional styles for your heading and paragraph text */
+  margin: 0;
 }
 
-/*landing-tile-section*/
 .landing-back-in-time,
 .landing-plan-visit {
   display: flex;
@@ -1702,11 +1415,11 @@ p {
 }
 
 .landing-back-in-time {
-  background-color: #242222; /* Black background for the 'back-in-time' tile */
+  background-color: #242222;
 }
 
 .landing-plan-visit {
-  background-color: #e9dbbd; /* Brown background for the 'plan-visit' tile */
+  background-color: #e9dbbd;
 }
 
 .tile-content {
@@ -1715,29 +1428,29 @@ p {
 }
 
 .text-content {
-  color: #fff; /* White text for contrast */
+  color: #fff;
   flex-basis: 50%;
-  display: flex; /* Use flexbox to align content */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: flex-start; /* Align content to the start (left-aligned) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   text-align: justify;
   text-justify: inter-word;
-  padding: 0 200px; /* Add padding to prevent text from touching the edges */
+  padding: 0 200px;
 }
 
 .tile-content.image-right,
 .tile-content.image-left {
-  position: relative; /* Establishes a positioning context for absolute positioning */
-  overflow: hidden; /* Ensures no parts of the image spill out of the container */
+  position: relative;
+  overflow: hidden;
 }
 
 .tile-content img {
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  object-fit: cover; /* Cover the container with the image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  position: absolute; /* Positioned absolutely to fit the parent's dimensions */
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -1753,54 +1466,47 @@ p {
   color: #242222;
 }
 
-/* Add a specific height to the image containers */
 .tile-content.image-right,
 .tile-content.image-left {
-  height: 600px; /* Example fixed height, you may adjust this value */
+  height: 600px;
 }
 
 .discover-btn,
 .takeMeThere {
-  position: relative; /* Adjust if necessary */
-  z-index: 10; /* Increase z-index */
-  /* Add any additional styles that ensure visibility and interactivity */
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 992px) {
-  /* Remove the heading divider line */
   .heading-content-divider {
     display: none;
   }
 
-  /* Stack the .welcome-txt over .subtext */
   .welcome-container {
-    text-align: center; /* Center aligns the text if desired */
-    margin-top: 0; /* Adjust top margin as the negative value is no longer needed */
+    text-align: center;
+    margin-top: 0;
   }
 
   .welcome-txt {
-    font-size: 60px; /* Adjusted for smaller screens */
+    font-size: 60px;
   }
 
   .subtext {
-    font-size: 16px; /* Adjusted for smaller screens */
+    font-size: 16px;
     margin-top: -20px;
   }
 
   .dali-artistic-abodes-section {
-    /* Ensure the container is a flexbox to apply 'order' to its children */
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-
-    text-align: center; /* Center align the text */
-    background-color: #e9dbbd; /* Presumed background color */
+    flex-direction: column;
+    text-align: center;
+    background-color: #e9dbbd;
   }
 
   .dali-text-container {
-    /* Order -1 will place the text above the image */
     order: -1;
     position: relative;
-    margin-bottom: 30px; /* Provide some space below the text */
+    margin-bottom: 30px;
     margin-top: -50px;
     margin-right: 100px;
   }
@@ -1816,10 +1522,9 @@ p {
   }
 
   .dali-image {
-    /* Make the image full width and let it take up natural height */
     width: 100%;
     height: auto;
-    order: 0; /* Image will come after the text due to 'order: -1' on text container */
+    order: 0;
     margin-bottom: 0;
   }
 
@@ -1827,22 +1532,21 @@ p {
   .landing-back-in-time .text-content h2 {
     font-size: 30px;
   }
-  /* Tile section adjustments for image then text, then image then text */
+
   .landing-back-in-time,
   .landing-plan-visit {
-    flex-direction: column; /* Stack the children vertically */
+    flex-direction: column;
   }
 
   .tile-content {
-    flex-basis: auto; /* Reset the basis and allow it to be determined by content size */
-    width: 100%; /* Full width for all tile contents */
-    padding: 20px 0; /* Add some padding for spacing */
+    flex-basis: auto;
+    width: 100%;
+    padding: 20px 0;
   }
 
-  /* Image and text order */
   .tile-content.image-right,
   .tile-content.image-left {
-    order: 1; /* Images come first */
+    order: 1;
     margin-top: -20px;
   }
 
@@ -1852,9 +1556,9 @@ p {
   }
 
   .text-content {
-    order: 2; /* Text content comes after the images */
-    text-align: center; /* Center-align text */
-    color: #000; /* Make text color black or any color desired for visibility */
+    order: 2;
+    text-align: center;
+    color: #000;
     margin-top: -18em;
     text-align: justify;
     text-justify: inter-word;
@@ -1863,31 +1567,15 @@ p {
 
   .tile-content img {
     height: 300px;
-    position: static; /* Remove absolute positioning */
+    position: static;
   }
 }
 
-/*------------------------------OUR MISSION-------------------*/
-/*new changes for landing page copy!*/
-
-.container {
+/*-----landing page welcome message-------*/
+/*.container {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-/*.welcome-txt {
-  font-size: 80px;
-  font-weight: 400 !important;
-  font-family: "Lato", sans-serif !important;
-  color: #383635;
-}
-
-.subtext {
-  font-size: 24px;
-  font-family: "Lato", sans-serif !important;
-  text-align: left;
-  color: #383635;
 }*/
 
 .cstm-pad {
@@ -2071,72 +1759,5 @@ p {
 @media (max-width: 767px) {
   .cstm-mar-top-50 {
     margin-top: 50px !important;
-  }
-}
-
-/* Our Mission page */
-
-.cstm-font-style {
-  font-family: "Dancing Script";
-  color: #222120;
-  font-size: 60px;
-  margin-top: 40px;
-}
-
-.text-mission {
-  font-size: 20px;
-  font-family: "Lato", sans-serif !important;
-  text-align: left;
-  color: #383635;
-}
-
-.cstm-image {
-  border-radius: 4px;
-  width: 80%;
-  filter: drop-shadow(20px 20px 10px green);
-  filter: drop-shadow(1px 1px 2px);
-}
-
-.cstm-margin-top-150px {
-  margin-top: 150px !important;
-}
-
-.cstm-margin-top-120px {
-  margin-top: 100px !important;
-}
-
-.text-mission2 {
-  font-size: 20px;
-  font-family: "Lato", sans-serif !important;
-  text-align: center;
-  color: #383635;
-}
-
-.cstm-width {
-  width: 60% !important;
-}
-
-@media (max-width: 767px) {
-  .text-mission {
-    font-size: 16px;
-    font-family: "Lato", sans-serif !important;
-    text-align: center;
-    color: #383635;
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 412px) {
-  .text-mission2 {
-    font-size: 16px;
-    font-family: "Lato", sans-serif !important;
-    text-align: center;
-    color: #383635;
-  }
-}
-
-@media (max-width: 412px) {
-  .cstm-margin-top-150px {
-    margin-top: 120px !important;
   }
 }
