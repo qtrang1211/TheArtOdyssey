@@ -59,50 +59,111 @@
 
   <body>
 
-  <!------------------------------ COMMON NAV BAR ------------------------------------>
-  <script src="index.js"></script>
+  <!-- Cookie Consent Screen -->
+<div class="cookie_consent_container cookie_hide" id="cookie_consent_container">
+  <div class="cookie_consent_box">
+      <!-- Cookie Pop-Up-->
+      <div class="cookie_pop_up" id="cookie_pop_up">
+          <h2><b>Cookies Policy</b></h2>
+          <p>Welcome to <b>artHaus</b>! <br><br> We utilize cookies to enhance your browsing experience and personalize content on our website. Cookies are small text files stored on your device that help us understand how you interact with our site.
 
-  <header>
-    <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
-      <div class="container">
-        <a href="landing-page.html"><img src="assets/Logo/logo-black.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="landing-house.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Houses
-              </a>
-              <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="Houses_Dali.html">Dali</a></li>
-                <li><a class="dropdown-item" href="Houses_Monet.html">Monet</a></li>
-                <li><a class="dropdown-item" href="Houses_Rembrandt.html">Rembrandt</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="directions.html">Visit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Our Mission</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+            By continuing to browse <b>artHaus</b>, you consent to the use of cookies. These cookies may collect information such as your IP address, browser type, and browsing behavior to improve our services and provide you with a seamless experience.
+            
+            For more information on how we use cookies and your options, please review our <a href="cookiepolicy.html">Cookies Policy.</a>
+    
+          </p>
+          <div class="cookie_pop_up_buttons">
+              <a class="cookie_more_info" id="cookies_more_info"><a href="https://commission.europa.eu/cookies-policy_en">For More Information</a>
+              <div class="service_button">
+                  <a class="link_b1" id="accept_cookie_settings"><div class="button_1">I accept</div></a>
+              </div>
+          </div>
       </div>
-    </nav>
-
-  <!------------------------------ COMMON NAV BAR - END ------------------------------------>
   
-    <!------------------------------ HEADER IMAGE ------------------------------>
-    <section>
-      <div id="intro" class="bg-image vh-100" style="background-image: url(assets/header/landing.jpg)"></div>
-    </section>
+  </div>
+</div>
 
-  </header>
+    <!------------------------------COMMON NAV BAR------------------------------------>
+    <script src="index.js"></script>
+    <header>
+      <nav
+        class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
+      >
+        <div class="container">
+          <a href="index.html"
+            ><img src="assets/Logo/logo-black.svg" alt="artHaus logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="houses.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Houses
+                </a>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+
+                  <li>
+                    <a class="dropdown-item" href="Houses_Dali.html">Dali</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Monet.html">Monet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Houses_Rembrandt.html"
+                      >Rembrandt</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="houses.html">All Houses</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="directions.html">Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--HEADER IMAGE-->
+      <section>
+        <div
+          id="intro"
+          class="bg-image vh-100"
+          style="background-image: url(assets/header/landing.jpg)"
+        ></div>
+      </section>
+    </header>
 
   <!------------------------------ CONTENT SECTION ------------------------------> 
   <div class="main-pages-heading">
@@ -604,55 +665,144 @@
 
   </div>
 
-  <!------------------------------ FOOTER ------------------------------>
-  <footer style="
-  background-color: #3a3635;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  ">
-    <div class="container">
-      <div class="row mt-3 mb-4 justify-content-between">
-        <div class="col-md-4">
-          <a href="newlanding.html"><img class="ctm-siz" src="assets/Logo/logo-black.svg" alt="arthaus logo" style="color: white !important; margin-bottom: 20px; max-width: 55%;"></a>
-          <form>
-            <div class="mb-3 d-flex align-items-center">
-              <input type="email" class="form-control custom-input" style="background-color: #3a3635; margin-right: 10px;" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" />
-              <button style="background-color: #3A3635; border: 1px solid white; color: #ECE5D5; border-radius: 4px;" class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
-            </div>
-          </form>
-          <p style="color: white;">Subscribe for exclusive art, culture, and adventure updates. Elevate your inbox with creativity!</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="row">
-            <div class="col-md-6 p-4">
-              <a href="landing-house.html" class="footer-link ftr-link-style">Artists' Houses</a>
-            </div>
-            <div class="col-md-6 p-4">
-              <a href="about.html" class="footer-link ftr-link-style">About Us</a>
-            </div>
-            <div class="col-md-6 p-4">
-              <a href="directions.html" class="footer-link ftr-link-style">Prices & Directions</a>
-            </div>
-            <div class="col-md-6 p-4">
-              <a href="contact.html" class="footer-link ftr-link-style">Contact Us</a>
+    <!--Footer-->
+
+    <footer
+      style="
+        background-color: #3a3635;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      "
+    >
+      <div class="container">
+        <div class="row mt-3 mb-4 justify-content-between">
+          <div class="col-md-4">
+            <a href="index.html"
+              ><img
+                class="ctm-siz"
+                src="assets/Logo/logo-black.svg"
+                alt="arthaus logo"
+                style="
+                  color: white !important;
+                  margin-bottom: 20px;
+                  max-width: 55%;
+                "
+            /></a>
+            <form>
+              <div class="mb-3 d-flex align-items-center">
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  style="background-color: #3a3635; margin-right: 10px"
+                  placeholder="Your email"
+                  aria-label="Your email"
+                  aria-describedby="subscribeButton"
+                />
+                <button
+                  style="
+                    background-color: #3a3635;
+                    border: 1px solid white;
+                    color: #ece5d5;
+                    border-radius: 4px;
+                  "
+                  class="btn btn-primary"
+                  type="submit"
+                  id="subscribeButton"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p style="color: white">
+              Subscribe for exclusive art, culture, and adventure updates.
+              Elevate your inbox with creativity!
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-md-6 p-4">
+                <a href="houses.html" class="footer-link ftr-link-style"
+                  >Houses</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="mission.html" class="footer-link ftr-link-style"
+                  >Our Mission</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="directions.html" class="footer-link ftr-link-style"
+                  >Visit</a
+                >
+              </div>
+              <div class="col-md-6 p-4">
+                <a href="contact.html" class="footer-link ftr-link-style"
+                  >Contact Us</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div
+          class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly"
+        >
+          <img
+            src="assets/icons/facebook_symbol.svg.svg"
+            alt="facebook icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/instagram_logo.svg.svg"
+            alt="instagram icon"
+            class="social-icon"
+          />
+          <img
+            src="assets/icons/tiktok_symbol.svg.svg"
+            alt="tiktok icon"
+            class="social-icon"
+          />
+          <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
+          <img
+            src="assets/icons/youtube_symbol.svg.svg"
+            alt="youtube icon"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+
+
+      <div class="row cstm-pad-rt cstm-pad-top cstm-pad-right">
+
+        <div class="col-md-8">
+          <p class="txt-white cstm-center" style="padding-left: 80px;">idm-2024@arthaus.com</p>
+        </div>
+        <div class="col-md-1">
+            <p class="txt-white text-center"><a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">Legal</a></p> 
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center">
+            <a href="privacy.html">Privacy</a> 
+          </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="cookiepolicy.html" id="consent_link">Cookies</a> </p>
+        </div>
+        <div class="col-md-1">
+          <p class="txt-white text-center"> <a href="https://digital-strategy.ec.europa.eu/en/policies/copyright-legislation">Copyright</a> </p> 
+        </div>
     </div>
-    <div class="row">
-    <div class="col-md-4"></div>
-    <div class="d-flex socials text-center mt-4 col-md-4 justify-content-evenly">
-      <img src="assets/icons/facebook_symbol.svg.svg" alt="" class="social-icon" />
-      <img src="assets/icons/instagram_logo.svg.svg" alt="" class="social-icon" />
-      <img src="assets/icons/tiktok_symbol.svg.svg" alt="" class="social-icon" />
-      <img src="assets/icons/x_logo.svg.svg" alt="" class="social-icon" />
-      <img src="assets/icons/youtube_symbol.svg.svg" alt="" class="social-icon" />
-    </div>
-    <div class="col-md-4"></div>
   </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
-  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+
+    </footer>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
