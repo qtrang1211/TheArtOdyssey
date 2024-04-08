@@ -19,6 +19,10 @@ a:link {
   color: #be7836;
 }
 
+.custom-color {
+  color: white !important;
+}
+
 a:visited {
   color: white;
 }
