@@ -701,7 +701,7 @@ h1 {
   }
 
   .collection-side {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 
   .collection-side h2 {
@@ -714,10 +714,10 @@ h1 {
   }
 
   .artists-side {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 90%;
-    margin-left: 30px;
+    width: 80%;
+    margin-left: 15px;
     margin-top: 0;
   }
 
@@ -726,7 +726,7 @@ h1 {
   }
 
   .announcement {
-    margin-left: 0;
+    margin-left: 35px;
     margin-top: 20px;
   }
 }
