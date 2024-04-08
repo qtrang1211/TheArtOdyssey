@@ -1774,8 +1774,7 @@ p {
   .policy-terms {
     margin-top: px;
     display: block;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     padding: 50px;
   }
 }
